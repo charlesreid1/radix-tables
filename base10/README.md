@@ -1,6 +1,9 @@
 # PrimesPage.java
 
 Class that prints the table of primes in HTML table format.
-This can be copied into the primetemplate.html page,
-or (eventually) PrimesPage can be modified to print an entire
-standalone HTML page.
+Prints a full HTML page, just pipe the output to the HTML file
+where you want it:
+
+```
+java PrimesPage > primes_base10.html
+```
