@@ -1,0 +1,9 @@
+table {
+    text-align: right;
+}
+tr#tint {
+    background-color: #ddd;
+}
+td#fat {
+    font-weight: bold;
+}

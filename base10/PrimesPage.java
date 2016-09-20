@@ -3,10 +3,10 @@ import java.util.*;
 /**
  * This class prints the primes in base 10.
  */
-public class PrintPrimes {
+public class PrimesPage {
 
     public static void main(String[] args) { 
-        int Ncols = 20;
+        int Ncols = 21;
         int Nrows = 100;
         int n = 1000000;
         //System.out.println("You'd better have at least "+Ncols*Nrows+" primes. You have "+nprimes);
@@ -34,7 +34,6 @@ public class PrintPrimes {
         for (int i = 2; i <= n; i++) {
             if (isPrime[i]) nprimes++;
         }
-        System.out.println("The number of primes <= " + n + " is " + nprimes);
 
         // Make a list of primes (sooper inefficient, I know...)
         LinkedList<Integer> primes = new LinkedList<Integer>();
@@ -46,26 +45,50 @@ public class PrintPrimes {
         }
         //System.out.println(primes.size());
 
+
+
+        // table header
+        System.out.println("<table class=\"table\">");
+        System.out.println();
+
         // row headers
-        System.out.printf("%3s "," ");
-        for(int c=0; c<Ncols; c++) {
-            System.out.printf("%6d ",c);
+        System.out.println("<tr>");
+        System.out.println("<td></td>"); // one empty column
+        for( int c=0; c < Ncols; c++ ) {
+            System.out.println("<td id=\"fat\">" + (c*100) + "</td>");
         }
-        System.out.print("\n\n");
+        System.out.println("</tr>");
+        System.out.println();
 
         int p = 0;
+        boolean hasTint = false;
         for(int r=0; r<Nrows; r++) {
-            System.out.printf("%3d ",r+1);
+
+            if(r%5==0) {
+                hasTint = !hasTint;
+            }
+
+            if( hasTint ) {
+                System.out.println("<tr id=\"tint\">");
+            } else {
+                System.out.println("<tr>");
+            }
+
+            System.out.println("    <td id=\"fat\">" + (r+1) + "</td>"); // prime index
+
             for(int c=0; c<Ncols; c++) {
                 p = primes.get(c*Nrows + r);
-                System.out.printf("%6d ",p);
+                System.out.println("    <td>" + p + "</td>");
             }
-            System.out.print("\n");
-            if((r+1)%5==0) {
-                System.out.print("\n");
-            }
+            System.out.println("</tr>");
+            System.out.println();
         }
+
+        // table close
+        System.out.println("</table>");
+        System.out.println();
 
     }
 }
+
 
