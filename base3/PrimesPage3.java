@@ -1,11 +1,15 @@
 import java.util.*;
+import java.math.BigInteger;
 
 /**
- * This class prints the primes in base 10.
+ * This class prints the primes in base 3.
  */
-public class PrimesPage {
+public class PrimesPage3 {
 
     public static void main(String[] args) { 
+
+        int base = 3;
+
         int Ncols = 21;
         int Nrows = 100;
         int n = 1000000;
@@ -58,6 +62,8 @@ public class PrimesPage {
 
         int p = 0;
         boolean hasTint = false;
+        BigInteger temp;
+        String tempstring = "";
         for(int r=0; r<Nrows; r++) {
 
             if(r%5==0) {
@@ -74,7 +80,9 @@ public class PrimesPage {
 
             for(int c=0; c<Ncols; c++) {
                 p = primes.get(c*Nrows + r);
-                System.out.println("    <td>" + p + "</td>");
+                temp = new BigInteger( Integer.toString(p) );
+                tempstring = temp.toString(base);
+                System.out.println("    <td>" + tempstring + "</td>");
             }
             System.out.println("</tr>");
             System.out.println();
