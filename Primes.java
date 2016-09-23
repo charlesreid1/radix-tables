@@ -18,7 +18,7 @@ public class Primes {
 
     public static void generateTable(int b) throws FileNotFoundException { 
 
-        String filename = String.format("primes%d.html",b);
+        String filename = String.format("docs/primes%d.html",b);
 
         PrintStream ps = new PrintStream(filename);
 
@@ -174,4 +174,5 @@ public class Primes {
         ps.println();
     }
 }
+
 
