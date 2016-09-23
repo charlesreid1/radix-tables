@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+	
+	<title>Radix Tables</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/navbar.css' />
+	<link rel='stylesheet' type='text/css' href='css/primes.css' />
 
-    <title>Radix Tables</title>
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,82 +27,82 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-      <!--
+
+
+
+    <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">radix-tables</a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">radix-tables</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="primes.html">Primes</a></li>
+                    <li>Powers</li>
+                    <li>Factorials</li>
+                    <li>Pascal's Triangle</li>
+                </ul>
+            </div><!--/.nav-collapse -->
         </div>
-      </div>
     </nav>
-      -->
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>radix tables<h1>
-        <p>The following tables presents various properties of the integers in radixes other than 10. Select a table to get started.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">What is a radix? &raquo;</a></p>
-      </div>
+
+
+
+
+    <div id="main-content" class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <h2>Prime Numbers</h2>
+                <p>Table showing the sequence of prime numbers in the specified radix.</p>
+                <p><a class="btn btn-default" href="primes.html" role="button">Prime Numbers &raquo;</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Powers of Integers</h2>
+                <p>Table showing a list of integers and their powers (1, 2, 3, 4, etc.) for non-10 radixes. </p>
+                <!--
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                -->
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-4">
+                <h2>Factorials</h2>
+                <p>Table of factorials up to 20 in the given radix.</p> 
+                <!--
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                -->
+            </div>
+
+            <div class="col-md-4">
+                <h2>Pascal's Triangle</h2>
+                <p>Pascal's Triangle still works - but the coefficients look different.</p>
+                <!--
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                -->
+            </div>
+
+        </div><!--end row-->
+
     </div>
 
-    <div class="container">
+</body>
 
-      <div class="row">
-
-        <div class="col-md-4">
-          <h2>Prime Numbers</h2>
-          <p>Table showing the sequence of prime numbers in the specified radix.</p>
-          <p><a class="btn btn-default" href="primes_base3.html" role="button">Primes in Base 3 &raquo;</a></p>
-          <p><a class="btn btn-default" href="primes_base10.html" role="button">Primes in Base 10 &raquo;</a></p>
-       </div>
-
-        <div class="col-md-4">
-          <h2>Powers of Integers</h2>
-          <p>Table showing a list of integers and their powers (1, 2, 3, 4, etc.) for non-10 radixes. </p>
-          <!--
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          -->
-        </div>
-
-      </div>
-      <div class="row">
-
-        <div class="col-md-4">
-          <h2>Factorials</h2>
-          <p>Table of factorials up to 20 in the given radix.</p> 
-          <!--
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          -->
-        </div>
-
-        <div class="col-md-4">
-          <h2>Pascal's Triangle</h2>
-          <p>Pascal's Triangle still works - but the coefficients look different.</p>
-          <!--
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          -->
-        </div>
-
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; 2016 Your Mom</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  </body>
 </html>
-
-
