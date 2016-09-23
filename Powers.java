@@ -45,7 +45,6 @@ public class Powers {
 
         // row headers
         ps.println("<tr class=\"clean floorline\">");
-
         for( int c=0; c < Ncols; c++ ) {
             if(c%2==1) {
                 ps.print("<td id=\"fat\" class=\"vtint\">");
@@ -64,7 +63,6 @@ public class Powers {
             }
             ps.println("</td>");
         }
-
         ps.println("</tr>");
         ps.println();
 
@@ -78,6 +76,7 @@ public class Powers {
                 ps.println("<td>&nbsp;</td>");
             }
         }
+        ps.println("</tr>");
         ps.println();
 
 
