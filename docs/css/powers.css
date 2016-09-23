@@ -21,3 +21,7 @@ tr.clean, td.clean {
 td#fat {
     font-weight: bold;
 }
+div.palindrome, span.palindrome {
+    color: #a00;
+    font-weight: bold;
+}

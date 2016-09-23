@@ -99,15 +99,36 @@ public class Powers {
 
                 temp = new BigInteger( Integer.toString(r) );
                 if(c==0) {
-                    ps.println(temp.toString(10));
+                    tempstring = temp.toString(10);
+                    ps.println(tempstring);
                 } else if(c==1) {
-                    ps.println(temp.toString(base));
+                    tempstring = temp.toString(base);
+                    ps.println(tempstring);
+
                 } else if(c==2) {
                     temp2 = temp.multiply( temp.add(BigInteger.ONE) ).divide( new BigInteger("2") );
-                    ps.println( temp2.toString(base) );
+                    tempstring = temp2.toString(base);
+                    boolean ispalindrome = checkIfPalindrome(tempstring);
+                    if( ispalindrome ) {
+                        ps.println("<div class=\"palindrome\">");
+                    }
+                    ps.println(tempstring);
+                    if( ispalindrome ) {
+                        ps.println("</div>");
+                    }
+
                 } else {
                     int power = c-1;
-                    ps.println( temp.pow(power).toString(base) );
+                    tempstring = temp.pow(power).toString(base);
+                    boolean ispalindrome = checkIfPalindrome(tempstring);
+                    if( ispalindrome ) {
+                        ps.println("<div class=\"palindrome\">");
+                    }
+                    ps.println( tempstring );
+                    if( ispalindrome ) {
+                        ps.println("</div>");
+                    }
+
                 }
                 ps.println("</td>");
             }
@@ -151,6 +172,15 @@ public class Powers {
         // table close
         ps.println("</table>");
         ps.println();
+    }
+
+    public static boolean checkIfPalindrome(String s) { 
+        String r = new StringBuilder(s).reverse().toString();
+        if( s.equals(r) && s.length() > 2 ) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
