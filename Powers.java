@@ -39,7 +39,7 @@ public class Powers {
         // The HTMLs
 
         printPageHeader(ps);
-        ps.println("<p>The integer powers in radix" + base + ":</p>");
+        ps.println("<p>The integer powers in radix " + base + ":</p>");
         printTableHeader(ps);
 
 
