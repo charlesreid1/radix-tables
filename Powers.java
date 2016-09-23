@@ -141,6 +141,7 @@ public class Powers {
                 for(int c=0; c<Ncols; c++) {
                     ps.println("<td>&nbsp;</td>");
                 }
+                ps.println("</tr>");
             }
 
 
