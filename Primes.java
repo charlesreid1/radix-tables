@@ -11,12 +11,12 @@ public class Primes {
 
         for( int n = 2; n <= 10; n++ ) {
             System.out.println("Creating html file for base "+n);
-            generateTable(n);
+            generatePrimesTable(n);
         }
 
     }
 
-    public static void generateTable(int b) throws FileNotFoundException { 
+    public static void generatePrimesTable(int b) throws FileNotFoundException { 
 
         String filename = String.format("docs/primes%d.html",b);
 
@@ -149,6 +149,9 @@ public class Primes {
             ps.println();
         }
 
+
+
+        // all done, time to print footer and finish the table
         printTableFooter(ps);
         printPageFooter(ps);
 

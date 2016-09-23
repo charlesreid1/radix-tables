@@ -1,0 +1,2996 @@
+<div id="guts">
+<p>The integer powers in radix7:</p>
+<table class="table">
+
+<tr class="clean floorline">
+<td id="fat">n<sub>10</sub></td>
+<td id="fat" class="vtint">n</td>
+<td id="fat">T(n)</td>
+<td id="fat" class="vtint">n<sup>2</sup></td>
+<td id="fat">n<sup>3</sup></td>
+<td id="fat" class="vtint">n<sup>4</sup></td>
+<td id="fat">n<sup>5</sup></td>
+<td id="fat" class="vtint">n<sup>6</sup></td>
+<td id="fat">n<sup>7</sup></td>
+<td id="fat" class="vtint">n<sup>8</sup></td>
+<td id="fat">n<sup>9</sup></td>
+<td id="fat" class="vtint">n<sup>10</sup></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+
+<tr>
+<td>1
+</td>
+<td class="vtint">1
+</td>
+<td>1
+</td>
+<td class="vtint">1
+</td>
+<td>1
+</td>
+<td class="vtint">1
+</td>
+<td>1
+</td>
+<td class="vtint">1
+</td>
+<td>1
+</td>
+<td class="vtint">1
+</td>
+<td>1
+</td>
+<td class="vtint">1
+</td>
+</tr>
+
+<tr>
+<td>2
+</td>
+<td class="vtint">2
+</td>
+<td>3
+</td>
+<td class="vtint">4
+</td>
+<td>11
+</td>
+<td class="vtint">22
+</td>
+<td>44
+</td>
+<td class="vtint">121
+</td>
+<td>242
+</td>
+<td class="vtint">514
+</td>
+<td>1331
+</td>
+<td class="vtint">2662
+</td>
+</tr>
+
+<tr>
+<td>3
+</td>
+<td class="vtint">3
+</td>
+<td>6
+</td>
+<td class="vtint">12
+</td>
+<td>36
+</td>
+<td class="vtint">144
+</td>
+<td>465
+</td>
+<td class="vtint">2061
+</td>
+<td>6243
+</td>
+<td class="vtint">25062
+</td>
+<td>111246
+</td>
+<td class="vtint">334104
+</td>
+</tr>
+
+<tr>
+<td>4
+</td>
+<td class="vtint">4
+</td>
+<td>13
+</td>
+<td class="vtint">22
+</td>
+<td>121
+</td>
+<td class="vtint">514
+</td>
+<td>2662
+</td>
+<td class="vtint">14641
+</td>
+<td>65524
+</td>
+<td class="vtint">362032
+</td>
+<td>2141161
+</td>
+<td class="vtint">11625034
+</td>
+</tr>
+
+<tr>
+<td>5
+</td>
+<td class="vtint">5
+</td>
+<td>21
+</td>
+<td class="vtint">34
+</td>
+<td>236
+</td>
+<td class="vtint">1552
+</td>
+<td>12053
+</td>
+<td class="vtint">63361
+</td>
+<td>443525
+</td>
+<td class="vtint">3214564
+</td>
+<td>22413146
+</td>
+<td class="vtint">146002132
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>6
+</td>
+<td class="vtint">6
+</td>
+<td>30
+</td>
+<td class="vtint">51
+</td>
+<td>426
+</td>
+<td class="vtint">3531
+</td>
+<td>31446
+</td>
+<td class="vtint">253011
+</td>
+<td>2244066
+</td>
+<td class="vtint">20163561
+</td>
+<td>151442016
+</td>
+<td class="vtint">1332645141
+</td>
+</tr>
+
+<tr>
+<td>7
+</td>
+<td class="vtint">10
+</td>
+<td>40
+</td>
+<td class="vtint">100
+</td>
+<td>1000
+</td>
+<td class="vtint">10000
+</td>
+<td>100000
+</td>
+<td class="vtint">1000000
+</td>
+<td>10000000
+</td>
+<td class="vtint">100000000
+</td>
+<td>1000000000
+</td>
+<td class="vtint">10000000000
+</td>
+</tr>
+
+<tr>
+<td>8
+</td>
+<td class="vtint">11
+</td>
+<td>51
+</td>
+<td class="vtint">121
+</td>
+<td>1331
+</td>
+<td class="vtint">14641
+</td>
+<td>164351
+</td>
+<td class="vtint">2141161
+</td>
+<td>23553101
+</td>
+<td class="vtint">262414111
+</td>
+<td>3216555221
+</td>
+<td class="vtint">35415440431
+</td>
+</tr>
+
+<tr>
+<td>9
+</td>
+<td class="vtint">12
+</td>
+<td>63
+</td>
+<td class="vtint">144
+</td>
+<td>2061
+</td>
+<td class="vtint">25062
+</td>
+<td>334104
+</td>
+<td class="vtint">4342251
+</td>
+<td>55440342
+</td>
+<td class="vtint">1031614434
+</td>
+<td>12413006541
+</td>
+<td class="vtint">152256115122
+</td>
+</tr>
+
+<tr>
+<td>10
+</td>
+<td class="vtint">13
+</td>
+<td>106
+</td>
+<td class="vtint">202
+</td>
+<td>2626
+</td>
+<td class="vtint">41104
+</td>
+<td>564355
+</td>
+<td class="vtint">11333311
+</td>
+<td>150666343
+</td>
+<td class="vtint">2322662122
+</td>
+<td>33531600616
+</td>
+<td class="vtint">502544411644
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>11
+</td>
+<td class="vtint">14
+</td>
+<td>123
+</td>
+<td class="vtint">232
+</td>
+<td>3611
+</td>
+<td class="vtint">60454
+</td>
+<td>1240352
+</td>
+<td class="vtint">21025621
+</td>
+<td>324431624
+</td>
+<td class="vtint">5212010002
+</td>
+<td>112301140031
+</td>
+<td class="vtint">1605516320464
+</td>
+</tr>
+
+<tr>
+<td>12
+</td>
+<td class="vtint">15
+</td>
+<td>141
+</td>
+<td class="vtint">264
+</td>
+<td>5016
+</td>
+<td class="vtint">114312
+</td>
+<td>2054313
+</td>
+<td class="vtint">34244331
+</td>
+<td>613364625
+</td>
+<td class="vtint">13440532644
+</td>
+<td>241602260256
+</td>
+<td class="vtint">4321240624602
+</td>
+</tr>
+
+<tr>
+<td>13
+</td>
+<td class="vtint">16
+</td>
+<td>160
+</td>
+<td class="vtint">331
+</td>
+<td>6256
+</td>
+<td class="vtint">146161
+</td>
+<td>3104326
+</td>
+<td class="vtint">56012221
+</td>
+<td>1361232166
+</td>
+<td class="vtint">26133411451
+</td>
+<td>523534520536
+</td>
+<td class="vtint">12650155563211
+</td>
+</tr>
+
+<tr>
+<td>14
+</td>
+<td class="vtint">20
+</td>
+<td>210
+</td>
+<td class="vtint">400
+</td>
+<td>11000
+</td>
+<td class="vtint">220000
+</td>
+<td>4400000
+</td>
+<td class="vtint">121000000
+</td>
+<td>2420000000
+</td>
+<td class="vtint">51400000000
+</td>
+<td>1331000000000
+</td>
+<td class="vtint">26620000000000
+</td>
+</tr>
+
+<tr>
+<td>15
+</td>
+<td class="vtint">21
+</td>
+<td>231
+</td>
+<td class="vtint">441
+</td>
+<td>12561
+</td>
+<td class="vtint">300411
+</td>
+<td>6311631
+</td>
+<td class="vtint">165550551
+</td>
+<td>4143165201
+</td>
+<td class="vtint">120340132221
+</td>
+<td>2530443106641
+</td>
+<td class="vtint">56442635306061
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>16
+</td>
+<td class="vtint">22
+</td>
+<td>253
+</td>
+<td class="vtint">514
+</td>
+<td>14641
+</td>
+<td class="vtint">362032
+</td>
+<td>11625034
+</td>
+<td class="vtint">262414111
+</td>
+<td>6436443442
+</td>
+<td class="vtint">211301422354
+</td>
+<td>4651634625451
+</td>
+<td class="vtint">142302631426552
+</td>
+</tr>
+
+<tr>
+<td>17
+</td>
+<td class="vtint">23
+</td>
+<td>306
+</td>
+<td class="vtint">562
+</td>
+<td>20216
+</td>
+<td class="vtint">465334
+</td>
+<td>15032345
+</td>
+<td class="vtint">412110631
+</td>
+<td>13111551443
+</td>
+<td class="vtint">334602650152
+</td>
+<td>11365501214156
+</td>
+<td class="vtint">265436131262314
+</td>
+</tr>
+
+<tr>
+<td>18
+</td>
+<td class="vtint">24
+</td>
+<td>333
+</td>
+<td class="vtint">642
+</td>
+<td>23001
+</td>
+<td class="vtint">615024
+</td>
+<td>22026642
+</td>
+<td class="vtint">562046001
+</td>
+<td>21112533024
+</td>
+<td class="vtint">540041055642
+</td>
+<td>20221346102001
+</td>
+<td class="vtint">515646335451024
+</td>
+</tr>
+
+<tr>
+<td>19
+</td>
+<td class="vtint">25
+</td>
+<td>361
+</td>
+<td class="vtint">1024
+</td>
+<td>25666
+</td>
+<td class="vtint">1051642
+</td>
+<td>30021643
+</td>
+<td class="vtint">1110612001
+</td>
+<td>31102533025
+</td>
+<td class="vtint">1140603622024
+</td>
+<td>32212334113666
+</td>
+<td class="vtint">1201645352215642
+</td>
+</tr>
+
+<tr>
+<td>20
+</td>
+<td class="vtint">26
+</td>
+<td>420
+</td>
+<td class="vtint">1111
+</td>
+<td>32216
+</td>
+<td class="vtint">1234321
+</td>
+<td>36125306
+</td>
+<td class="vtint">1404663631
+</td>
+<td>43501551266
+</td>
+<td class="vtint">1564251260341
+</td>
+<td>51663560123156
+</td>
+<td class="vtint">2104546513602151
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>21
+</td>
+<td class="vtint">30
+</td>
+<td>450
+</td>
+<td class="vtint">1200
+</td>
+<td>36000
+</td>
+<td class="vtint">1440000
+</td>
+<td>46500000
+</td>
+<td class="vtint">2061000000
+</td>
+<td>62430000000
+</td>
+<td class="vtint">2506200000000
+</td>
+<td>111246000000000
+</td>
+<td class="vtint">3341040000000000
+</td>
+</tr>
+
+<tr>
+<td>22
+</td>
+<td class="vtint">31
+</td>
+<td>511
+</td>
+<td class="vtint">1261
+</td>
+<td>43021
+</td>
+<td class="vtint">1663651
+</td>
+<td>61543111
+</td>
+<td class="vtint">2544466441
+</td>
+<td>115545456301
+</td>
+<td class="vtint">3651606141331
+</td>
+<td>153136154014561
+</td>
+<td class="vtint">5410614434521321
+</td>
+</tr>
+
+<tr>
+<td>23
+</td>
+<td class="vtint">32
+</td>
+<td>543
+</td>
+<td class="vtint">1354
+</td>
+<td>50321
+</td>
+<td class="vtint">2243602
+</td>
+<td>105464564
+</td>
+<td class="vtint">3445166341
+</td>
+<td>150242352542
+</td>
+<td class="vtint">5441422251304
+</td>
+<td>244062146005061
+</td>
+<td class="vtint">11503652365225612
+</td>
+</tr>
+
+<tr>
+<td>24
+</td>
+<td class="vtint">33
+</td>
+<td>606
+</td>
+<td class="vtint">1452
+</td>
+<td>55206
+</td>
+<td class="vtint">2551164
+</td>
+<td>124452435
+</td>
+<td class="vtint">4510230351
+</td>
+<td>221441235543
+</td>
+<td class="vtint">10644524506212
+</td>
+<td>361602311404326
+</td>
+<td class="vtint">16232512613012454
+</td>
+</tr>
+
+<tr>
+<td>25
+</td>
+<td class="vtint">34
+</td>
+<td>643
+</td>
+<td class="vtint">1552
+</td>
+<td>63361
+</td>
+<td class="vtint">3214564
+</td>
+<td>146002132
+</td>
+<td class="vtint">6023106151
+</td>
+<td>304152012124
+</td>
+<td class="vtint">14011161445612
+</td>
+<td>542413516520041
+</td>
+<td class="vtint">26042032600612054
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>26
+</td>
+<td class="vtint">35
+</td>
+<td>1011
+</td>
+<td class="vtint">1654
+</td>
+<td>102146
+</td>
+<td class="vtint">3612202
+</td>
+<td>202663403
+</td>
+<td class="vtint">10440512041
+</td>
+<td>403015155125
+</td>
+<td class="vtint">21041633522104
+</td>
+<td>1100161106540006
+</td>
+<td class="vtint">41506662141460312
+</td>
+</tr>
+
+<tr>
+<td>27
+</td>
+<td class="vtint">36
+</td>
+<td>1050
+</td>
+<td class="vtint">2061
+</td>
+<td>111246
+</td>
+<td class="vtint">4342251
+</td>
+<td>232651356
+</td>
+<td class="vtint">12413006541
+</td>
+<td>520134351366
+</td>
+<td class="vtint">26255603310231
+</td>
+<td>1414634262102306
+</td>
+<td class="vtint">61240100122023021
+</td>
+</tr>
+
+<tr>
+<td>28
+</td>
+<td class="vtint">40
+</td>
+<td>1120
+</td>
+<td class="vtint">2200
+</td>
+<td>121000
+</td>
+<td class="vtint">5140000
+</td>
+<td>266200000
+</td>
+<td class="vtint">14641000000
+</td>
+<td>655240000000
+</td>
+<td class="vtint">36203200000000
+</td>
+<td>2141161000000000
+</td>
+<td class="vtint">116250340000000000
+</td>
+</tr>
+
+<tr>
+<td>29
+</td>
+<td class="vtint">41
+</td>
+<td>1161
+</td>
+<td class="vtint">2311
+</td>
+<td>131051
+</td>
+<td class="vtint">6004021
+</td>
+<td>336225161
+</td>
+<td class="vtint">20511625531
+</td>
+<td>1150316346401
+</td>
+<td class="vtint">51066400231441
+</td>
+<td>3025051413126011
+</td>
+<td class="vtint">154421044301556451
+</td>
+</tr>
+
+<tr>
+<td>30
+</td>
+<td class="vtint">42
+</td>
+<td>1233
+</td>
+<td class="vtint">2424
+</td>
+<td>141501
+</td>
+<td class="vtint">6612342
+</td>
+<td>413355324
+</td>
+<td class="vtint">24031253301
+</td>
+<td>1402646634642
+</td>
+<td class="vtint">65254524661224
+</td>
+<td>4101023042335101
+</td>
+<td class="vtint">235243331445100242
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>31
+</td>
+<td class="vtint">43
+</td>
+<td>1306
+</td>
+<td class="vtint">2542
+</td>
+<td>152566
+</td>
+<td class="vtint">10564324
+</td>
+<td>465225625
+</td>
+<td class="vtint">30664441201
+</td>
+<td>1662534234643
+</td>
+<td class="vtint">115422302126242
+</td>
+<td>5366125325161366
+</td>
+<td class="vtint">334433122012236424
+</td>
+</tr>
+
+<tr>
+<td>32
+</td>
+<td class="vtint">44
+</td>
+<td>1353
+</td>
+<td class="vtint">2662
+</td>
+<td>164351
+</td>
+<td class="vtint">11625034
+</td>
+<td>555131222
+</td>
+<td class="vtint">35415440431
+</td>
+<td>2324315646224
+</td>
+<td class="vtint">142302631426552
+</td>
+<td>10260662353141211
+</td>
+<td class="vtint">456103404165206614
+</td>
+</tr>
+
+<tr>
+<td>33
+</td>
+<td class="vtint">45
+</td>
+<td>1431
+</td>
+<td class="vtint">3114
+</td>
+<td>206526
+</td>
+<td class="vtint">13036332
+</td>
+<td>653434233
+</td>
+<td class="vtint">44001203511
+</td>
+<td>3036060534225
+</td>
+<td class="vtint">203416055003154
+</td>
+<td>12530055564212316
+</td>
+<td class="vtint">640413634012224252
+</td>
+</tr>
+
+<tr>
+<td>34
+</td>
+<td class="vtint">46
+</td>
+<td>1510
+</td>
+<td class="vtint">3241
+</td>
+<td>222406
+</td>
+<td class="vtint">14234011
+</td>
+<td>1061123536
+</td>
+<td class="vtint">53165422651
+</td>
+<td>3536402052466
+</td>
+<td class="vtint">243006431511121
+</td>
+<td>15534441453045226
+</td>
+<td class="vtint">1160554241130206461
+</td>
+</tr>
+
+<tr>
+<td>35
+</td>
+<td class="vtint">50
+</td>
+<td>1560
+</td>
+<td class="vtint">3400
+</td>
+<td>236000
+</td>
+<td class="vtint">15520000
+</td>
+<td>1205300000
+</td>
+<td class="vtint">63361000000
+</td>
+<td>4435250000000
+</td>
+<td class="vtint">321456400000000
+</td>
+<td>22413146000000000
+</td>
+<td class="vtint">1460021320000000000
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>36
+</td>
+<td class="vtint">51
+</td>
+<td>1641
+</td>
+<td class="vtint">3531
+</td>
+<td>253011
+</td>
+<td class="vtint">20163561
+</td>
+<td>1332645141
+</td>
+<td class="vtint">104641226121
+</td>
+<td>5442636255501
+</td>
+<td class="vtint">410550506362551
+</td>
+<td>30251315255063331
+</td>
+<td class="vtint">2150053505332526511
+</td>
+</tr>
+
+<tr>
+<td>37
+</td>
+<td class="vtint">52
+</td>
+<td>2023
+</td>
+<td class="vtint">3664
+</td>
+<td>300451
+</td>
+<td class="vtint">21634012
+</td>
+<td>1501261654
+</td>
+<td class="vtint">120403212631
+</td>
+<td>6600333433042
+</td>
+<td class="vtint">511524341512144
+</td>
+<td>36242266031265511
+</td>
+<td class="vtint">2644565520263502202
+</td>
+</tr>
+
+<tr>
+<td>38
+</td>
+<td class="vtint">53
+</td>
+<td>2106
+</td>
+<td class="vtint">4132
+</td>
+<td>315656
+</td>
+<td class="vtint">23503054
+</td>
+<td>1651326215
+</td>
+<td class="vtint">134420352121
+</td>
+<td>11160216256043
+</td>
+<td class="vtint">626055225260302
+</td>
+<td>46541320002362336
+</td>
+<td class="vtint">3566256560166134164
+</td>
+</tr>
+
+<tr>
+<td>39
+</td>
+<td class="vtint">54
+</td>
+<td>2163
+</td>
+<td class="vtint">4302
+</td>
+<td>334641
+</td>
+<td class="vtint">25443504
+</td>
+<td>2143615212
+</td>
+<td class="vtint">153124554111
+</td>
+<td>12625466211324
+</td>
+<td class="vtint">1061445531051522
+</td>
+<td>61652061241115451
+</td>
+<td class="vtint">4666435634314004244
+</td>
+</tr>
+
+<tr>
+<td>40
+</td>
+<td class="vtint">55
+</td>
+<td>2251
+</td>
+<td class="vtint">4444
+</td>
+<td>354406
+</td>
+<td class="vtint">30521362
+</td>
+<td>2352246163
+</td>
+<td class="vtint">203334265651
+</td>
+<td>14560052010325
+</td>
+<td class="vtint">1244324213605234
+</td>
+<td>106134164460624226
+</td>
+<td class="vtint">6303443105601265522
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>41
+</td>
+<td class="vtint">56
+</td>
+<td>2340
+</td>
+<td class="vtint">4621
+</td>
+<td>404636
+</td>
+<td class="vtint">33006241
+</td>
+<td>2604522116
+</td>
+<td class="vtint">225466135261
+</td>
+<td>20033123004566
+</td>
+<td class="vtint">1452614614403011
+</td>
+<td>125646364345534646
+</td>
+<td class="vtint">11146163063416250131
+</td>
+</tr>
+
+<tr>
+<td>42
+</td>
+<td class="vtint">60
+</td>
+<td>2430
+</td>
+<td class="vtint">5100
+</td>
+<td>426000
+</td>
+<td class="vtint">35310000
+</td>
+<td>3144600000
+</td>
+<td class="vtint">253011000000
+</td>
+<td>22440660000000
+</td>
+<td class="vtint">2016356100000000
+</td>
+<td>151442016000000000
+</td>
+<td class="vtint">13326451410000000000
+</td>
+</tr>
+
+<tr>
+<td>43
+</td>
+<td class="vtint">61
+</td>
+<td>2521
+</td>
+<td class="vtint">5251
+</td>
+<td>450541
+</td>
+<td class="vtint">41026231
+</td>
+<td>3433360021
+</td>
+<td class="vtint">312435461611
+</td>
+<td>25431630033601
+</td>
+<td class="vtint">2314305333054661
+</td>
+<td>210602055311004151
+</td>
+<td class="vtint">16162060033301350441
+</td>
+</tr>
+
+<tr>
+<td>44
+</td>
+<td class="vtint">62
+</td>
+<td>2613
+</td>
+<td class="vtint">5434
+</td>
+<td>503231
+</td>
+<td class="vtint">43600252
+</td>
+<td>4041523214
+</td>
+<td class="vtint">344550435661
+</td>
+<td>32032000414142
+</td>
+<td class="vtint">2646644035404064
+</td>
+<td>244124554260446621
+</td>
+<td class="vtint">22462462325021422432
+</td>
+</tr>
+
+<tr>
+<td>45
+</td>
+<td class="vtint">63
+</td>
+<td>3006
+</td>
+<td class="vtint">5622
+</td>
+<td>526446
+</td>
+<td class="vtint">46566114
+</td>
+<td>4400314605
+</td>
+<td class="vtint">412526562141
+</td>
+<td>35665606642143
+</td>
+<td class="vtint">3353565324352332
+</td>
+<td>315245241501130206
+</td>
+<td class="vtint">26624143520205136434
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>46
+</td>
+<td class="vtint">64
+</td>
+<td>3103
+</td>
+<td class="vtint">6112
+</td>
+<td>553531
+</td>
+<td class="vtint">53025544
+</td>
+<td>5050441102
+</td>
+<td class="vtint">453532123561
+</td>
+<td>43325652651424
+</td>
+<td class="vtint">4136251343224462
+</td>
+<td>365150016626436121
+</td>
+<td class="vtint">35023161603124634404
+</td>
+</tr>
+
+<tr>
+<td>47
+</td>
+<td class="vtint">65
+</td>
+<td>3201
+</td>
+<td class="vtint">6304
+</td>
+<td>611456
+</td>
+<td class="vtint">56322322
+</td>
+<td>5453254223
+</td>
+<td class="vtint">531055550521
+</td>
+<td>51413410320425
+</td>
+<td class="vtint">5005210611101314
+</td>
+<td>454504336254625436
+</td>
+<td class="vtint">44205121616616656362
+</td>
+</tr>
+
+<tr>
+<td>48
+</td>
+<td class="vtint">66
+</td>
+<td>3300
+</td>
+<td class="vtint">6501
+</td>
+<td>640266
+</td>
+<td class="vtint">63056301
+</td>
+<td>6212540466
+</td>
+<td class="vtint">612041206101
+</td>
+<td>60262046400666
+</td>
+<td class="vtint">5635612560365601
+</td>
+<td>554622343146161166
+</td>
+<td class="vtint">54604311641436625401
+</td>
+</tr>
+
+<tr>
+<td>49
+</td>
+<td class="vtint">100
+</td>
+<td>3400
+</td>
+<td class="vtint">10000
+</td>
+<td>1000000
+</td>
+<td class="vtint">100000000
+</td>
+<td>10000000000
+</td>
+<td class="vtint">1000000000000
+</td>
+<td>100000000000000
+</td>
+<td class="vtint">10000000000000000
+</td>
+<td>1000000000000000000
+</td>
+<td class="vtint">100000000000000000000
+</td>
+</tr>
+
+<tr>
+<td>50
+</td>
+<td class="vtint">101
+</td>
+<td>3501
+</td>
+<td class="vtint">10201
+</td>
+<td>1030301
+</td>
+<td class="vtint">104060401
+</td>
+<td>10513130501
+</td>
+<td class="vtint">1062126210601
+</td>
+<td>110305050301001
+</td>
+<td class="vtint">11141113110401101
+</td>
+<td>1125252424150511201
+</td>
+<td class="vtint">113653525142231631301
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>51
+</td>
+<td class="vtint">102
+</td>
+<td>3603
+</td>
+<td class="vtint">10404
+</td>
+<td>1061511
+</td>
+<td class="vtint">111334422
+</td>
+<td>11356444344
+</td>
+<td class="vtint">1162023656421
+</td>
+<td>121556446621242
+</td>
+<td class="vtint">12432424222000014
+</td>
+<td>1301440603644001431
+</td>
+<td class="vtint">133050302205321146262
+</td>
+</tr>
+
+<tr>
+<td>52
+</td>
+<td class="vtint">103
+</td>
+<td>4006
+</td>
+<td class="vtint">10612
+</td>
+<td>1123636
+</td>
+<td class="vtint">116101444
+</td>
+<td>12264452365
+</td>
+<td class="vtint">1266635260261
+</td>
+<td>134163401200243
+</td>
+<td class="vtint">14155223623625362
+</td>
+<td>1464354400200351646
+</td>
+<td class="vtint">154525166520636613504
+</td>
+</tr>
+
+<tr>
+<td>53
+</td>
+<td class="vtint">104
+</td>
+<td>4113
+</td>
+<td class="vtint">11122
+</td>
+<td>1160021
+</td>
+<td class="vtint">124032214
+</td>
+<td>13235413562
+</td>
+<td class="vtint">1413152650441
+</td>
+<td>150604302636524
+</td>
+<td class="vtint">16054054111501432
+</td>
+<td>2012021023630052561
+</td>
+<td class="vtint">212253216524455563334
+</td>
+</tr>
+
+<tr>
+<td>54
+</td>
+<td class="vtint">105
+</td>
+<td>4221
+</td>
+<td class="vtint">11334
+</td>
+<td>1224036
+</td>
+<td class="vtint">132163152
+</td>
+<td>14243560353
+</td>
+<td class="vtint">1535304161061
+</td>
+<td>165506546334525
+</td>
+<td class="vtint">21141434001125364
+</td>
+<td>2253244536121536246
+</td>
+<td class="vtint">243320406565125611532
+</td>
+</tr>
+
+<tr>
+<td>55
+</td>
+<td class="vtint">106
+</td>
+<td>4330
+</td>
+<td class="vtint">11551
+</td>
+<td>1262026
+</td>
+<td class="vtint">140531131
+</td>
+<td>15320563246
+</td>
+<td class="vtint">1666644364111
+</td>
+<td>214664235655066
+</td>
+<td class="vtint">23431402016402461
+</td>
+<td>2554022520114601216
+</td>
+<td class="vtint">311355454362521232541
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>56
+</td>
+<td class="vtint">110
+</td>
+<td>4440
+</td>
+<td class="vtint">12100
+</td>
+<td>1331000
+</td>
+<td class="vtint">146410000
+</td>
+<td>16435100000
+</td>
+<td class="vtint">2141161000000
+</td>
+<td>235531010000000
+</td>
+<td class="vtint">26241411100000000
+</td>
+<td>3216555221000000000
+</td>
+<td class="vtint">354154404310000000000
+</td>
+</tr>
+
+<tr>
+<td>57
+</td>
+<td class="vtint">111
+</td>
+<td>4551
+</td>
+<td class="vtint">12321
+</td>
+<td>1400631
+</td>
+<td class="vtint">155503341
+</td>
+<td>20624204151
+</td>
+<td class="vtint">2322616664061
+</td>
+<td>261144116344101
+</td>
+<td class="vtint">32320330250525211
+</td>
+<td>3620556661141631421
+</td>
+<td class="vtint">435215456020054421031
+</td>
+</tr>
+
+<tr>
+<td>58
+</td>
+<td class="vtint">112
+</td>
+<td>4663
+</td>
+<td class="vtint">12544
+</td>
+<td>1441561
+</td>
+<td class="vtint">165121462
+</td>
+<td>22156640404
+</td>
+<td class="vtint">2515243355551
+</td>
+<td>315343622521342
+</td>
+<td class="vtint">35655152356023634
+</td>
+<td>4363343430541013641
+</td>
+<td class="vtint">525361130554223564422
+</td>
+</tr>
+
+<tr>
+<td>59
+</td>
+<td class="vtint">113
+</td>
+<td>5106
+</td>
+<td class="vtint">13102
+</td>
+<td>1513526
+</td>
+<td class="vtint">204665404
+</td>
+<td>23500520255
+</td>
+<td class="vtint">3022162422511
+</td>
+<td>344541050410343
+</td>
+<td class="vtint">42633102060002422
+</td>
+<td>5214503536140310316
+</td>
+<td class="vtint">625605536553215366344
+</td>
+</tr>
+
+<tr>
+<td>60
+</td>
+<td class="vtint">114
+</td>
+<td>5223
+</td>
+<td class="vtint">13332
+</td>
+<td>1556511
+</td>
+<td class="vtint">215105154
+</td>
+<td>25161330252
+</td>
+<td class="vtint">3241115312421
+</td>
+<td>406150515252624
+</td>
+<td class="vtint">50243553011526402
+</td>
+<td>6121465336351312431
+</td>
+<td class="vtint">1040214411350043254064
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>61
+</td>
+<td class="vtint">115
+</td>
+<td>5341
+</td>
+<td class="vtint">13564
+</td>
+<td>1633516
+</td>
+<td class="vtint">225454612
+</td>
+<td>26633643613
+</td>
+<td class="vtint">3502502646031
+</td>
+<td>443025045225625
+</td>
+<td class="vtint">55244252633653444
+</td>
+<td>10116122113504106356
+</td>
+<td class="vtint">1164026406423211610302
+</td>
+</tr>
+
+<tr>
+<td>62
+</td>
+<td class="vtint">116
+</td>
+<td>5460
+</td>
+<td class="vtint">14131
+</td>
+<td>2011556
+</td>
+<td class="vtint">236411461
+</td>
+<td>31463000126
+</td>
+<td class="vtint">4050364015321
+</td>
+<td>512266615153166
+</td>
+<td class="vtint">63663360233530351
+</td>
+<td>11212243141123115036
+</td>
+<td class="vtint">1334260234063651016611
+</td>
+</tr>
+
+<tr>
+<td>63
+</td>
+<td class="vtint">120
+</td>
+<td>5610
+</td>
+<td class="vtint">14400
+</td>
+<td>2061000
+</td>
+<td class="vtint">250620000
+</td>
+<td>33410400000
+</td>
+<td class="vtint">4342251000000
+</td>
+<td>554403420000000
+</td>
+<td class="vtint">103161443400000000
+</td>
+<td>12413006541000000000
+</td>
+<td class="vtint">1522561151220000000000
+</td>
+</tr>
+
+<tr>
+<td>64
+</td>
+<td class="vtint">121
+</td>
+<td>6031
+</td>
+<td class="vtint">14641
+</td>
+<td>2141161
+</td>
+<td class="vtint">262414111
+</td>
+<td>35415440431
+</td>
+<td class="vtint">4651634625451
+</td>
+<td>632514456346201
+</td>
+<td class="vtint">113200616214553321
+</td>
+<td>14030311225330615141
+</td>
+<td class="vtint">2031000661631341065361
+</td>
+</tr>
+
+<tr>
+<td>65
+</td>
+<td class="vtint">122
+</td>
+<td>6153
+</td>
+<td class="vtint">15214
+</td>
+<td>2222441
+</td>
+<td class="vtint">304504432
+</td>
+<td>40516210334
+</td>
+<td class="vtint">5306643664411
+</td>
+<td>1014113530354442
+</td>
+<td class="vtint">124055220340241554
+</td>
+<td>15501433215143136551
+</td>
+<td class="vtint">2260511515614126362152
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>66
+</td>
+<td class="vtint">123
+</td>
+<td>6306
+</td>
+<td class="vtint">15462
+</td>
+<td>2305116
+</td>
+<td class="vtint">320165634
+</td>
+<td>43014436245
+</td>
+<td class="vtint">5654145661131
+</td>
+<td>1102056652612443
+</td>
+<td class="vtint">135560034601300452
+</td>
+<td>20410144655563262556
+</td>
+<td class="vtint">2544051526300611325014
+</td>
+</tr>
+
+<tr>
+<td>67
+</td>
+<td class="vtint">124
+</td>
+<td>6433
+</td>
+<td class="vtint">16042
+</td>
+<td>2361601
+</td>
+<td class="vtint">333165424
+</td>
+<td>45312605542
+</td>
+<td class="vtint">6351433363501
+</td>
+<td>1163605040434024
+</td>
+<td class="vtint">151350264411115342
+</td>
+<td>22464430146612005401
+</td>
+<td class="vtint">3156252302246122042324
+</td>
+</tr>
+
+<tr>
+<td>68
+</td>
+<td class="vtint">125
+</td>
+<td>6561
+</td>
+<td class="vtint">16324
+</td>
+<td>2446466
+</td>
+<td class="vtint">346511242
+</td>
+<td>51013142243
+</td>
+<td class="vtint">10100012510401
+</td>
+<td>1262501634034025
+</td>
+<td class="vtint">165202645153652524
+</td>
+<td>25043004610303526066
+</td>
+<td class="vtint">3533101652521614364342
+</td>
+</tr>
+
+<tr>
+<td>69
+</td>
+<td class="vtint">126
+</td>
+<td>10020
+</td>
+<td class="vtint">16611
+</td>
+<td>2535516
+</td>
+<td class="vtint">363444621
+</td>
+<td>53521022106
+</td>
+<td class="vtint">10540212152031
+</td>
+<td>1365660401212266
+</td>
+<td class="vtint">213136464456416241
+</td>
+<td>30525300551541055356
+</td>
+<td class="vtint">4244123510455100104551
+</td>
+</tr>
+
+<tr>
+<td>70
+</td>
+<td class="vtint">130
+</td>
+<td>10150
+</td>
+<td class="vtint">20200
+</td>
+<td>2626000
+</td>
+<td class="vtint">411040000
+</td>
+<td>56435500000
+</td>
+<td class="vtint">11333311000000
+</td>
+<td>1506663430000000
+</td>
+<td class="vtint">232266212200000000
+</td>
+<td>33531600616000000000
+</td>
+<td class="vtint">5025444116440000000000
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>71
+</td>
+<td class="vtint">131
+</td>
+<td>10311
+</td>
+<td class="vtint">20461
+</td>
+<td>3020321
+</td>
+<td class="vtint">425665351
+</td>
+<td>62465460611
+</td>
+<td class="vtint">12153305306341
+</td>
+<td>1626046361530301
+</td>
+<td class="vtint">253006103330102431
+</td>
+<td>40104162602543455061
+</td>
+<td class="vtint">5554012300303162606621
+</td>
+</tr>
+
+<tr>
+<td>72
+</td>
+<td class="vtint">132
+</td>
+<td>10443
+</td>
+<td class="vtint">21054
+</td>
+<td>3113121
+</td>
+<td class="vtint">444265302
+</td>
+<td>65643346164
+</td>
+<td class="vtint">13031222023641
+</td>
+<td>2053454640523542
+</td>
+<td class="vtint">305056345516110504
+</td>
+<td>43634500641122623161
+</td>
+<td class="vtint">6463053424561556224212
+</td>
+</tr>
+
+<tr>
+<td>73
+</td>
+<td class="vtint">133
+</td>
+<td>10606
+</td>
+<td class="vtint">21352
+</td>
+<td>3210106
+</td>
+<td class="vtint">463244464
+</td>
+<td>102241550335
+</td>
+<td class="vtint">13635126461551
+</td>
+<td>2220101556016543
+</td>
+<td class="vtint">331603550606636512
+</td>
+<td>51103245531022322026
+</td>
+<td class="vtint">10460102021556335463154
+</td>
+</tr>
+
+<tr>
+<td>74
+</td>
+<td class="vtint">134
+</td>
+<td>11043
+</td>
+<td class="vtint">21652
+</td>
+<td>3305261
+</td>
+<td class="vtint">512611264
+</td>
+<td>105663150032
+</td>
+<td class="vtint">14602122064651
+</td>
+<td>2362621024063124
+</td>
+<td class="vtint">360254450624515312
+</td>
+<td>55601463014321354441
+</td>
+<td class="vtint">11546540000322032161354
+</td>
+</tr>
+
+<tr>
+<td>75
+</td>
+<td class="vtint">135
+</td>
+<td>11211
+</td>
+<td class="vtint">22254
+</td>
+<td>3404646
+</td>
+<td class="vtint">532640502
+</td>
+<td>112543365003
+</td>
+<td class="vtint">15600321264441
+</td>
+<td>2545250341426125
+</td>
+<td class="vtint">420605123423162604
+</td>
+<td>64052264365430345106
+</td>
+<td class="vtint">13040116416362364252012
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>76
+</td>
+<td class="vtint">136
+</td>
+<td>11350
+</td>
+<td class="vtint">22561
+</td>
+<td>3505546
+</td>
+<td class="vtint">553400551
+</td>
+<td>116555416156
+</td>
+<td class="vtint">16631166236641
+</td>
+<td>3041036400622366
+</td>
+<td class="vtint">453305052425546131
+</td>
+<td>102642463223550602506
+</td>
+<td class="vtint">14336642321443142514421
+</td>
+</tr>
+
+<tr>
+<td>77
+</td>
+<td class="vtint">140
+</td>
+<td>11520
+</td>
+<td class="vtint">23200
+</td>
+<td>3611000
+</td>
+<td class="vtint">604540000
+</td>
+<td>124035200000
+</td>
+<td class="vtint">21025621000000
+</td>
+<td>3244316240000000
+</td>
+<td class="vtint">521201000200000000
+</td>
+<td>112301140031000000000
+</td>
+<td class="vtint">16055163204640000000000
+</td>
+</tr>
+
+<tr>
+<td>78
+</td>
+<td class="vtint">141
+</td>
+<td>11661
+</td>
+<td class="vtint">23511
+</td>
+<td>4014351
+</td>
+<td class="vtint">626423421
+</td>
+<td>131355401661
+</td>
+<td class="vtint">22161441010431
+</td>
+<td>3462033112510401
+</td>
+<td class="vtint">561410332233302541
+</td>
+<td>122425163511562031211
+</td>
+<td class="vtint">20631645354503510034051
+</td>
+</tr>
+
+<tr>
+<td>79
+</td>
+<td class="vtint">142
+</td>
+<td>12133
+</td>
+<td class="vtint">24124
+</td>
+<td>4122301
+</td>
+<td class="vtint">652033042
+</td>
+<td>136152355624
+</td>
+<td class="vtint">23363635164601
+</td>
+<td>4021302524035642
+</td>
+<td class="vtint">634361331410130424
+</td>
+<td>133412606026542160201
+</td>
+<td class="vtint">22644263052535254011542
+</td>
+</tr>
+
+<tr>
+<td>80
+</td>
+<td class="vtint">143
+</td>
+<td>12306
+</td>
+<td class="vtint">24442
+</td>
+<td>4231466
+</td>
+<td class="vtint">1005103624
+</td>
+<td>144126224525
+</td>
+<td class="vtint">24640113143401
+</td>
+<td>4263066546535643
+</td>
+<td class="vtint">1013246246154266542
+</td>
+<td>145264606563424145066
+</td>
+<td class="vtint">25136535111532653105124
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>81
+</td>
+<td class="vtint">144
+</td>
+<td>12453
+</td>
+<td class="vtint">25062
+</td>
+<td>4342251
+</td>
+<td class="vtint">1031614434
+</td>
+<td>152256115122
+</td>
+<td class="vtint">26255603310231
+</td>
+<td>4550536146310224
+</td>
+<td class="vtint">1065211201464306252
+</td>
+<td>161113046355153136611
+</td>
+<td class="vtint">30523646105135412104214
+</td>
+</tr>
+
+<tr>
+<td>82
+</td>
+<td class="vtint">145
+</td>
+<td>12631
+</td>
+<td class="vtint">25414
+</td>
+<td>4454326
+</td>
+<td class="vtint">1056203632
+</td>
+<td>160605236533
+</td>
+<td class="vtint">30651366033211
+</td>
+<td>5152012430545225
+</td>
+<td class="vtint">1153365206033353654
+</td>
+<td>204635310610603313416
+</td>
+<td class="vtint">33415416012111053451652
+</td>
+</tr>
+
+<tr>
+<td>83
+</td>
+<td class="vtint">146
+</td>
+<td>13110
+</td>
+<td class="vtint">26041
+</td>
+<td>4601006
+</td>
+<td class="vtint">1114250311
+</td>
+<td>166420202336
+</td>
+<td class="vtint">32422613215051
+</td>
+<td>5500341432433466
+</td>
+<td class="vtint">1245260513102260021
+</td>
+<td>222541025512303613426
+</td>
+<td class="vtint">36531213530366340500161
+</td>
+</tr>
+
+<tr>
+<td>84
+</td>
+<td class="vtint">150
+</td>
+<td>13260
+</td>
+<td class="vtint">26400
+</td>
+<td>5016000
+</td>
+<td class="vtint">1143120000
+</td>
+<td>205431300000
+</td>
+<td class="vtint">34244331000000
+</td>
+<td>6133646250000000
+</td>
+<td class="vtint">1344053264400000000
+</td>
+<td>241602260256000000000
+</td>
+<td class="vtint">43212406246020000000000
+</td>
+</tr>
+
+<tr>
+<td>85
+</td>
+<td class="vtint">151
+</td>
+<td>13441
+</td>
+<td class="vtint">30031
+</td>
+<td>5135311
+</td>
+<td class="vtint">1202461261
+</td>
+<td>214645220641
+</td>
+<td class="vtint">36151054663021
+</td>
+<td>6516043624006501
+</td>
+<td class="vtint">1446646623215443651
+</td>
+<td>262143336102265330531
+</td>
+<td class="vtint">50150644104513024553111
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>86
+</td>
+<td class="vtint">152
+</td>
+<td>13623
+</td>
+<td class="vtint">30364
+</td>
+<td>5256251
+</td>
+<td class="vtint">1232643412
+</td>
+<td>224401431254
+</td>
+<td class="vtint">41141360521231
+</td>
+<td>10220460402164042
+</td>
+<td class="vtint">1560153550466561344
+</td>
+<td>314011006245250224611
+</td>
+<td class="vtint">54423003412641301206502
+</td>
+</tr>
+
+<tr>
+<td>87
+</td>
+<td class="vtint">153
+</td>
+<td>14106
+</td>
+<td class="vtint">31032
+</td>
+<td>5411556
+</td>
+<td class="vtint">1263645354
+</td>
+<td>234341036115
+</td>
+<td class="vtint">43220442615321
+</td>
+<td>10642401356510043
+</td>
+<td class="vtint">2005220051604640602
+</td>
+<td>340231302231552615036
+</td>
+<td class="vtint">62322355611434516430564
+</td>
+</tr>
+
+<tr>
+<td>88
+</td>
+<td class="vtint">154
+</td>
+<td>14263
+</td>
+<td class="vtint">31402
+</td>
+<td>5535541
+</td>
+<td class="vtint">1325506204
+</td>
+<td>244530321112
+</td>
+<td class="vtint">45360236414611
+</td>
+<td>11415404140222324
+</td>
+<td class="vtint">2131341240561241222
+</td>
+<td>365230151353661445151
+</td>
+<td class="vtint">100601410642500426546544
+</td>
+</tr>
+
+<tr>
+<td>89
+</td>
+<td class="vtint">155
+</td>
+<td>14451
+</td>
+<td class="vtint">32044
+</td>
+<td>5664206
+</td>
+<td class="vtint">1361204662
+</td>
+<td>255243502463
+</td>
+<td class="vtint">50622442162351
+</td>
+<td>12213415466161325
+</td>
+<td class="vtint">2263116104244666034
+</td>
+<td>425103061564663521326
+</td>
+<td class="vtint">106553345243523105406222
+</td>
+</tr>
+
+<tr>
+<td>90
+</td>
+<td class="vtint">156
+</td>
+<td>14640
+</td>
+<td class="vtint">32421
+</td>
+<td>6124236
+</td>
+<td class="vtint">1424450541
+</td>
+<td>266220551616
+</td>
+<td class="vtint">53252413652361
+</td>
+<td>13034403206665566
+</td>
+<td class="vtint">2433466203356461611
+</td>
+<td>456625046434340641146
+</td>
+<td class="vtint">116266104043060110546531
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>91
+</td>
+<td class="vtint">160
+</td>
+<td>15130
+</td>
+<td class="vtint">33100
+</td>
+<td>6256000
+</td>
+<td class="vtint">1461610000
+</td>
+<td>310432600000
+</td>
+<td class="vtint">56012221000000
+</td>
+<td>13612321660000000
+</td>
+<td class="vtint">2613341145100000000
+</td>
+<td>523534520536000000000
+</td>
+<td class="vtint">126501555632110000000000
+</td>
+</tr>
+
+<tr>
+<td>92
+</td>
+<td class="vtint">161
+</td>
+<td>15321
+</td>
+<td class="vtint">33451
+</td>
+<td>6422141
+</td>
+<td class="vtint">1526631631
+</td>
+<td>322220001521
+</td>
+<td class="vtint">61544020320511
+</td>
+<td>14515210611244601
+</td>
+<td class="vtint">3103005254051046061
+</td>
+<td>562644306526453103351
+</td>
+<td class="vtint">140525363150155543043041
+</td>
+</tr>
+
+<tr>
+<td>93
+</td>
+<td class="vtint">162
+</td>
+<td>15513
+</td>
+<td class="vtint">34134
+</td>
+<td>6560031
+</td>
+<td class="vtint">1565555652
+</td>
+<td>334253351514
+</td>
+<td class="vtint">64513006551261
+</td>
+<td>15450100564205142
+</td>
+<td class="vtint">3302446341660663264
+</td>
+<td>634403333662241013021
+</td>
+<td class="vtint">152436043426513304503032
+</td>
+</tr>
+
+<tr>
+<td>94
+</td>
+<td class="vtint">163
+</td>
+<td>16006
+</td>
+<td class="vtint">34522
+</td>
+<td>10026346
+</td>
+<td class="vtint">1635424414
+</td>
+<td>346603545505
+</td>
+<td class="vtint">100561421246341
+</td>
+<td>16442044634213143
+</td>
+<td class="vtint">3512651011336442632
+</td>
+<td>1011605305221603121606
+</td>
+<td class="vtint">165301030514130305531134
+</td>
+</tr>
+
+<tr>
+<td>95
+</td>
+<td class="vtint">164
+</td>
+<td>16203
+</td>
+<td class="vtint">35212
+</td>
+<td>10200431
+</td>
+<td class="vtint">2006214244
+</td>
+<td>362515203002
+</td>
+<td class="vtint">104052155655361
+</td>
+<td>20465214630442424
+</td>
+<td class="vtint">4034251305266524162
+</td>
+<td>1062014144134435626521
+</td>
+<td class="vtint">212124053331450512115004
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<tr>
+<td>96
+</td>
+<td class="vtint">165
+</td>
+<td>16401
+</td>
+<td class="vtint">35604
+</td>
+<td>10343256
+</td>
+<td class="vtint">2050634622
+</td>
+<td>406025351523
+</td>
+<td class="vtint">110360316301221
+</td>
+<td>21554012621341425
+</td>
+<td class="vtint">4300331525425302114
+</td>
+<td>1145165342031203515536
+</td>
+<td class="vtint">230013004362145323103062
+</td>
+</tr>
+
+<tr>
+<td>97
+</td>
+<td class="vtint">166
+</td>
+<td>16600
+</td>
+<td class="vtint">36301
+</td>
+<td>10520566
+</td>
+<td class="vtint">2123325601
+</td>
+<td>422542121266
+</td>
+<td class="vtint">114115552135201
+</td>
+<td>23006324545201666
+</td>
+<td class="vtint">4545555614462164501
+</td>
+<td>1234565564310644032366
+</td>
+<td class="vtint">246011550264551132444101
+</td>
+</tr>
+
+<tr>
+<td>98
+</td>
+<td class="vtint">200
+</td>
+<td>20100
+</td>
+<td class="vtint">40000
+</td>
+<td>11000000
+</td>
+<td class="vtint">2200000000
+</td>
+<td>440000000000
+</td>
+<td class="vtint">121000000000000
+</td>
+<td>24200000000000000
+</td>
+<td class="vtint">5140000000000000000
+</td>
+<td>1331000000000000000000
+</td>
+<td class="vtint">266200000000000000000000
+</td>
+</tr>
+
+<tr>
+<td>99
+</td>
+<td class="vtint">201
+</td>
+<td>20301
+</td>
+<td class="vtint">40401
+</td>
+<td>11150601
+</td>
+<td class="vtint">2244331101
+</td>
+<td>454443551301
+</td>
+<td class="vtint">125006520141501
+</td>
+<td>25426643551502001
+</td>
+<td class="vtint">5444422020212202201
+</td>
+<td>1430662126062652642401
+</td>
+<td class="vtint">320626420644656544452601
+</td>
+</tr>
+
+<tr>
+<td>100
+</td>
+<td class="vtint">202
+</td>
+<td>20503
+</td>
+<td class="vtint">41104
+</td>
+<td>11333311
+</td>
+<td class="vtint">2322662122
+</td>
+<td>502544411644
+</td>
+<td class="vtint">132150634516021
+</td>
+<td>30030522136142242
+</td>
+<td class="vtint">6066226105140066214
+</td>
+<td>1535044306544330041531
+</td>
+<td class="vtint">344015313561621001452562
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</table>
+
+</div><!-- end guts -->

@@ -5,11 +5,11 @@ $(function() {
         baseHeight   = 0,
         $el;
         
-    $("div#primes").delegate("a", "click", function() {
+    $("div#usejs").delegate("a", "click", function() {
         window.location.hash = $(this).attr("href");
         return false;
     });
-    
+
     $(window).bind('hashchange', function(){
     
         newHash = window.location.hash.substring(1);
