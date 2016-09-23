@@ -29,8 +29,8 @@ public class Primes {
         int n = 100000;
 
 
-
-
+        ////////////////////////////////////
+        // The Maths
 
         // initially assume all integers are prime
         boolean[] isPrime = new boolean[n+1];
@@ -65,7 +65,14 @@ public class Primes {
             }
         }
 
+
+
+
+        ////////////////////////////////////
+        // The HTMLs
+
         printPageHeader(ps);
+        ps.println("<p>The integers in radix "+base+":</p>");
         printTableHeader(ps);
 
         // row headers
@@ -81,8 +88,22 @@ public class Primes {
             ps.println("</td>");
         }
         ps.println("</tr>");
+
+        // empty spacer row before we start the prime numbers
+        ps.println("<tr>");
+        ps.println("<td>&nbsp;</td>");
+        for(int c=0; c<Ncols; c++) {
+            if(c%5==0) {
+                ps.println("<td class=\"vtint\">&nbsp;</td>");
+            } else {
+                ps.println("<td>&nbsp;</td>");
+            }
+        }
         ps.println();
 
+
+
+        // rows and rows of prime numbers
         int p = 0;
         boolean hasTint = false;
         BigInteger temp;
@@ -117,9 +138,10 @@ public class Primes {
             }
             ps.println("</tr>");
 
+            // spacer row
             if(r%5==4) { 
                 ps.println("<tr>");
-                for(int c=0; c<Ncols+1; c++) {
+                for(int c=0; c<Ncols; c++) {
                     ps.println("<td>&nbsp;</td>");
                 }
             }
