@@ -20,7 +20,7 @@ public class Powers {
 
         int maxPower = 10;
         int Ncols = maxPower + 2; // n thru n^maxPower, plus triangle nums, plus n in base 10
-        int Nrows = 100;
+        int Nrows = 1000;
 
         String filename = String.format("docs/powers%d.html",b);
 
