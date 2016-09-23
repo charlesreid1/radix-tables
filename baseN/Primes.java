@@ -72,7 +72,7 @@ public class Primes {
         // The HTMLs
 
         printPageHeader(ps);
-        ps.println("<p>The integers in radix "+base+":</p>");
+        ps.println("<p>The first 2,000 primes in radix "+base+":</p>");
         printTableHeader(ps);
 
         // row headers
