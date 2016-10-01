@@ -110,16 +110,6 @@ public class Primes {
         String tempstring = "";
         for(int r=0; r<Nrows; r++) {
 
-            /*
-            if(r%5==0) {
-                hasTint = !hasTint;
-            }
-            if( hasTint ) { 
-                ps.println("<tr class=\"tint\">");
-            } else {
-                ps.println("<tr>");
-            }
-            */
             ps.println("<tr>");
 
             ps.println("    <td class=\"clean\" id=\"fat\">" + (r+1) + "</td>"); // prime index
