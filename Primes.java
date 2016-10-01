@@ -106,6 +106,8 @@ public class Primes {
 
         // rows and rows of prime numbers
         int p = 0;
+        int pm2 = 0; 
+        int pp2 = 0;
         boolean hasTint = false;
         BigInteger temp;
         String tempstring = "";
@@ -116,7 +118,23 @@ public class Primes {
             ps.println("    <td class=\"clean\" id=\"fat\">" + (r+1) + "</td>"); // prime index
 
             for(int c=0; c<Ncols; c++) {
+
                 p = primes.get(c*Nrows + r);
+
+                boolean isTwin = false;
+                if(r>0||c>0) {
+                    pm2 = primes.get(c*Nrows + r-1);
+                    if( p==(pm2+2) ) {
+                        isTwin = true;
+                    }
+                }
+                if(r<(Nrows-1)||c<(Ncols-1)) {
+                    pp2 = primes.get(c*Nrows + r+1);
+                    if( p==(pp2-2) ) {
+                        isTwin = true;
+                    }
+                }
+
                 temp = new BigInteger( Integer.toString(p) );
                 tempstring = temp.toString(base);
                 if(c%5==0) {
@@ -128,9 +146,13 @@ public class Primes {
                 boolean ispalindrome = checkIfPalindrome(tempstring);
                 if(ispalindrome) {
                     ps.println("<div class=\"palindrome\">");
+                } else if(isTwin) { 
+                    ps.println("<div class=\"twin\">");
                 }
+
                 ps.println(tempstring);
-                if(ispalindrome) { 
+
+                if(ispalindrome || isTwin) { 
                     ps.println("</div>");
                 }
 
@@ -148,7 +170,6 @@ public class Primes {
 
             ps.println();
         }
-
 
 
         // all done, time to print footer and finish the table
