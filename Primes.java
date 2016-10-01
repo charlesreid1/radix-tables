@@ -9,7 +9,7 @@ public class Primes {
 
     public static void main(String[] args) throws FileNotFoundException { 
 
-        for( int n = 2; n <= 10; n++ ) {
+        for( int n = 2; n <= 20; n++ ) {
             System.out.println("Creating html file for base "+n);
             generatePrimesTable(n);
         }
@@ -123,7 +123,16 @@ public class Primes {
                 } else {
                     ps.print("    <td>");
                 }
+
+                boolean ispalindrome = checkIfPalindrome(tempstring);
+                if(ispalindrome) {
+                    ps.println("<div class=\"palindrome\">");
+                }
                 ps.println(tempstring);
+                if(ispalindrome) { 
+                    ps.println("</div>");
+                }
+
                 ps.println("</td>");
             }
             ps.println("</tr>");
@@ -166,6 +175,15 @@ public class Primes {
         ps.println("</table>");
         ps.println();
     }
-}
 
+    public static boolean checkIfPalindrome(String s) { 
+        String r = new StringBuilder(s).reverse().toString();
+        if( s.equals(r) && s.length() > 2 ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+}
 
