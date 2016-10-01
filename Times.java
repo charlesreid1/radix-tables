@@ -95,6 +95,7 @@ public class Times {
             // spacer row
             if(r%5==4) { 
                 ps.println("<tr>");
+                ps.println("<td>&nbsp;</td>");
                 for(int c=0; c<Ncols; c++) {
                     if( (c+1)%5==0 ) {
                         ps.print("    <td class=\"vtint\">");
