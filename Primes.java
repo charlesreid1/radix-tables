@@ -99,6 +99,7 @@ public class Primes {
                 ps.println("<td>&nbsp;</td>");
             }
         }
+        ps.println("</tr>");
         ps.println();
 
 
