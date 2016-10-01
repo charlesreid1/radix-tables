@@ -24,7 +24,7 @@ public class Times {
 
         int base = b;
 
-        int Nmax = 30;
+        int Nmax = 50;
         int Nrows = Nmax, Ncols = Nmax;
 
 
@@ -42,7 +42,7 @@ public class Times {
 
         // row headers: multipliers
         ps.println("<tr class=\"clean floorline\">");
-        ps.println("<td></td>"); // one empty column
+        ps.println("<td class=\"vtint\"></td>"); // one empty column
         for( int c=0; c < Ncols; c++ ) {
             if( (c+1)%5==0) {
                 ps.println("<td class=\"vtint\" id=\"fat\">");
@@ -65,14 +65,15 @@ public class Times {
             ps.println("<tr>");
 
             // left-side: multiplier
-            ps.println("    <td class=\"clean\" id=\"fat\">" + (r+1) + "</td>"); 
+            ps.println("    <td class=\"vtint\" id=\"fat\">" + (r+1) + "</td>"); 
 
             for(int c=0; c<Ncols; c++) {
 
                 p = (r+1)*(c+1);
                 temp = new BigInteger( Integer.toString(p) );
                 tempstring = temp.toString(base);
-                if( (c+1)%5==0 ) {
+                boolean onDiag = (r+1)==(c+1);
+                if( (c+1)%5==0 || onDiag ) {
                     ps.print("    <td class=\"vtint\">");
                 } else {
                     ps.print("    <td>");
@@ -90,23 +91,6 @@ public class Times {
                 ps.println("</td>");
             }
             ps.println("</tr>");
-
-
-            // spacer row
-            if(r%5==4) { 
-                ps.println("<tr>");
-                ps.println("<td>&nbsp;</td>");
-                for(int c=0; c<Ncols; c++) {
-                    if( (c+1)%5==0 ) {
-                        ps.print("    <td class=\"vtint\">");
-                    } else {
-                        ps.print("    <td>");
-                    }
-                    ps.print("&nbsp;");
-                    ps.println("</td>");
-                }
-            }
-
             ps.println();
 
         }
