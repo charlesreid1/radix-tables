@@ -44,7 +44,7 @@ public class Times {
         ps.println("<tr class=\"clean floorline\">");
         ps.println("<td></td>"); // one empty column
         for( int c=0; c < Ncols; c++ ) {
-            if(c%5==0) {
+            if( (c+1)%5==0) {
                 ps.println("<td class=\"vtint\" id=\"fat\">");
             } else {
                 ps.println("<td id=\"fat\">");
@@ -72,7 +72,7 @@ public class Times {
                 p = (r+1)*(c+1);
                 temp = new BigInteger( Integer.toString(p) );
                 tempstring = temp.toString(base);
-                if(c%5==0) {
+                if( (c+1)%5==0 ) {
                     ps.print("    <td class=\"vtint\">");
                 } else {
                     ps.print("    <td>");
@@ -96,7 +96,13 @@ public class Times {
             if(r%5==4) { 
                 ps.println("<tr>");
                 for(int c=0; c<Ncols; c++) {
-                    ps.println("<td>&nbsp;</td>");
+                    if( (c+1)%5==0 ) {
+                        ps.print("    <td class=\"vtint\">");
+                    } else {
+                        ps.print("    <td>");
+                    }
+                    ps.print("&nbsp;");
+                    ps.println("</td>");
                 }
             }
 
