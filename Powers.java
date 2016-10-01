@@ -9,7 +9,7 @@ public class Powers {
 
     public static void main(String[] args) throws FileNotFoundException { 
 
-        for( int n = 2; n <= 10; n++ ) {
+        for( int n = 2; n <= 20; n++ ) {
             System.out.println("Creating html file for base "+n);
             generatePowersTable(n);
         }
