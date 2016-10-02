@@ -18,7 +18,7 @@ public class Factorials {
 
     public static void generateFactorialsTable(int b) throws FileNotFoundException { 
 
-        int maxFactorial = 30;
+        int maxFactorial = 100;
 
         int Ncols = 2;
 
@@ -74,23 +74,32 @@ public class Factorials {
 
             temp = new BigInteger( Integer.toString(r) );
 
+            // base 10 representation
             ps.print("<td class=\"left\">");
             tempstring = temp.toString(10);
-            ps.println(tempstring);
+            ps.print("<code>");
+            ps.print(tempstring);
+            ps.print("</code>");
             ps.println("</td>");
 
+            // base n representation
             ps.print("<td class=\"left\">");
-            tempstring = temp.toString();
-            ps.println(tempstring);
+            tempstring = temp.toString(base);
+            ps.print("<code>");
+            ps.print(tempstring);
+            ps.print("</code>");
             ps.println("</td>");
 
+            // number itself
             ps.print("<td class=\"right\">");
             tempstring = factorial(temp).toString(base);
             boolean ispalindrome = checkIfPalindrome(tempstring);
             if( ispalindrome ) {
-                ps.println("<div class=\"palindrome\">");
+                ps.print("<div class=\"palindrome\">");
             }
-            ps.println(tempstring);
+            ps.print("<code>");
+            ps.print(tempstring);
+            ps.print("</code>");
             if( ispalindrome ) {
                 ps.println("</div>");
             }

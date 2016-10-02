@@ -24,7 +24,7 @@ public class Primes {
 
         int base = b;
 
-        int Ncols = 20;
+        int Ncols = 50;
         int Nrows = 100;
         int n = 100000;
 
@@ -72,7 +72,7 @@ public class Primes {
         // The HTMLs
 
         printPageHeader(ps);
-        ps.println("<p>The first 2,000 primes in radix "+base+":</p>");
+        ps.println("<p>The first "+(Ncols*Nrows)+" primes in radix "+base+":</p>");
         printTableHeader(ps);
 
         // row headers
@@ -80,11 +80,13 @@ public class Primes {
         ps.println("<td></td>"); // one empty column
         for( int c=0; c < Ncols; c++ ) {
             if(c%5==0) {
-                ps.println("<td class=\"vtint\" id=\"fat\">");
+                ps.print("<td class=\"vtint\" id=\"fat\">");
             } else {
-                ps.println("<td id=\"fat\">");
+                ps.print("<td id=\"fat\">");
             }
-            ps.println( c*100 );
+            ps.print("<code>");
+            ps.print( c*100 );
+            ps.print("</code>");
             ps.println("</td>");
         }
         ps.println("</tr>");
@@ -145,17 +147,14 @@ public class Primes {
 
                 boolean ispalindrome = checkIfPalindrome(tempstring);
                 if(ispalindrome) {
-                    ps.println("<div class=\"palindrome\">");
+                    ps.println("<code class=\"palindrome\">");
                 } else if(isTwin) { 
-                    ps.println("<div class=\"twin\">");
+                    ps.println("<code class=\"twin\">");
+                } else {
+                    ps.print("<code>");
                 }
-
                 ps.println(tempstring);
-
-                if(ispalindrome || isTwin) { 
-                    ps.println("</div>");
-                }
-
+                ps.println("</code>");
                 ps.println("</td>");
             }
             ps.println("</tr>");
