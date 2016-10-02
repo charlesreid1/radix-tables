@@ -13,7 +13,21 @@ tr.clean, td.clean {
 td#fat {
     font-weight: bold;
 }
-div.palindrome, span.palindrome {
+
+/* color schemes */
+div.palindrome, span.palindrome, code.palindrome {
     color: #a00;
     font-weight: bold;
+}
+div.twin, span.twin, code.twin {
+    color: #00a;
+    font-weight: bold;
+}
+
+body {
+    background-color: #fafafa;
+}
+code {
+    background: none;
+    color: black;
 }

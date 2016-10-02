@@ -21,3 +21,10 @@ td.left {
 td.right {
     text-align: left;
 }
+body {
+    background-color: #fafafa;
+}
+code {
+    background-color: #fafafa;
+    color: black;
+}
