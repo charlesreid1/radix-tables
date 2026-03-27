@@ -9,7 +9,7 @@ rm -rf build
 mkdir -p build
 
 echo "=== Compiling and running generators ==="
-for gen in Times Primes Powers Factorials Reciprocals; do
+for gen in Times Primes Powers Factorials Reciprocals Harshad; do
   echo "  $gen..."
   javac -d build "src/${gen}.java"
   java -cp build "$gen"
