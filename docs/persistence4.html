@@ -1,0 +1,1276 @@
+<div id="guts">
+<p>Integers 1&ndash;500 in radix 4. Colored by multiplicative persistence (max 3 in this range).</p>
+<p><strong>Smallest number with persistence <em>k</em>:</strong></p>
+<table class="table summary-table">
+<tr>
+<td id="fat"><code>k</code></td>
+<td id="fat"><code class="pers0">0</code></td>
+<td id="fat"><code class="pers1">1</code></td>
+<td id="fat"><code class="pers2">2</code></td>
+<td id="fat"><code class="pers3">3</code></td>
+</tr>
+<tr>
+<td id="fat"><code>smallest</code></td>
+<td><code class="pers0">1</code></td>
+<td><code class="pers1">10</code></td>
+<td><code class="pers2">22</code></td>
+<td><code class="pers3">333</code></td>
+</tr>
+<tr>
+<td id="fat"><code>count</code></td>
+<td><code class="pers0">3</code></td>
+<td><code class="pers1">338</code></td>
+<td><code class="pers2">146</code></td>
+<td><code class="pers3">13</code></td>
+</tr>
+</table>
+<table class="table">
+
+<tr class="clean floorline">
+<td></td>
+<td class="vtint" id="fat"><code>0</code></td>
+<td id="fat"><code>1</code></td>
+<td id="fat"><code>2</code></td>
+<td id="fat"><code>3</code></td>
+<td id="fat"><code>4</code></td>
+<td class="vtint" id="fat"><code>5</code></td>
+<td id="fat"><code>6</code></td>
+<td id="fat"><code>7</code></td>
+<td id="fat"><code>8</code></td>
+<td id="fat"><code>9</code></td>
+<td class="vtint" id="fat"><code>10</code></td>
+<td id="fat"><code>11</code></td>
+<td id="fat"><code>12</code></td>
+<td id="fat"><code>13</code></td>
+<td id="fat"><code>14</code></td>
+<td class="vtint" id="fat"><code>15</code></td>
+<td id="fat"><code>16</code></td>
+<td id="fat"><code>17</code></td>
+<td id="fat"><code>18</code></td>
+<td id="fat"><code>19</code></td>
+<td class="vtint" id="fat"><code>20</code></td>
+<td id="fat"><code>21</code></td>
+<td id="fat"><code>22</code></td>
+<td id="fat"><code>23</code></td>
+<td id="fat"><code>24</code></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td class="vtint">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">0</td>
+    <td class="vtint"><code class="pers0">1</code>
+</td>
+    <td><code class="pers0">2</code>
+</td>
+    <td><code class="pers0">3</code>
+</td>
+    <td><code class="pers1">10</code>
+</td>
+    <td><code class="pers1">11</code>
+</td>
+    <td class="vtint"><code class="pers1">12</code>
+</td>
+    <td><code class="pers1">13</code>
+</td>
+    <td><code class="pers1">20</code>
+</td>
+    <td><code class="pers1">21</code>
+</td>
+    <td><code class="pers2">22</code>
+</td>
+    <td class="vtint"><code class="pers2">23</code>
+</td>
+    <td><code class="pers1">30</code>
+</td>
+    <td><code class="pers1">31</code>
+</td>
+    <td><code class="pers2">32</code>
+</td>
+    <td><code class="pers2">33</code>
+</td>
+    <td class="vtint"><code class="pers1">100</code>
+</td>
+    <td><code class="pers1">101</code>
+</td>
+    <td><code class="pers1">102</code>
+</td>
+    <td><code class="pers1">103</code>
+</td>
+    <td><code class="pers1">110</code>
+</td>
+    <td class="vtint"><code class="pers1">111</code>
+</td>
+    <td><code class="pers1">112</code>
+</td>
+    <td><code class="pers1">113</code>
+</td>
+    <td><code class="pers1">120</code>
+</td>
+    <td><code class="pers1">121</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">25</td>
+    <td class="vtint"><code class="pers2">122</code>
+</td>
+    <td><code class="pers2">123</code>
+</td>
+    <td><code class="pers1">130</code>
+</td>
+    <td><code class="pers1">131</code>
+</td>
+    <td><code class="pers2">132</code>
+</td>
+    <td class="vtint"><code class="pers2">133</code>
+</td>
+    <td><code class="pers1">200</code>
+</td>
+    <td><code class="pers1">201</code>
+</td>
+    <td><code class="pers1">202</code>
+</td>
+    <td><code class="pers1">203</code>
+</td>
+    <td class="vtint"><code class="pers1">210</code>
+</td>
+    <td><code class="pers1">211</code>
+</td>
+    <td><code class="pers2">212</code>
+</td>
+    <td><code class="pers2">213</code>
+</td>
+    <td><code class="pers1">220</code>
+</td>
+    <td class="vtint"><code class="pers2">221</code>
+</td>
+    <td><code class="pers2">222</code>
+</td>
+    <td><code class="pers2">223</code>
+</td>
+    <td><code class="pers1">230</code>
+</td>
+    <td><code class="pers2">231</code>
+</td>
+    <td class="vtint"><code class="pers2">232</code>
+</td>
+    <td><code class="pers2">233</code>
+</td>
+    <td><code class="pers1">300</code>
+</td>
+    <td><code class="pers1">301</code>
+</td>
+    <td><code class="pers1">302</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">50</td>
+    <td class="vtint"><code class="pers1">303</code>
+</td>
+    <td><code class="pers1">310</code>
+</td>
+    <td><code class="pers1">311</code>
+</td>
+    <td><code class="pers2">312</code>
+</td>
+    <td><code class="pers2">313</code>
+</td>
+    <td class="vtint"><code class="pers1">320</code>
+</td>
+    <td><code class="pers2">321</code>
+</td>
+    <td><code class="pers2">322</code>
+</td>
+    <td><code class="pers2">323</code>
+</td>
+    <td><code class="pers1">330</code>
+</td>
+    <td class="vtint"><code class="pers2">331</code>
+</td>
+    <td><code class="pers2">332</code>
+</td>
+    <td><code class="pers3">333</code>
+</td>
+    <td><code class="pers1">1000</code>
+</td>
+    <td><code class="pers1">1001</code>
+</td>
+    <td class="vtint"><code class="pers1">1002</code>
+</td>
+    <td><code class="pers1">1003</code>
+</td>
+    <td><code class="pers1">1010</code>
+</td>
+    <td><code class="pers1">1011</code>
+</td>
+    <td><code class="pers1">1012</code>
+</td>
+    <td class="vtint"><code class="pers1">1013</code>
+</td>
+    <td><code class="pers1">1020</code>
+</td>
+    <td><code class="pers1">1021</code>
+</td>
+    <td><code class="pers1">1022</code>
+</td>
+    <td><code class="pers1">1023</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">75</td>
+    <td class="vtint"><code class="pers1">1030</code>
+</td>
+    <td><code class="pers1">1031</code>
+</td>
+    <td><code class="pers1">1032</code>
+</td>
+    <td><code class="pers1">1033</code>
+</td>
+    <td><code class="pers1">1100</code>
+</td>
+    <td class="vtint"><code class="pers1">1101</code>
+</td>
+    <td><code class="pers1">1102</code>
+</td>
+    <td><code class="pers1">1103</code>
+</td>
+    <td><code class="pers1">1110</code>
+</td>
+    <td><code class="pers1">1111</code>
+</td>
+    <td class="vtint"><code class="pers1">1112</code>
+</td>
+    <td><code class="pers1">1113</code>
+</td>
+    <td><code class="pers1">1120</code>
+</td>
+    <td><code class="pers1">1121</code>
+</td>
+    <td><code class="pers2">1122</code>
+</td>
+    <td class="vtint"><code class="pers2">1123</code>
+</td>
+    <td><code class="pers1">1130</code>
+</td>
+    <td><code class="pers1">1131</code>
+</td>
+    <td><code class="pers2">1132</code>
+</td>
+    <td><code class="pers2">1133</code>
+</td>
+    <td class="vtint"><code class="pers1">1200</code>
+</td>
+    <td><code class="pers1">1201</code>
+</td>
+    <td><code class="pers1">1202</code>
+</td>
+    <td><code class="pers1">1203</code>
+</td>
+    <td><code class="pers1">1210</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">100</td>
+    <td class="vtint"><code class="pers1">1211</code>
+</td>
+    <td><code class="pers2">1212</code>
+</td>
+    <td><code class="pers2">1213</code>
+</td>
+    <td><code class="pers1">1220</code>
+</td>
+    <td><code class="pers2">1221</code>
+</td>
+    <td class="vtint"><code class="pers2">1222</code>
+</td>
+    <td><code class="pers2">1223</code>
+</td>
+    <td><code class="pers1">1230</code>
+</td>
+    <td><code class="pers2">1231</code>
+</td>
+    <td><code class="pers2">1232</code>
+</td>
+    <td class="vtint"><code class="pers2">1233</code>
+</td>
+    <td><code class="pers1">1300</code>
+</td>
+    <td><code class="pers1">1301</code>
+</td>
+    <td><code class="pers1">1302</code>
+</td>
+    <td><code class="pers1">1303</code>
+</td>
+    <td class="vtint"><code class="pers1">1310</code>
+</td>
+    <td><code class="pers1">1311</code>
+</td>
+    <td><code class="pers2">1312</code>
+</td>
+    <td><code class="pers2">1313</code>
+</td>
+    <td><code class="pers1">1320</code>
+</td>
+    <td class="vtint"><code class="pers2">1321</code>
+</td>
+    <td><code class="pers2">1322</code>
+</td>
+    <td><code class="pers2">1323</code>
+</td>
+    <td><code class="pers1">1330</code>
+</td>
+    <td><code class="pers2">1331</code>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">125</td>
+    <td class="vtint"><code class="pers2">1332</code>
+</td>
+    <td><code class="pers3">1333</code>
+</td>
+    <td><code class="pers1">2000</code>
+</td>
+    <td><code class="pers1">2001</code>
+</td>
+    <td><code class="pers1">2002</code>
+</td>
+    <td class="vtint"><code class="pers1">2003</code>
+</td>
+    <td><code class="pers1">2010</code>
+</td>
+    <td><code class="pers1">2011</code>
+</td>
+    <td><code class="pers1">2012</code>
+</td>
+    <td><code class="pers1">2013</code>
+</td>
+    <td class="vtint"><code class="pers1">2020</code>
+</td>
+    <td><code class="pers1">2021</code>
+</td>
+    <td><code class="pers1">2022</code>
+</td>
+    <td><code class="pers1">2023</code>
+</td>
+    <td><code class="pers1">2030</code>
+</td>
+    <td class="vtint"><code class="pers1">2031</code>
+</td>
+    <td><code class="pers1">2032</code>
+</td>
+    <td><code class="pers1">2033</code>
+</td>
+    <td><code class="pers1">2100</code>
+</td>
+    <td><code class="pers1">2101</code>
+</td>
+    <td class="vtint"><code class="pers1">2102</code>
+</td>
+    <td><code class="pers1">2103</code>
+</td>
+    <td><code class="pers1">2110</code>
+</td>
+    <td><code class="pers1">2111</code>
+</td>
+    <td><code class="pers2">2112</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">150</td>
+    <td class="vtint"><code class="pers2">2113</code>
+</td>
+    <td><code class="pers1">2120</code>
+</td>
+    <td><code class="pers2">2121</code>
+</td>
+    <td><code class="pers2">2122</code>
+</td>
+    <td><code class="pers2">2123</code>
+</td>
+    <td class="vtint"><code class="pers1">2130</code>
+</td>
+    <td><code class="pers2">2131</code>
+</td>
+    <td><code class="pers2">2132</code>
+</td>
+    <td><code class="pers2">2133</code>
+</td>
+    <td><code class="pers1">2200</code>
+</td>
+    <td class="vtint"><code class="pers1">2201</code>
+</td>
+    <td><code class="pers1">2202</code>
+</td>
+    <td><code class="pers1">2203</code>
+</td>
+    <td><code class="pers1">2210</code>
+</td>
+    <td><code class="pers2">2211</code>
+</td>
+    <td class="vtint"><code class="pers2">2212</code>
+</td>
+    <td><code class="pers2">2213</code>
+</td>
+    <td><code class="pers1">2220</code>
+</td>
+    <td><code class="pers2">2221</code>
+</td>
+    <td><code class="pers2">2222</code>
+</td>
+    <td class="vtint"><code class="pers2">2223</code>
+</td>
+    <td><code class="pers1">2230</code>
+</td>
+    <td><code class="pers2">2231</code>
+</td>
+    <td><code class="pers2">2232</code>
+</td>
+    <td><code class="pers2">2233</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">175</td>
+    <td class="vtint"><code class="pers1">2300</code>
+</td>
+    <td><code class="pers1">2301</code>
+</td>
+    <td><code class="pers1">2302</code>
+</td>
+    <td><code class="pers1">2303</code>
+</td>
+    <td><code class="pers1">2310</code>
+</td>
+    <td class="vtint"><code class="pers2">2311</code>
+</td>
+    <td><code class="pers2">2312</code>
+</td>
+    <td><code class="pers2">2313</code>
+</td>
+    <td><code class="pers1">2320</code>
+</td>
+    <td><code class="pers2">2321</code>
+</td>
+    <td class="vtint"><code class="pers2">2322</code>
+</td>
+    <td><code class="pers2">2323</code>
+</td>
+    <td><code class="pers1">2330</code>
+</td>
+    <td><code class="pers2">2331</code>
+</td>
+    <td><code class="pers2">2332</code>
+</td>
+    <td class="vtint"><code class="pers3">2333</code>
+</td>
+    <td><code class="pers1">3000</code>
+</td>
+    <td><code class="pers1">3001</code>
+</td>
+    <td><code class="pers1">3002</code>
+</td>
+    <td><code class="pers1">3003</code>
+</td>
+    <td class="vtint"><code class="pers1">3010</code>
+</td>
+    <td><code class="pers1">3011</code>
+</td>
+    <td><code class="pers1">3012</code>
+</td>
+    <td><code class="pers1">3013</code>
+</td>
+    <td><code class="pers1">3020</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">200</td>
+    <td class="vtint"><code class="pers1">3021</code>
+</td>
+    <td><code class="pers1">3022</code>
+</td>
+    <td><code class="pers1">3023</code>
+</td>
+    <td><code class="pers1">3030</code>
+</td>
+    <td><code class="pers1">3031</code>
+</td>
+    <td class="vtint"><code class="pers1">3032</code>
+</td>
+    <td><code class="pers1">3033</code>
+</td>
+    <td><code class="pers1">3100</code>
+</td>
+    <td><code class="pers1">3101</code>
+</td>
+    <td><code class="pers1">3102</code>
+</td>
+    <td class="vtint"><code class="pers1">3103</code>
+</td>
+    <td><code class="pers1">3110</code>
+</td>
+    <td><code class="pers1">3111</code>
+</td>
+    <td><code class="pers2">3112</code>
+</td>
+    <td><code class="pers2">3113</code>
+</td>
+    <td class="vtint"><code class="pers1">3120</code>
+</td>
+    <td><code class="pers2">3121</code>
+</td>
+    <td><code class="pers2">3122</code>
+</td>
+    <td><code class="pers2">3123</code>
+</td>
+    <td><code class="pers1">3130</code>
+</td>
+    <td class="vtint"><code class="pers2">3131</code>
+</td>
+    <td><code class="pers2">3132</code>
+</td>
+    <td><code class="pers3">3133</code>
+</td>
+    <td><code class="pers1">3200</code>
+</td>
+    <td><code class="pers1">3201</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">225</td>
+    <td class="vtint"><code class="pers1">3202</code>
+</td>
+    <td><code class="pers1">3203</code>
+</td>
+    <td><code class="pers1">3210</code>
+</td>
+    <td><code class="pers2">3211</code>
+</td>
+    <td><code class="pers2">3212</code>
+</td>
+    <td class="vtint"><code class="pers2">3213</code>
+</td>
+    <td><code class="pers1">3220</code>
+</td>
+    <td><code class="pers2">3221</code>
+</td>
+    <td><code class="pers2">3222</code>
+</td>
+    <td><code class="pers2">3223</code>
+</td>
+    <td class="vtint"><code class="pers1">3230</code>
+</td>
+    <td><code class="pers2">3231</code>
+</td>
+    <td><code class="pers2">3232</code>
+</td>
+    <td><code class="pers3">3233</code>
+</td>
+    <td><code class="pers1">3300</code>
+</td>
+    <td class="vtint"><code class="pers1">3301</code>
+</td>
+    <td><code class="pers1">3302</code>
+</td>
+    <td><code class="pers1">3303</code>
+</td>
+    <td><code class="pers1">3310</code>
+</td>
+    <td><code class="pers2">3311</code>
+</td>
+    <td class="vtint"><code class="pers2">3312</code>
+</td>
+    <td><code class="pers3">3313</code>
+</td>
+    <td><code class="pers1">3320</code>
+</td>
+    <td><code class="pers2">3321</code>
+</td>
+    <td><code class="pers2">3322</code>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">250</td>
+    <td class="vtint"><code class="pers3">3323</code>
+</td>
+    <td><code class="pers1">3330</code>
+</td>
+    <td><code class="pers3">3331</code>
+</td>
+    <td><code class="pers3">3332</code>
+</td>
+    <td><code class="pers2">3333</code>
+</td>
+    <td class="vtint"><code class="pers1">10000</code>
+</td>
+    <td><code class="pers1">10001</code>
+</td>
+    <td><code class="pers1">10002</code>
+</td>
+    <td><code class="pers1">10003</code>
+</td>
+    <td><code class="pers1">10010</code>
+</td>
+    <td class="vtint"><code class="pers1">10011</code>
+</td>
+    <td><code class="pers1">10012</code>
+</td>
+    <td><code class="pers1">10013</code>
+</td>
+    <td><code class="pers1">10020</code>
+</td>
+    <td><code class="pers1">10021</code>
+</td>
+    <td class="vtint"><code class="pers1">10022</code>
+</td>
+    <td><code class="pers1">10023</code>
+</td>
+    <td><code class="pers1">10030</code>
+</td>
+    <td><code class="pers1">10031</code>
+</td>
+    <td><code class="pers1">10032</code>
+</td>
+    <td class="vtint"><code class="pers1">10033</code>
+</td>
+    <td><code class="pers1">10100</code>
+</td>
+    <td><code class="pers1">10101</code>
+</td>
+    <td><code class="pers1">10102</code>
+</td>
+    <td><code class="pers1">10103</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">275</td>
+    <td class="vtint"><code class="pers1">10110</code>
+</td>
+    <td><code class="pers1">10111</code>
+</td>
+    <td><code class="pers1">10112</code>
+</td>
+    <td><code class="pers1">10113</code>
+</td>
+    <td><code class="pers1">10120</code>
+</td>
+    <td class="vtint"><code class="pers1">10121</code>
+</td>
+    <td><code class="pers1">10122</code>
+</td>
+    <td><code class="pers1">10123</code>
+</td>
+    <td><code class="pers1">10130</code>
+</td>
+    <td><code class="pers1">10131</code>
+</td>
+    <td class="vtint"><code class="pers1">10132</code>
+</td>
+    <td><code class="pers1">10133</code>
+</td>
+    <td><code class="pers1">10200</code>
+</td>
+    <td><code class="pers1">10201</code>
+</td>
+    <td><code class="pers1">10202</code>
+</td>
+    <td class="vtint"><code class="pers1">10203</code>
+</td>
+    <td><code class="pers1">10210</code>
+</td>
+    <td><code class="pers1">10211</code>
+</td>
+    <td><code class="pers1">10212</code>
+</td>
+    <td><code class="pers1">10213</code>
+</td>
+    <td class="vtint"><code class="pers1">10220</code>
+</td>
+    <td><code class="pers1">10221</code>
+</td>
+    <td><code class="pers1">10222</code>
+</td>
+    <td><code class="pers1">10223</code>
+</td>
+    <td><code class="pers1">10230</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">300</td>
+    <td class="vtint"><code class="pers1">10231</code>
+</td>
+    <td><code class="pers1">10232</code>
+</td>
+    <td><code class="pers1">10233</code>
+</td>
+    <td><code class="pers1">10300</code>
+</td>
+    <td><code class="pers1">10301</code>
+</td>
+    <td class="vtint"><code class="pers1">10302</code>
+</td>
+    <td><code class="pers1">10303</code>
+</td>
+    <td><code class="pers1">10310</code>
+</td>
+    <td><code class="pers1">10311</code>
+</td>
+    <td><code class="pers1">10312</code>
+</td>
+    <td class="vtint"><code class="pers1">10313</code>
+</td>
+    <td><code class="pers1">10320</code>
+</td>
+    <td><code class="pers1">10321</code>
+</td>
+    <td><code class="pers1">10322</code>
+</td>
+    <td><code class="pers1">10323</code>
+</td>
+    <td class="vtint"><code class="pers1">10330</code>
+</td>
+    <td><code class="pers1">10331</code>
+</td>
+    <td><code class="pers1">10332</code>
+</td>
+    <td><code class="pers1">10333</code>
+</td>
+    <td><code class="pers1">11000</code>
+</td>
+    <td class="vtint"><code class="pers1">11001</code>
+</td>
+    <td><code class="pers1">11002</code>
+</td>
+    <td><code class="pers1">11003</code>
+</td>
+    <td><code class="pers1">11010</code>
+</td>
+    <td><code class="pers1">11011</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">325</td>
+    <td class="vtint"><code class="pers1">11012</code>
+</td>
+    <td><code class="pers1">11013</code>
+</td>
+    <td><code class="pers1">11020</code>
+</td>
+    <td><code class="pers1">11021</code>
+</td>
+    <td><code class="pers1">11022</code>
+</td>
+    <td class="vtint"><code class="pers1">11023</code>
+</td>
+    <td><code class="pers1">11030</code>
+</td>
+    <td><code class="pers1">11031</code>
+</td>
+    <td><code class="pers1">11032</code>
+</td>
+    <td><code class="pers1">11033</code>
+</td>
+    <td class="vtint"><code class="pers1">11100</code>
+</td>
+    <td><code class="pers1">11101</code>
+</td>
+    <td><code class="pers1">11102</code>
+</td>
+    <td><code class="pers1">11103</code>
+</td>
+    <td><code class="pers1">11110</code>
+</td>
+    <td class="vtint"><code class="pers1">11111</code>
+</td>
+    <td><code class="pers1">11112</code>
+</td>
+    <td><code class="pers1">11113</code>
+</td>
+    <td><code class="pers1">11120</code>
+</td>
+    <td><code class="pers1">11121</code>
+</td>
+    <td class="vtint"><code class="pers2">11122</code>
+</td>
+    <td><code class="pers2">11123</code>
+</td>
+    <td><code class="pers1">11130</code>
+</td>
+    <td><code class="pers1">11131</code>
+</td>
+    <td><code class="pers2">11132</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">350</td>
+    <td class="vtint"><code class="pers2">11133</code>
+</td>
+    <td><code class="pers1">11200</code>
+</td>
+    <td><code class="pers1">11201</code>
+</td>
+    <td><code class="pers1">11202</code>
+</td>
+    <td><code class="pers1">11203</code>
+</td>
+    <td class="vtint"><code class="pers1">11210</code>
+</td>
+    <td><code class="pers1">11211</code>
+</td>
+    <td><code class="pers2">11212</code>
+</td>
+    <td><code class="pers2">11213</code>
+</td>
+    <td><code class="pers1">11220</code>
+</td>
+    <td class="vtint"><code class="pers2">11221</code>
+</td>
+    <td><code class="pers2">11222</code>
+</td>
+    <td><code class="pers2">11223</code>
+</td>
+    <td><code class="pers1">11230</code>
+</td>
+    <td><code class="pers2">11231</code>
+</td>
+    <td class="vtint"><code class="pers2">11232</code>
+</td>
+    <td><code class="pers2">11233</code>
+</td>
+    <td><code class="pers1">11300</code>
+</td>
+    <td><code class="pers1">11301</code>
+</td>
+    <td><code class="pers1">11302</code>
+</td>
+    <td class="vtint"><code class="pers1">11303</code>
+</td>
+    <td><code class="pers1">11310</code>
+</td>
+    <td><code class="pers1">11311</code>
+</td>
+    <td><code class="pers2">11312</code>
+</td>
+    <td><code class="pers2">11313</code>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">375</td>
+    <td class="vtint"><code class="pers1">11320</code>
+</td>
+    <td><code class="pers2">11321</code>
+</td>
+    <td><code class="pers2">11322</code>
+</td>
+    <td><code class="pers2">11323</code>
+</td>
+    <td><code class="pers1">11330</code>
+</td>
+    <td class="vtint"><code class="pers2">11331</code>
+</td>
+    <td><code class="pers2">11332</code>
+</td>
+    <td><code class="pers3">11333</code>
+</td>
+    <td><code class="pers1">12000</code>
+</td>
+    <td><code class="pers1">12001</code>
+</td>
+    <td class="vtint"><code class="pers1">12002</code>
+</td>
+    <td><code class="pers1">12003</code>
+</td>
+    <td><code class="pers1">12010</code>
+</td>
+    <td><code class="pers1">12011</code>
+</td>
+    <td><code class="pers1">12012</code>
+</td>
+    <td class="vtint"><code class="pers1">12013</code>
+</td>
+    <td><code class="pers1">12020</code>
+</td>
+    <td><code class="pers1">12021</code>
+</td>
+    <td><code class="pers1">12022</code>
+</td>
+    <td><code class="pers1">12023</code>
+</td>
+    <td class="vtint"><code class="pers1">12030</code>
+</td>
+    <td><code class="pers1">12031</code>
+</td>
+    <td><code class="pers1">12032</code>
+</td>
+    <td><code class="pers1">12033</code>
+</td>
+    <td><code class="pers1">12100</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">400</td>
+    <td class="vtint"><code class="pers1">12101</code>
+</td>
+    <td><code class="pers1">12102</code>
+</td>
+    <td><code class="pers1">12103</code>
+</td>
+    <td><code class="pers1">12110</code>
+</td>
+    <td><code class="pers1">12111</code>
+</td>
+    <td class="vtint"><code class="pers2">12112</code>
+</td>
+    <td><code class="pers2">12113</code>
+</td>
+    <td><code class="pers1">12120</code>
+</td>
+    <td><code class="pers2">12121</code>
+</td>
+    <td><code class="pers2">12122</code>
+</td>
+    <td class="vtint"><code class="pers2">12123</code>
+</td>
+    <td><code class="pers1">12130</code>
+</td>
+    <td><code class="pers2">12131</code>
+</td>
+    <td><code class="pers2">12132</code>
+</td>
+    <td><code class="pers2">12133</code>
+</td>
+    <td class="vtint"><code class="pers1">12200</code>
+</td>
+    <td><code class="pers1">12201</code>
+</td>
+    <td><code class="pers1">12202</code>
+</td>
+    <td><code class="pers1">12203</code>
+</td>
+    <td><code class="pers1">12210</code>
+</td>
+    <td class="vtint"><code class="pers2">12211</code>
+</td>
+    <td><code class="pers2">12212</code>
+</td>
+    <td><code class="pers2">12213</code>
+</td>
+    <td><code class="pers1">12220</code>
+</td>
+    <td><code class="pers2">12221</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">425</td>
+    <td class="vtint"><code class="pers2">12222</code>
+</td>
+    <td><code class="pers2">12223</code>
+</td>
+    <td><code class="pers1">12230</code>
+</td>
+    <td><code class="pers2">12231</code>
+</td>
+    <td><code class="pers2">12232</code>
+</td>
+    <td class="vtint"><code class="pers2">12233</code>
+</td>
+    <td><code class="pers1">12300</code>
+</td>
+    <td><code class="pers1">12301</code>
+</td>
+    <td><code class="pers1">12302</code>
+</td>
+    <td><code class="pers1">12303</code>
+</td>
+    <td class="vtint"><code class="pers1">12310</code>
+</td>
+    <td><code class="pers2">12311</code>
+</td>
+    <td><code class="pers2">12312</code>
+</td>
+    <td><code class="pers2">12313</code>
+</td>
+    <td><code class="pers1">12320</code>
+</td>
+    <td class="vtint"><code class="pers2">12321</code>
+</td>
+    <td><code class="pers2">12322</code>
+</td>
+    <td><code class="pers2">12323</code>
+</td>
+    <td><code class="pers1">12330</code>
+</td>
+    <td><code class="pers2">12331</code>
+</td>
+    <td class="vtint"><code class="pers2">12332</code>
+</td>
+    <td><code class="pers3">12333</code>
+</td>
+    <td><code class="pers1">13000</code>
+</td>
+    <td><code class="pers1">13001</code>
+</td>
+    <td><code class="pers1">13002</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">450</td>
+    <td class="vtint"><code class="pers1">13003</code>
+</td>
+    <td><code class="pers1">13010</code>
+</td>
+    <td><code class="pers1">13011</code>
+</td>
+    <td><code class="pers1">13012</code>
+</td>
+    <td><code class="pers1">13013</code>
+</td>
+    <td class="vtint"><code class="pers1">13020</code>
+</td>
+    <td><code class="pers1">13021</code>
+</td>
+    <td><code class="pers1">13022</code>
+</td>
+    <td><code class="pers1">13023</code>
+</td>
+    <td><code class="pers1">13030</code>
+</td>
+    <td class="vtint"><code class="pers1">13031</code>
+</td>
+    <td><code class="pers1">13032</code>
+</td>
+    <td><code class="pers1">13033</code>
+</td>
+    <td><code class="pers1">13100</code>
+</td>
+    <td><code class="pers1">13101</code>
+</td>
+    <td class="vtint"><code class="pers1">13102</code>
+</td>
+    <td><code class="pers1">13103</code>
+</td>
+    <td><code class="pers1">13110</code>
+</td>
+    <td><code class="pers1">13111</code>
+</td>
+    <td><code class="pers2">13112</code>
+</td>
+    <td class="vtint"><code class="pers2">13113</code>
+</td>
+    <td><code class="pers1">13120</code>
+</td>
+    <td><code class="pers2">13121</code>
+</td>
+    <td><code class="pers2">13122</code>
+</td>
+    <td><code class="pers2">13123</code>
+</td>
+</tr>
+
+<tr>
+    <td class="clean" id="fat">475</td>
+    <td class="vtint"><code class="pers1">13130</code>
+</td>
+    <td><code class="pers2">13131</code>
+</td>
+    <td><code class="pers2">13132</code>
+</td>
+    <td><code class="pers3">13133</code>
+</td>
+    <td><code class="pers1">13200</code>
+</td>
+    <td class="vtint"><code class="pers1">13201</code>
+</td>
+    <td><code class="pers1">13202</code>
+</td>
+    <td><code class="pers1">13203</code>
+</td>
+    <td><code class="pers1">13210</code>
+</td>
+    <td><code class="pers2">13211</code>
+</td>
+    <td class="vtint"><code class="pers2">13212</code>
+</td>
+    <td><code class="pers2">13213</code>
+</td>
+    <td><code class="pers1">13220</code>
+</td>
+    <td><code class="pers2">13221</code>
+</td>
+    <td><code class="pers2">13222</code>
+</td>
+    <td class="vtint"><code class="pers2">13223</code>
+</td>
+    <td><code class="pers1">13230</code>
+</td>
+    <td><code class="pers2">13231</code>
+</td>
+    <td><code class="pers2">13232</code>
+</td>
+    <td><code class="pers3">13233</code>
+</td>
+    <td class="vtint"><code class="pers1">13300</code>
+</td>
+    <td><code class="pers1">13301</code>
+</td>
+    <td><code class="pers1">13302</code>
+</td>
+    <td><code class="pers1">13303</code>
+</td>
+    <td><code class="pers1">13310</code>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+</table>
+
+</div><!-- end guts -->
