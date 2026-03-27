@@ -1,0 +1,49 @@
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: none;
+}
+table {
+    text-align: left;
+}
+td.vtint {
+    background-color: #eee;
+}
+tr.clean, td.clean {
+    background-color: #fff;
+}
+td#fat {
+    font-weight: bold;
+}
+td.col-n {
+    text-align: left;
+    width: 80px;
+}
+td.col-expansion {
+    text-align: left;
+    font-family: monospace;
+}
+td.col-period {
+    text-align: right;
+    width: 80px;
+}
+
+/* color schemes */
+code.terminating {
+    color: #070;
+    font-weight: bold;
+}
+code.full-reptend {
+    color: #a00;
+    font-weight: bold;
+}
+code.palindrome {
+    color: #00a;
+    font-weight: bold;
+}
+
+body {
+    background-color: #fafafa;
+}
+code {
+    background: none;
+    color: black;
+}
