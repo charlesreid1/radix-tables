@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Radix Tables - Harshad Numbers</title>
+
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel='stylesheet' type='text/css' href='css/navbar.css' />
+	<link rel='stylesheet' type='text/css' href='css/harshad.css' />
+
+</head>
+
+<body>
+
+
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">radix-tables</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="times.html">Times</a></li>
+                    <li><a href="primes.html">Primes</a></li>
+                    <li><a href="powers.html">Powers</a></li>
+                    <li><a href="factorials.html">Factorials</a></li>
+                    <li><a href="reciprocals.html">Reciprocals</a></li>
+                    <li class="active"><a href="harshad.html">Harshad</a></li>
+                    <!--
+                    <li>Pascal's Triangle</li>
+                    -->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <h1>Harshad Numbers</h1>
+                <p class="lead">Numbers divisible by their own digit sum.</p>
+
+                <p>A Harshad number (or Niven number) is an integer that is divisible by the sum of its digits.
+                Since digit sums are completely base-dependent, the set of Harshad numbers is
+                <em>totally different</em> in every base.</p>
+
+                <p>For example, 12 is Harshad in base 10 because 1+2=3 and 12/3=4.
+                But in base 7, 12 is written as 15 (digits 1 and 5), digit sum 6, and 12/6=2, so it is also Harshad.
+                Other numbers are Harshad in one base but not another.</p>
+
+                <p>Numbers in <span class="harshad">green</span> are Harshad numbers.</p>
+                <p>Numbers in <span class="harshad-palindrome">red</span> are palindromic Harshad numbers.</p>
+                <p>Numbers in <span class="non-harshad">gray</span> are not Harshad.</p>
+
+            </div>
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <p>Select a radix below:</p>
+                <div id="usejs" class="btn-group" role="group">
+                    <a href="harshad2.html"  type="button" class="btn btn-primary btn-default">2</a>
+                    <a href="harshad3.html"  type="button" class="btn btn-primary btn-default">3</a>
+                    <a href="harshad4.html"  type="button" class="btn btn-primary btn-default">4</a>
+                    <a href="harshad5.html"  type="button" class="btn btn-primary btn-default">5</a>
+                    <a href="harshad6.html"  type="button" class="btn btn-primary btn-default">6</a>
+                    <a href="harshad7.html"  type="button" class="btn btn-primary btn-default">7</a>
+                    <a href="harshad8.html"  type="button" class="btn btn-primary btn-default">8</a>
+                    <a href="harshad9.html"  type="button" class="btn btn-primary btn-default">9</a>
+                    <a href="harshad10.html" type="button" class="btn btn-primary btn-default">10</a>
+                    <a href="harshad11.html" type="button" class="btn btn-primary btn-default">11</a>
+                    <a href="harshad12.html" type="button" class="btn btn-primary btn-default">12</a>
+                    <a href="harshad13.html" type="button" class="btn btn-primary btn-default">13</a>
+                    <a href="harshad14.html" type="button" class="btn btn-primary btn-default">14</a>
+                    <a href="harshad15.html" type="button" class="btn btn-primary btn-default">15</a>
+                    <a href="harshad16.html" type="button" class="btn btn-primary btn-default">16</a>
+                    <a href="harshad17.html" type="button" class="btn btn-primary btn-default">17</a>
+                    <a href="harshad18.html" type="button" class="btn btn-primary btn-default">18</a>
+                    <a href="harshad19.html" type="button" class="btn btn-primary btn-default">19</a>
+                    <a href="harshad20.html" type="button" class="btn btn-primary btn-default">20</a>
+                </div>
+
+                <p>&nbsp;</p>
+
+            </div>
+        </div><!--end row-->
+
+        <div id="main-content">
+        </div>
+
+        <div id="guts">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

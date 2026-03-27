@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Radix Tables - Reciprocal Expansions</title>
+
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel='stylesheet' type='text/css' href='css/navbar.css' />
+	<link rel='stylesheet' type='text/css' href='css/reciprocals.css' />
+
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">radix-tables</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="times.html">Times</a></li>
+                    <li><a href="primes.html">Primes</a></li>
+                    <li><a href="powers.html">Powers</a></li>
+                    <li><a href="factorials.html">Factorials</a></li>
+                    <li class="active"><a href="reciprocals.html">Reciprocals</a></li>
+                    <li><a href="harshad.html">Harshad</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">
+
+                <h1>Reciprocal Expansions</h1>
+                <p class="lead">The repeating "decimal" expansion of 1/n in each base.</p>
+
+                <p>The repeat period of 1/n in base b equals the multiplicative order of b mod n &mdash;
+                so the same fraction can terminate in one base, have a short cycle in another, and a very long cycle in a third.</p>
+
+                <p>
+                Fractions in <span style="color:#070;font-weight:bold">green</span> terminate (period 0).
+                Fractions in <span style="color:#a00;font-weight:bold">red</span> are full-reptend primes (period = n&minus;1, the maximum).
+                Fractions in <span style="color:#00a;font-weight:bold">blue</span> have a palindromic repeating cycle.
+                Repeating digits are shown in parentheses.
+                </p>
+
+            </div>
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <p>Select a radix below:</p>
+                <div id="usejs" class="btn-group" role="group">
+                    <a href="reciprocals2.html"  type="button" class="btn btn-primary btn-default">2</a>
+                    <a href="reciprocals3.html"  type="button" class="btn btn-primary btn-default">3</a>
+                    <a href="reciprocals4.html"  type="button" class="btn btn-primary btn-default">4</a>
+                    <a href="reciprocals5.html"  type="button" class="btn btn-primary btn-default">5</a>
+                    <a href="reciprocals6.html"  type="button" class="btn btn-primary btn-default">6</a>
+                    <a href="reciprocals7.html"  type="button" class="btn btn-primary btn-default">7</a>
+                    <a href="reciprocals8.html"  type="button" class="btn btn-primary btn-default">8</a>
+                    <a href="reciprocals9.html"  type="button" class="btn btn-primary btn-default">9</a>
+                    <a href="reciprocals10.html" type="button" class="btn btn-primary btn-default">10</a>
+                    <a href="reciprocals11.html" type="button" class="btn btn-primary btn-default">11</a>
+                    <a href="reciprocals12.html" type="button" class="btn btn-primary btn-default">12</a>
+                    <a href="reciprocals13.html" type="button" class="btn btn-primary btn-default">13</a>
+                    <a href="reciprocals14.html" type="button" class="btn btn-primary btn-default">14</a>
+                    <a href="reciprocals15.html" type="button" class="btn btn-primary btn-default">15</a>
+                    <a href="reciprocals16.html" type="button" class="btn btn-primary btn-default">16</a>
+                    <a href="reciprocals17.html" type="button" class="btn btn-primary btn-default">17</a>
+                    <a href="reciprocals18.html" type="button" class="btn btn-primary btn-default">18</a>
+                    <a href="reciprocals19.html" type="button" class="btn btn-primary btn-default">19</a>
+                    <a href="reciprocals20.html" type="button" class="btn btn-primary btn-default">20</a>
+                </div>
+
+                <p>&nbsp;</p>
+
+            </div>
+        </div><!--end row-->
+
+        <div id="main-content">
+        </div>
+
+        <div id="guts">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
