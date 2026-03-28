@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Radix Tables - Fibonacci Numbers</title>
+
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel='stylesheet' type='text/css' href='css/navbar.css' />
+	<link rel='stylesheet' type='text/css' href='css/fibonacci.css' />
+
+</head>
+
+<body>
+
+
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">radix-tables</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="times.html">Times</a></li>
+                    <li><a href="primes.html">Primes</a></li>
+                    <li><a href="powers.html">Powers</a></li>
+                    <li><a href="factorials.html">Factorials</a></li>
+                    <li><a href="reciprocals.html">Reciprocals</a></li>
+                    <li><a href="harshad.html">Harshad</a></li>
+                    <li><a href="persistence.html">Persistence</a></li>
+                    <li class="active"><a href="fibonacci.html">Fibonacci</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <h1>Fibonacci Numbers</h1>
+                <p class="lead">The Fibonacci sequence is fixed, but the digit patterns are not.</p>
+
+                <p>The Fibonacci sequence (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...) is the same in every base,
+                but palindromes, digit patterns, and terminal digit cycles all change.</p>
+
+                <p>The <strong>Pisano period</strong> &pi;(b) is the period of the Fibonacci sequence mod b &mdash;
+                equivalently, the cycle length of the last digit. In base 10 the last digit repeats every 60 terms;
+                in base 7, every 16.</p>
+
+                <p>Numbers in <span class="palindrome-swatch">red</span> are palindromic Fibonacci numbers.</p>
+                <p>Numbers in <span class="pisano-swatch">blue</span> mark Pisano period boundaries (where the last-digit cycle restarts).</p>
+
+            </div>
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <p>Select a radix below:</p>
+                <div id="usejs" class="btn-group" role="group">
+                    <a href="fibonacci2.html"  type="button" class="btn btn-primary btn-default">2</a>
+                    <a href="fibonacci3.html"  type="button" class="btn btn-primary btn-default">3</a>
+                    <a href="fibonacci4.html"  type="button" class="btn btn-primary btn-default">4</a>
+                    <a href="fibonacci5.html"  type="button" class="btn btn-primary btn-default">5</a>
+                    <a href="fibonacci6.html"  type="button" class="btn btn-primary btn-default">6</a>
+                    <a href="fibonacci7.html"  type="button" class="btn btn-primary btn-default">7</a>
+                    <a href="fibonacci8.html"  type="button" class="btn btn-primary btn-default">8</a>
+                    <a href="fibonacci9.html"  type="button" class="btn btn-primary btn-default">9</a>
+                    <a href="fibonacci10.html" type="button" class="btn btn-primary btn-default">10</a>
+                    <a href="fibonacci11.html" type="button" class="btn btn-primary btn-default">11</a>
+                    <a href="fibonacci12.html" type="button" class="btn btn-primary btn-default">12</a>
+                    <a href="fibonacci13.html" type="button" class="btn btn-primary btn-default">13</a>
+                    <a href="fibonacci14.html" type="button" class="btn btn-primary btn-default">14</a>
+                    <a href="fibonacci15.html" type="button" class="btn btn-primary btn-default">15</a>
+                    <a href="fibonacci16.html" type="button" class="btn btn-primary btn-default">16</a>
+                    <a href="fibonacci17.html" type="button" class="btn btn-primary btn-default">17</a>
+                    <a href="fibonacci18.html" type="button" class="btn btn-primary btn-default">18</a>
+                    <a href="fibonacci19.html" type="button" class="btn btn-primary btn-default">19</a>
+                    <a href="fibonacci20.html" type="button" class="btn btn-primary btn-default">20</a>
+                </div>
+
+                <p>&nbsp;</p>
+
+            </div>
+        </div><!--end row-->
+
+        <div id="main-content">
+        </div>
+
+        <div id="guts">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

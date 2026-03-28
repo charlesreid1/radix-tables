@@ -1,0 +1,45 @@
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: none; /*1px solid #ddd;*/
+}
+table {
+    text-align: right;
+}
+td.vtint {
+    background-color: #eee;
+}
+td#fat {
+    font-weight: bold;
+}
+code.palindrome {
+    color: #a00;
+    font-weight: bold;
+}
+code.pisano {
+    color: #07a;
+    font-weight: bold;
+}
+tr.pisano-boundary {
+    border-top: 2px solid #07a;
+}
+td.left {
+    text-align: left;
+    width: 100px;
+}
+td.right {
+    text-align: left;
+}
+span.palindrome-swatch {
+    color: #a00;
+    font-weight: bold;
+}
+span.pisano-swatch {
+    color: #07a;
+    font-weight: bold;
+}
+body {
+    background-color: #fafafa;
+}
+code {
+    background-color: #fafafa;
+    color: black;
+}
