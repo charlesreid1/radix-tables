@@ -3,7 +3,7 @@ import java.util.*;
 import java.math.BigInteger;
 
 /**
- * This class generates a grid of integers 1..500, highlighting
+ * This class generates a grid of integers 1..5000, highlighting
  * Harshad (Niven) numbers — numbers divisible by their digit sum.
  */
 public class Harshad {
@@ -26,14 +26,14 @@ public class Harshad {
         int base = b;
 
         int Ncols = 25;
-        int Nrows = 20;
-        int total = Ncols * Nrows; // 500
+        int Nrows = 200;
+        int total = Ncols * Nrows; // 5000
 
 
         ////////////////////////////////////
         // The Maths
 
-        // For each number 1..500, check if Harshad in this base
+        // For each number 1..5000, check if Harshad in this base
         boolean[] isHarshad = new boolean[total + 1];
         int harshadCount = 0;
         for(int i = 1; i <= total; i++) {
