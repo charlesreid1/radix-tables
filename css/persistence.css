@@ -1,0 +1,71 @@
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: none; /*1px solid #ddd;*/
+}
+table {
+    text-align: right;
+}
+td.vtint {
+    background-color: #eee;
+}
+tr.clean, td.clean {
+    background-color: #fff;
+}
+td#fat {
+    font-weight: bold;
+}
+
+/* summary table */
+.summary-table {
+    width: auto;
+    display: inline-table;
+    margin-bottom: 20px;
+}
+
+/* persistence color scheme — from cool (low) to hot (high) */
+code.pers0 {
+    color: #bbb;
+}
+code.pers1 {
+    color: #888;
+}
+code.pers2 {
+    color: #07a;
+    font-weight: bold;
+}
+code.pers3 {
+    color: #070;
+    font-weight: bold;
+}
+code.pers4 {
+    color: #a80;
+    font-weight: bold;
+}
+code.pers5 {
+    color: #d40;
+    font-weight: bold;
+}
+code.pers6 {
+    color: #a0a;
+    font-weight: bold;
+}
+code.pers7 {
+    color: #609;
+    font-weight: bold;
+}
+code.pers8 {
+    color: #900;
+    font-weight: bold;
+}
+code.pers9 {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #fafafa;
+}
+code {
+    background: none;
+    color: black;
+}

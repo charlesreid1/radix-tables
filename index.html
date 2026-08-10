@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<title>Radix Tables</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/navbar.css' />
+	<link rel='stylesheet' type='text/css' href='css/primes.css' />
+
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">radix-tables</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="times.html">Times</a></li>
+                    <li><a href="primes.html">Primes</a></li>
+                    <li><a href="powers.html">Powers</a></li>
+                    <li><a href="factorials.html">Factorials</a></li>
+                    <li><a href="reciprocals.html">Reciprocals</a></li>
+                    <li><a href="harshad.html">Harshad</a></li>
+                    <li><a href="persistence.html">Persistence</a></li>
+                    <li><a href="fibonacci.html">Fibonacci</a></li>
+                    <!--
+                    <li>Pascal's Triangle</li>
+                    -->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+
+
+
+    <div id="main-content" class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Times Table</h2>
+                <p>Times table showing products of integers in the specified radix.</p>
+                <p><a class="btn btn-default" href="times.html" role="button">Times Table &raquo;</a></p>
+            </div>
+            <div class="col-md-6">
+                <h2>Prime Numbers</h2>
+                <p>Table showing the sequence of prime numbers in the specified radix.</p>
+                <p><a class="btn btn-default" href="primes.html" role="button">Prime Numbers &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Powers of Integers</h2>
+                <p>Table showing a list of integers raised to integer powers (1 thru 10) for non-10 radixes.</p>
+                <p><a class="btn btn-default" href="powers.html" role="button">Powers &raquo;</a></p>
+            </div>
+            <div class="col-md-6">
+                <h2>Factorials</h2>
+                <p>Table of factorials up to 30 in the given radix.</p>
+                <p><a class="btn btn-default" href="factorials.html" role="button">Factorials &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Reciprocal Expansions</h2>
+                <p>The repeating "decimal" expansion of 1/n. Period lengths, terminating fractions, and full-reptend primes all change with the base.</p>
+                <p><a class="btn btn-default" href="reciprocals.html" role="button">Reciprocals &raquo;</a></p>
+            </div>
+            <div class="col-md-6">
+                <h2>Harshad Numbers</h2>
+                <p>Numbers divisible by their own digit sum. The set of Harshad numbers is totally different in every base.</p>
+                <p><a class="btn btn-default" href="harshad.html" role="button">Harshad &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Multiplicative Persistence</h2>
+                <p>How many times must you multiply a number's digits together before reaching a single digit? The persistence landscape reshapes completely from base to base.</p>
+                <p><a class="btn btn-default" href="persistence.html" role="button">Persistence &raquo;</a></p>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Fibonacci Numbers</h2>
+                <p>The Fibonacci sequence is fixed, but the digit patterns are not. Palindromes and Pisano periods change with the base.</p>
+                <p><a class="btn btn-default" href="fibonacci.html" role="button">Fibonacci &raquo;</a></p>
+            </div>
+
+            <!--
+            <div class="col-md-6">
+                <h2>Pascal's Triangle</h2>
+                <p>Pascal's Triangle still works - but the coefficients look different.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            -->
+        </div><!--end row-->
+
+    </div>
+
+</body>
+
+</html>

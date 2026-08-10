@@ -1,0 +1,2716 @@
+<div id="guts">
+<p>The first 501 Fibonacci numbers in radix 3. Pisano period &pi;(3) = 8 (the last-digit cycle repeats every 8 terms). There are 2 palindromes in this range.</p>
+<table class="table">
+
+<tr>
+<td id="fat" class="left">n<sub>10</sub></td>
+<td id="fat" class="left">n</td>
+<td id="fat" class="right">F(n)</td>
+</tr>
+
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+
+<tr>
+<td class="left"><code>1</code></td>
+<td class="left"><code>1</code></td>
+<td class="right"><code>1</code></td>
+</tr>
+<tr>
+<td class="left"><code>2</code></td>
+<td class="left"><code>2</code></td>
+<td class="right"><code>1</code></td>
+</tr>
+<tr>
+<td class="left"><code>3</code></td>
+<td class="left"><code>10</code></td>
+<td class="right"><code>2</code></td>
+</tr>
+<tr>
+<td class="left"><code>4</code></td>
+<td class="left"><code>11</code></td>
+<td class="right"><code>10</code></td>
+</tr>
+<tr>
+<td class="left"><code>5</code></td>
+<td class="left"><code>12</code></td>
+<td class="right"><code>12</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>6</code></td>
+<td class="left"><code>20</code></td>
+<td class="right"><code>22</code></td>
+</tr>
+<tr>
+<td class="left"><code>7</code></td>
+<td class="left"><code>21</code></td>
+<td class="right"><code class="palindrome">111</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>8</code></td>
+<td class="left"><code>22</code></td>
+<td class="right"><code class="pisano">210</code></td>
+</tr>
+<tr>
+<td class="left"><code>9</code></td>
+<td class="left"><code>100</code></td>
+<td class="right"><code>1021</code></td>
+</tr>
+<tr>
+<td class="left"><code>10</code></td>
+<td class="left"><code>101</code></td>
+<td class="right"><code>2001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>11</code></td>
+<td class="left"><code>102</code></td>
+<td class="right"><code>10022</code></td>
+</tr>
+<tr>
+<td class="left"><code>12</code></td>
+<td class="left"><code>110</code></td>
+<td class="right"><code>12100</code></td>
+</tr>
+<tr>
+<td class="left"><code>13</code></td>
+<td class="left"><code>111</code></td>
+<td class="right"><code class="palindrome">22122</code></td>
+</tr>
+<tr>
+<td class="left"><code>14</code></td>
+<td class="left"><code>112</code></td>
+<td class="right"><code>111222</code></td>
+</tr>
+<tr>
+<td class="left"><code>15</code></td>
+<td class="left"><code>120</code></td>
+<td class="right"><code>211121</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>16</code></td>
+<td class="left"><code>121</code></td>
+<td class="right"><code class="pisano">1100120</code></td>
+</tr>
+<tr>
+<td class="left"><code>17</code></td>
+<td class="left"><code>122</code></td>
+<td class="right"><code>2012011</code></td>
+</tr>
+<tr>
+<td class="left"><code>18</code></td>
+<td class="left"><code>200</code></td>
+<td class="right"><code>10112201</code></td>
+</tr>
+<tr>
+<td class="left"><code>19</code></td>
+<td class="left"><code>201</code></td>
+<td class="right"><code>12201212</code></td>
+</tr>
+<tr>
+<td class="left"><code>20</code></td>
+<td class="left"><code>202</code></td>
+<td class="right"><code>100021120</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>21</code></td>
+<td class="left"><code>210</code></td>
+<td class="right"><code>120000102</code></td>
+</tr>
+<tr>
+<td class="left"><code>22</code></td>
+<td class="left"><code>211</code></td>
+<td class="right"><code>220021222</code></td>
+</tr>
+<tr>
+<td class="left"><code>23</code></td>
+<td class="left"><code>212</code></td>
+<td class="right"><code>1110022101</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>24</code></td>
+<td class="left"><code>220</code></td>
+<td class="right"><code class="pisano">2100121100</code></td>
+</tr>
+<tr>
+<td class="left"><code>25</code></td>
+<td class="left"><code>221</code></td>
+<td class="right"><code>10210220201</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>26</code></td>
+<td class="left"><code>222</code></td>
+<td class="right"><code>20011112001</code></td>
+</tr>
+<tr>
+<td class="left"><code>27</code></td>
+<td class="left"><code>1000</code></td>
+<td class="right"><code>100222102202</code></td>
+</tr>
+<tr>
+<td class="left"><code>28</code></td>
+<td class="left"><code>1001</code></td>
+<td class="right"><code>121010221210</code></td>
+</tr>
+<tr>
+<td class="left"><code>29</code></td>
+<td class="left"><code>1002</code></td>
+<td class="right"><code>222010101112</code></td>
+</tr>
+<tr>
+<td class="left"><code>30</code></td>
+<td class="left"><code>1010</code></td>
+<td class="right"><code>1120021100022</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>31</code></td>
+<td class="left"><code>1011</code></td>
+<td class="right"><code>2112101201211</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>32</code></td>
+<td class="left"><code>1012</code></td>
+<td class="right"><code class="pisano">11002200002010</code></td>
+</tr>
+<tr>
+<td class="left"><code>33</code></td>
+<td class="left"><code>1020</code></td>
+<td class="right"><code>20122001210221</code></td>
+</tr>
+<tr>
+<td class="left"><code>34</code></td>
+<td class="left"><code>1021</code></td>
+<td class="right"><code>101201201220001</code></td>
+</tr>
+<tr>
+<td class="left"><code>35</code></td>
+<td class="left"><code>1022</code></td>
+<td class="right"><code>122100210200222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>36</code></td>
+<td class="left"><code>1100</code></td>
+<td class="right"><code>1001002112121000</code></td>
+</tr>
+<tr>
+<td class="left"><code>37</code></td>
+<td class="left"><code>1101</code></td>
+<td class="right"><code>1200110100021222</code></td>
+</tr>
+<tr>
+<td class="left"><code>38</code></td>
+<td class="left"><code>1102</code></td>
+<td class="right"><code>2201112212212222</code></td>
+</tr>
+<tr>
+<td class="left"><code>39</code></td>
+<td class="left"><code>1110</code></td>
+<td class="right"><code>11102000020011221</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>40</code></td>
+<td class="left"><code>1111</code></td>
+<td class="right"><code class="pisano">21010120010001220</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>41</code></td>
+<td class="left"><code>1112</code></td>
+<td class="right"><code>102112120100020211</code></td>
+</tr>
+<tr>
+<td class="left"><code>42</code></td>
+<td class="left"><code>1120</code></td>
+<td class="right"><code>200200010110022201</code></td>
+</tr>
+<tr>
+<td class="left"><code>43</code></td>
+<td class="left"><code>1121</code></td>
+<td class="right"><code>1010012200210120112</code></td>
+</tr>
+<tr>
+<td class="left"><code>44</code></td>
+<td class="left"><code>1122</code></td>
+<td class="right"><code>1210212211020220020</code></td>
+</tr>
+<tr>
+<td class="left"><code>45</code></td>
+<td class="left"><code>1200</code></td>
+<td class="right"><code>2221002112001110202</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>46</code></td>
+<td class="left"><code>1201</code></td>
+<td class="right"><code>11201222100022100222</code></td>
+</tr>
+<tr>
+<td class="left"><code>47</code></td>
+<td class="left"><code>1202</code></td>
+<td class="right"><code>21200001212100211201</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>48</code></td>
+<td class="left"><code>1210</code></td>
+<td class="right"><code class="pisano">110102001012200012200</code></td>
+</tr>
+<tr>
+<td class="left"><code>49</code></td>
+<td class="left"><code>1211</code></td>
+<td class="right"><code>202002010002001001101</code></td>
+</tr>
+<tr>
+<td class="left"><code>50</code></td>
+<td class="left"><code>1212</code></td>
+<td class="right"><code>1012111011021201021001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>51</code></td>
+<td class="left"><code>1220</code></td>
+<td class="right"><code>1221120021100202022102</code></td>
+</tr>
+<tr>
+<td class="left"><code>52</code></td>
+<td class="left"><code>1221</code></td>
+<td class="right"><code>10011001102122110120110</code></td>
+</tr>
+<tr>
+<td class="left"><code>53</code></td>
+<td class="left"><code>1222</code></td>
+<td class="right"><code>12002121201000012212212</code></td>
+</tr>
+<tr>
+<td class="left"><code>54</code></td>
+<td class="left"><code>2000</code></td>
+<td class="right"><code>22020200010122200110022</code></td>
+</tr>
+<tr>
+<td class="left"><code>55</code></td>
+<td class="left"><code>2001</code></td>
+<td class="right"><code>111100021211122220100011</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>56</code></td>
+<td class="left"><code>2002</code></td>
+<td class="right"><code class="pisano">210120221222022120210110</code></td>
+</tr>
+<tr>
+<td class="left"><code>57</code></td>
+<td class="left"><code>2010</code></td>
+<td class="right"><code>1021221020210222111010121</code></td>
+</tr>
+<tr>
+<td class="left"><code>58</code></td>
+<td class="left"><code>2011</code></td>
+<td class="right"><code>2002112012210022001221001</code></td>
+</tr>
+<tr>
+<td class="left"><code>59</code></td>
+<td class="left"><code>2012</code></td>
+<td class="right"><code>10101110110121021120001122</code></td>
+</tr>
+<tr>
+<td class="left"><code>60</code></td>
+<td class="left"><code>2020</code></td>
+<td class="right"><code>12110222200101120121222200</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>61</code></td>
+<td class="left"><code>2021</code></td>
+<td class="right"><code>22212110010222212012001022</code></td>
+</tr>
+<tr>
+<td class="left"><code>62</code></td>
+<td class="left"><code>2022</code></td>
+<td class="right"><code>112100102211101102211000222</code></td>
+</tr>
+<tr>
+<td class="left"><code>63</code></td>
+<td class="left"><code>2100</code></td>
+<td class="right"><code>212012212222101022000002021</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>64</code></td>
+<td class="left"><code>2101</code></td>
+<td class="right"><code class="pisano">1101120022210202201211010020</code></td>
+</tr>
+<tr>
+<td class="left"><code>65</code></td>
+<td class="left"><code>2102</code></td>
+<td class="right"><code>2020210012210011000211012111</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>66</code></td>
+<td class="left"><code>2110</code></td>
+<td class="right"><code>10122100112120220202122022201</code></td>
+</tr>
+<tr>
+<td class="left"><code>67</code></td>
+<td class="left"><code>2111</code></td>
+<td class="right"><code>12220010202101001210110112012</code></td>
+</tr>
+<tr>
+<td class="left"><code>68</code></td>
+<td class="left"><code>2112</code></td>
+<td class="right"><code>100112111021221222120002211220</code></td>
+</tr>
+<tr>
+<td class="left"><code>69</code></td>
+<td class="left"><code>2120</code></td>
+<td class="right"><code>120102122001100001100120101002</code></td>
+</tr>
+<tr>
+<td class="left"><code>70</code></td>
+<td class="left"><code>2121</code></td>
+<td class="right"><code>220222010100022000220200012222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>71</code></td>
+<td class="left"><code>2122</code></td>
+<td class="right"><code>1111101202101122002021020121001</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>72</code></td>
+<td class="left"><code>2200</code></td>
+<td class="right"><code class="pisano">2102100212201221010011220211000</code></td>
+</tr>
+<tr>
+<td class="left"><code>73</code></td>
+<td class="left"><code>2201</code></td>
+<td class="right"><code>10220202122010120012110011102001</code></td>
+</tr>
+<tr>
+<td class="left"><code>74</code></td>
+<td class="left"><code>2202</code></td>
+<td class="right"><code>20100010111212111022122002020001</code></td>
+</tr>
+<tr>
+<td class="left"><code>75</code></td>
+<td class="left"><code>2210</code></td>
+<td class="right"><code>101020220011000001112002020122002</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>76</code></td>
+<td class="left"><code>2211</code></td>
+<td class="right"><code>121121000122212112211201022212010</code></td>
+</tr>
+<tr>
+<td class="left"><code>77</code></td>
+<td class="left"><code>2212</code></td>
+<td class="right"><code>222211220210212121100210120111012</code></td>
+</tr>
+<tr>
+<td class="left"><code>78</code></td>
+<td class="left"><code>2220</code></td>
+<td class="right"><code>1121102221110202011012111220100022</code></td>
+</tr>
+<tr>
+<td class="left"><code>79</code></td>
+<td class="left"><code>2221</code></td>
+<td class="right"><code>2121021212021121202120022110211111</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>80</code></td>
+<td class="left"><code>2222</code></td>
+<td class="right"><code class="pisano">11012201210202100220202211101011210</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>81</code></td>
+<td class="left"><code>10000</code></td>
+<td class="right"><code>20211000200000222200100010212000021</code></td>
+</tr>
+<tr>
+<td class="left"><code>82</code></td>
+<td class="left"><code>10001</code></td>
+<td class="right"><code>102000202110210100121002222020012001</code></td>
+</tr>
+<tr>
+<td class="left"><code>83</code></td>
+<td class="left"><code>10002</code></td>
+<td class="right"><code>122211210010211100021110010002012022</code></td>
+</tr>
+<tr>
+<td class="left"><code>84</code></td>
+<td class="left"><code>10010</code></td>
+<td class="right"><code>1001212112121121200212120002022101100</code></td>
+</tr>
+<tr>
+<td class="left"><code>85</code></td>
+<td class="left"><code>10011</code></td>
+<td class="right"><code>1201201022202110001011000012101120122</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>86</code></td>
+<td class="left"><code>10012</code></td>
+<td class="right"><code>2210120212101001202000120021200221222</code></td>
+</tr>
+<tr>
+<td class="left"><code>87</code></td>
+<td class="left"><code>10020</code></td>
+<td class="right"><code>11112022012010111210011120111002112121</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>88</code></td>
+<td class="left"><code>10021</code></td>
+<td class="right"><code class="pisano">21022220001111120112012010202210111120</code></td>
+</tr>
+<tr>
+<td class="left"><code>89</code></td>
+<td class="left"><code>10022</code></td>
+<td class="right"><code>102212012020122002022100201020220001011</code></td>
+</tr>
+<tr>
+<td class="left"><code>90</code></td>
+<td class="left"><code>10100</code></td>
+<td class="right"><code>201012002022010122211112212000200112201</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>91</code></td>
+<td class="left"><code>10101</code></td>
+<td class="right"><code>1011001021112202202010220120021120120212</code></td>
+</tr>
+<tr>
+<td class="left"><code>92</code></td>
+<td class="left"><code>10102</code></td>
+<td class="right"><code>1212020100211220101222110102022021010120</code></td>
+</tr>
+<tr>
+<td class="left"><code>93</code></td>
+<td class="left"><code>10110</code></td>
+<td class="right"><code>10000021122101200011010100222120211201102</code></td>
+</tr>
+<tr>
+<td class="left"><code>94</code></td>
+<td class="left"><code>10111</code></td>
+<td class="right"><code>11212112000020120120002211101220002211222</code></td>
+</tr>
+<tr>
+<td class="left"><code>95</code></td>
+<td class="left"><code>10112</code></td>
+<td class="right"><code>21212210122122020201020012101110221120101</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>96</code></td>
+<td class="left"><code>10120</code></td>
+<td class="right"><code class="pisano">110202022122212211021100000210101001102100</code></td>
+</tr>
+<tr>
+<td class="left"><code>97</code></td>
+<td class="left"><code>10121</code></td>
+<td class="right"><code>202122010022112001222120020011211222222201</code></td>
+</tr>
+<tr>
+<td class="left"><code>98</code></td>
+<td class="left"><code>10122</code></td>
+<td class="right"><code>1020101102222101220020220020222020001102001</code></td>
+</tr>
+<tr>
+<td class="left"><code>99</code></td>
+<td class="left"><code>10200</code></td>
+<td class="right"><code>2000000120021220222020110111011002001101202</code></td>
+</tr>
+<tr>
+<td class="left"><code>100</code></td>
+<td class="left"><code>10201</code></td>
+<td class="right"><code>10020102000021022212111100202010022002210210</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>101</code></td>
+<td class="left"><code>10202</code></td>
+<td class="right"><code>12020102120120020211201211020021101011012112</code></td>
+</tr>
+<tr>
+<td class="left"><code>102</code></td>
+<td class="left"><code>10210</code></td>
+<td class="right"><code>22110211120211120201020011222101200021000022</code></td>
+</tr>
+<tr>
+<td class="left"><code>103</code></td>
+<td class="left"><code>10211</code></td>
+<td class="right"><code>111201021011101211112222000012200001102012211</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>104</code></td>
+<td class="left"><code>10212</code></td>
+<td class="right"><code class="pisano">211012002202020102021012012012001201200020010</code></td>
+</tr>
+<tr>
+<td class="left"><code>105</code></td>
+<td class="left"><code>10220</code></td>
+<td class="right"><code>1022220100220122020211011012101201210002102221</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>106</code></td>
+<td class="left"><code>10221</code></td>
+<td class="right"><code>2011002110122212200002100101120210111202200001</code></td>
+</tr>
+<tr>
+<td class="left"><code>107</code></td>
+<td class="left"><code>10222</code></td>
+<td class="right"><code>10110222211120111220220111120222112021212002222</code></td>
+</tr>
+<tr>
+<td class="left"><code>108</code></td>
+<td class="left"><code>11000</code></td>
+<td class="right"><code>12122002022020101120222211222120022210121210000</code></td>
+</tr>
+<tr>
+<td class="left"><code>109</code></td>
+<td class="left"><code>11001</code></td>
+<td class="right"><code>100010002010210220111220100120112212002110212222</code></td>
+</tr>
+<tr>
+<td class="left"><code>110</code></td>
+<td class="left"><code>11002</code></td>
+<td class="right"><code>112202011110001022002220012120010011220002122222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>111</code></td>
+<td class="left"><code>11010</code></td>
+<td class="right"><code>212212020120212012121210120010200000222120112221</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>112</code></td>
+<td class="left"><code>11011</code></td>
+<td class="right"><code class="pisano">1102121102000220111201200202200210012212200012220</code></td>
+</tr>
+<tr>
+<td class="left"><code>113</code></td>
+<td class="left"><code>11012</code></td>
+<td class="right"><code>2022110122121202201100111022211110020212020202211</code></td>
+</tr>
+<tr>
+<td class="left"><code>114</code></td>
+<td class="left"><code>11020</code></td>
+<td class="right"><code>10202002001122200020002012002112020110201220222201</code></td>
+</tr>
+<tr>
+<td class="left"><code>115</code></td>
+<td class="left"><code>11021</code></td>
+<td class="right"><code>20001112201021102221102200102100200201121011202112</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>116</code></td>
+<td class="left"><code>11022</code></td>
+<td class="right"><code>100210121202221010011111212111212221012100002202020</code></td>
+</tr>
+<tr>
+<td class="left"><code>117</code></td>
+<td class="left"><code>11100</code></td>
+<td class="right"><code>120212011111012120002221112221020121220221021111202</code></td>
+</tr>
+<tr>
+<td class="left"><code>118</code></td>
+<td class="left"><code>11101</code></td>
+<td class="right"><code>221122210021010200021110102110010120010021101020222</code></td>
+</tr>
+<tr>
+<td class="left"><code>119</code></td>
+<td class="left"><code>11102</code></td>
+<td class="right"><code>1112111221202100020101101222101101012001012122202201</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>120</code></td>
+<td class="left"><code>11110</code></td>
+<td class="right"><code class="pisano">2111011202000110220122212101211111202011111001000200</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>121</code></td>
+<td class="left"><code>11111</code></td>
+<td class="right"><code>11000200200202211011001021101012212221012200200210101</code></td>
+</tr>
+<tr>
+<td class="left"><code>122</code></td>
+<td class="left"><code>11112</code></td>
+<td class="right"><code>20111212102210022001201010210001101200101011201211001</code></td>
+</tr>
+<tr>
+<td class="left"><code>123</code></td>
+<td class="left"><code>11120</code></td>
+<td class="right"><code>101112120010120010012202102011021021121120212102121102</code></td>
+</tr>
+<tr>
+<td class="left"><code>124</code></td>
+<td class="left"><code>11121</code></td>
+<td class="right"><code>122001102120100102021110112221022200021222001011102110</code></td>
+</tr>
+<tr>
+<td class="left"><code>125</code></td>
+<td class="left"><code>11122</code></td>
+<td class="right"><code>1000120222200220112111012222002120221220112220121000212</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>126</code></td>
+<td class="left"><code>11200</code></td>
+<td class="right"><code>1122122102021020221202200112000220122012111221202110022</code></td>
+</tr>
+<tr>
+<td class="left"><code>127</code></td>
+<td class="left"><code>11201</code></td>
+<td class="right"><code>2200020101222011111020220111010111121010001212100111011</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>128</code></td>
+<td class="left"><code>11202</code></td>
+<td class="right"><code class="pisano">11022212211020102110000121000011102020022120211002221110</code></td>
+</tr>
+<tr>
+<td class="left"><code>129</code></td>
+<td class="left"><code>11210</code></td>
+<td class="right"><code>21000010020012120221021111111021220211102122200110102121</code></td>
+</tr>
+<tr>
+<td class="left"><code>130</code></td>
+<td class="left"><code>11211</code></td>
+<td class="right"><code>102100000001110000101022002111110100001202020111120101001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>131</code></td>
+<td class="left"><code>11212</code></td>
+<td class="right"><code>200100010021122121022120120222202020220011220012000210122</code></td>
+</tr>
+<tr>
+<td class="left"><code>132</code></td>
+<td class="left"><code>11220</code></td>
+<td class="right"><code>1002200010100002121200212200111012120221221010200121011200</code></td>
+</tr>
+<tr>
+<td class="left"><code>133</code></td>
+<td class="left"><code>11221</code></td>
+<td class="right"><code>1210000020121202020000110021110221211212010000212121222022</code></td>
+</tr>
+<tr>
+<td class="left"><code>134</code></td>
+<td class="left"><code>11222</code></td>
+<td class="right"><code>2212200100221211211201022221222011102211001011120020010222</code></td>
+</tr>
+<tr>
+<td class="left"><code>135</code></td>
+<td class="left"><code>12000</code></td>
+<td class="right"><code>11122200121120121001201210020110010021200011012102212010021</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>136</code></td>
+<td class="left"><code>12001</code></td>
+<td class="right"><code class="pisano">21112100222112102220110010012102021201111012101000002021020</code></td>
+</tr>
+<tr>
+<td class="left"><code>137</code></td>
+<td class="left"><code>12002</code></td>
+<td class="right"><code>110012001121010000222011220102212102000011100120102221101111</code></td>
+</tr>
+<tr>
+<td class="left"><code>138</code></td>
+<td class="left"><code>12010</code></td>
+<td class="right"><code>201201102120122110212122000122021200201122112221110000122201</code></td>
+</tr>
+<tr>
+<td class="left"><code>139</code></td>
+<td class="left"><code>12011</code></td>
+<td class="right"><code>1011220111011202111211210221002011002201210220111212222001012</code></td>
+</tr>
+<tr>
+<td class="left"><code>140</code></td>
+<td class="left"><code>12012</code></td>
+<td class="right"><code>1220121220202101222201102221201102210110110110110022222200220</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>141</code></td>
+<td class="left"><code>12020</code></td>
+<td class="right"><code>10002112101221011111120020212210120220012021100222012221202002</code></td>
+</tr>
+<tr>
+<td class="left"><code>142</code></td>
+<td class="left"><code>12021</code></td>
+<td class="right"><code>12000011022200120111021200211112000200122201211102112221102222</code></td>
+</tr>
+<tr>
+<td class="left"><code>143</code></td>
+<td class="left"><code>12022</code></td>
+<td class="right"><code>22002200201121201222211221201022121120212000012101202220012001</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>144</code></td>
+<td class="left"><code>12100</code></td>
+<td class="right"><code class="pisano">111002212001022022111010122112211122021111202000211022211122000</code></td>
+</tr>
+<tr>
+<td class="left"><code>145</code></td>
+<td class="left"><code>12101</code></td>
+<td class="right"><code>210012112202221001110222121021011020212100202020020002201211001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>146</code></td>
+<td class="left"><code>12102</code></td>
+<td class="right"><code>1021022101211020100222010020210222220010212111021001102120110001</code></td>
+</tr>
+<tr>
+<td class="left"><code>147</code></td>
+<td class="left"><code>12110</code></td>
+<td class="right"><code>2001111221121011102110002212002011011000020020111021112022021002</code></td>
+</tr>
+<tr>
+<td class="left"><code>148</code></td>
+<td class="left"><code>12111</code></td>
+<td class="right"><code>10022211100102101210102020002220011001011002201202022221212201010</code></td>
+</tr>
+<tr>
+<td class="left"><code>149</code></td>
+<td class="left"><code>12112</code></td>
+<td class="right"><code>12101100022000120012212022221222022012011022222020121111011222012</code></td>
+</tr>
+<tr>
+<td class="left"><code>150</code></td>
+<td class="left"><code>12120</code></td>
+<td class="right"><code>22201011122102222000021120001212110020022102200222221110001200022</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>151</code></td>
+<td class="left"><code>12121</code></td>
+<td class="right"><code>112002111221110112020010220000211202102110202200020112221020122111</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>152</code></td>
+<td class="left"><code>12122</code></td>
+<td class="right"><code class="pisano">211210200120220111020102110002201012122210012101020111101022022210</code></td>
+</tr>
+<tr>
+<td class="left"><code>153</code></td>
+<td class="left"><code>12200</code></td>
+<td class="right"><code>1100220012112101000110120100010112222002020222001111001022112222021</code></td>
+</tr>
+<tr>
+<td class="left"><code>154</code></td>
+<td class="left"><code>12201</code></td>
+<td class="right"><code>2012200220010021111200222210020021011202001011102201112200212022001</code></td>
+</tr>
+<tr>
+<td class="left"><code>155</code></td>
+<td class="left"><code>12202</code></td>
+<td class="right"><code>10120121002122122112011120010100211010211022010111012121000102021022</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>156</code></td>
+<td class="left"><code>12210</code></td>
+<td class="right"><code>12210021222202221000212112220121002022120100021220221010201021120100</code></td>
+</tr>
+<tr>
+<td class="left"><code>157</code></td>
+<td class="left"><code>12211</code></td>
+<td class="right"><code>100100220002102120120001010000221220110101122102102010201201200211122</code></td>
+</tr>
+<tr>
+<td class="left"><code>158</code></td>
+<td class="left"><code>12212</code></td>
+<td class="right"><code>120011012002012111120220122221112222202221222201100001212102222101222</code></td>
+</tr>
+<tr>
+<td class="left"><code>159</code></td>
+<td class="left"><code>12220</code></td>
+<td class="right"><code>220112002011122002010221202222111220020100122010202012121011200020121</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>160</code></td>
+<td class="left"><code>12221</code></td>
+<td class="right"><code class="pisano">1110200021020211120201212102221001220000022121212002021110121122122120</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>161</code></td>
+<td class="left"><code>12222</code></td>
+<td class="right"><code>2101012100102110122212211012220120210020200020222211111001210022220011</code></td>
+</tr>
+<tr>
+<td class="left"><code>162</code></td>
+<td class="left"><code>20000</code></td>
+<td class="right"><code>10211212121200022020121200122211122200020222212211220202112101222112201</code></td>
+</tr>
+<tr>
+<td class="left"><code>163</code></td>
+<td class="left"><code>20001</code></td>
+<td class="right"><code>20020001222002202220111111212202020110111200010211202020121012022102212</code></td>
+</tr>
+<tr>
+<td class="left"><code>164</code></td>
+<td class="left"><code>20002</code></td>
+<td class="right"><code>101001221120210002011010012112120220010202200000200200000010121021222120</code></td>
+</tr>
+<tr>
+<td class="left"><code>165</code></td>
+<td class="left"><code>20010</code></td>
+<td class="right"><code>121022000112212212001121201102100010121021100011112102020201210121102102</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>166</code></td>
+<td class="left"><code>20011</code></td>
+<td class="right"><code>222100222010122221012201220221221000202001000012020002020212101220101222</code></td>
+</tr>
+<tr>
+<td class="left"><code>167</code></td>
+<td class="left"><code>20012</code></td>
+<td class="right"><code>1120122222200112210021100122101021011100022100100202111111121012111211101</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>168</code></td>
+<td class="left"><code>20020</code></td>
+<td class="right"><code class="pisano">2120000221211012201111002120100012012002100100112222120202110121102020100</code></td>
+</tr>
+<tr>
+<td class="left"><code>169</code></td>
+<td class="left"><code>20021</code></td>
+<td class="right"><code>11010200221111202111202110012201110100102122200220202002021001210221001201</code></td>
+</tr>
+<tr>
+<td class="left"><code>170</code></td>
+<td class="left"><code>20022</code></td>
+<td class="right"><code>20200201220022222020020112210001122112112000001110201200000112102100022001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>171</code></td>
+<td class="left"><code>20100</code></td>
+<td class="right"><code>101211102211211201201222222222210002212221122202101110202021121020021100202</code></td>
+</tr>
+<tr>
+<td class="left"><code>172</code></td>
+<td class="left"><code>20101</code></td>
+<td class="right"><code>122112011202011200222020112202211202102110122210212012102022010122121122210</code></td>
+</tr>
+<tr>
+<td class="left"><code>173</code></td>
+<td class="left"><code>20102</code></td>
+<td class="right"><code>1001100121121000102201020112202121212022102022120020200011120201212220000112</code></td>
+</tr>
+<tr>
+<td class="left"><code>174</code></td>
+<td class="left"><code>20110</code></td>
+<td class="right"><code>1200212210100012010200111002112110121201212222101002212120212212112111200022</code></td>
+</tr>
+<tr>
+<td class="left"><code>175</code></td>
+<td class="left"><code>20111</code></td>
+<td class="right"><code>2202020101221012120101201122022002111001022021221100112202110121102101200211</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>176</code></td>
+<td class="left"><code>20112</code></td>
+<td class="right"><code class="pisano">11110010012021101201002012201211120002210012021022110102100100110221220101010</code></td>
+</tr>
+<tr>
+<td class="left"><code>177</code></td>
+<td class="left"><code>20120</code></td>
+<td class="right"><code>21012100121012121021110221101010122120211111120020210222002211002101022001221</code></td>
+</tr>
+<tr>
+<td class="left"><code>178</code></td>
+<td class="left"><code>20121</code></td>
+<td class="right"><code>102122110210110222222120011002222012200121200211120021101110011120100012110001</code></td>
+</tr>
+<tr>
+<td class="left"><code>179</code></td>
+<td class="left"><code>20122</code></td>
+<td class="right"><code>200211211101200121021001002111002212021110012101211002100112222122201111111222</code></td>
+</tr>
+<tr>
+<td class="left"><code>180</code></td>
+<td class="left"><code>20200</code></td>
+<td class="right"><code>1010111022012011121020121020121002001222001220020101100202000011020001200222000</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>181</code></td>
+<td class="left"><code>20201</code></td>
+<td class="right"><code>1211100010120212012111122100002011221020112002122012110002120010212210012110222</code></td>
+</tr>
+<tr>
+<td class="left"><code>182</code></td>
+<td class="left"><code>20202</code></td>
+<td class="right"><code>2221211102210000210202020120200021000012120222212120210211120022002211220102222</code></td>
+</tr>
+<tr>
+<td class="left"><code>183</code></td>
+<td class="left"><code>20210</code></td>
+<td class="right"><code>11210011120100220000020212220202102221110010002111210020221010102222122002220221</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>184</code></td>
+<td class="left"><code>20211</code></td>
+<td class="right"><code class="pisano">21202000000010220211000010111102200221122201002101101001202200202002111000100220</code></td>
+</tr>
+<tr>
+<td class="left"><code>185</code></td>
+<td class="left"><code>20212</code></td>
+<td class="right"><code>110112011120111210211021000102012010220002211011220011022200211012002010010021211</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>186</code></td>
+<td class="left"><code>20220</code></td>
+<td class="right"><code>202021011120122201122021010220121211211202112021021112101110111221011121010122201</code></td>
+</tr>
+<tr>
+<td class="left"><code>187</code></td>
+<td class="left"><code>20221</code></td>
+<td class="right"><code>1012210100011011112110112011022210222201212100110011200201011100010020201020221112</code></td>
+</tr>
+<tr>
+<td class="left"><code>188</code></td>
+<td class="left"><code>20222</code></td>
+<td class="right"><code>1222001111201211021002210022020102211120121212201110020002121212001102022101121020</code></td>
+</tr>
+<tr>
+<td class="left"><code>189</code></td>
+<td class="left"><code>21000</code></td>
+<td class="right"><code>10011211211212222210120022110120020211022111020011121220210210012011200000122112202</code></td>
+</tr>
+<tr>
+<td class="left"><code>190</code></td>
+<td class="left"><code>21001</code></td>
+<td class="right"><code>12010220100121211001200002202210200122220010002220002010220102001020002100001010222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>191</code></td>
+<td class="left"><code>21002</code></td>
+<td class="right"><code>22022202012111210212020102020100221111012121100001201001201012020101202100200200201</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>192</code></td>
+<td class="left"><code>21010</code></td>
+<td class="right"><code class="pisano">111110122120010121220220112000011122011002201102221210012121121021121211200201211200</code></td>
+</tr>
+<tr>
+<td class="left"><code>193</code></td>
+<td class="left"><code>21011</code></td>
+<td class="right"><code>210210101202122102210010221020112120122022022210000111021022210112000121001102112101</code></td>
+</tr>
+<tr>
+<td class="left"><code>194</code></td>
+<td class="left"><code>21012</code></td>
+<td class="right"><code>1022021001022210001201001110020201012210102001012222021110221101210122102202011101001</code></td>
+</tr>
+<tr>
+<td class="left"><code>195</code></td>
+<td class="left"><code>21020</code></td>
+<td class="right"><code>2010001110002102111111012101111020210102201100222222202202021012022200000210120220102</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>196</code></td>
+<td class="left"><code>21021</code></td>
+<td class="right"><code>10102022111102012120012020211201222000020010102012222001020012121010022110112202021110</code></td>
+</tr>
+<tr>
+<td class="left"><code>197</code></td>
+<td class="left"><code>21022</code></td>
+<td class="right"><code>12112100221111122001200110020020012210122211210012221210222110210102222111100100011212</code></td>
+</tr>
+<tr>
+<td class="left"><code>198</code></td>
+<td class="left"><code>21100</code></td>
+<td class="right"><code>22221200102220211121212201001222011210212222012102220212012200101120021221220002110022</code></td>
+</tr>
+<tr>
+<td class="left"><code>199</code></td>
+<td class="left"><code>21101</code></td>
+<td class="right"><code>112111001101102110200120011022012101121112210222122212200012011012000021110020102122011</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>200</code></td>
+<td class="left"><code>21102</code></td>
+<td class="right"><code class="pisano">212102201211100022022102212101011120102102210012002210112101211120120120102010112002110</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>201</code></td>
+<td class="left"><code>21110</code></td>
+<td class="right"><code>1101220210012202210000000000200100222000222121011202200012120222202120211212100221201121</code></td>
+</tr>
+<tr>
+<td class="left"><code>202</code></td>
+<td class="left"><code>21111</code></td>
+<td class="right"><code>2021100112001010002022102220001112112110102101100212110201222211100011102021111110211001</code></td>
+</tr>
+<tr>
+<td class="left"><code>203</code></td>
+<td class="left"><code>21112</code></td>
+<td class="right"><code>10200021022020212212022102220201220111111101222112122010221120211002202021010212102112122</code></td>
+</tr>
+<tr>
+<td class="left"><code>204</code></td>
+<td class="left"><code>21120</code></td>
+<td class="right"><code>12221121211021222221121212210210110000221211100220111121200120122102220200102100220100200</code></td>
+</tr>
+<tr>
+<td class="left"><code>205</code></td>
+<td class="left"><code>21121</code></td>
+<td class="right"><code>100121220010112212210221022201112100112110020100110010202122011110112122221120020022220022</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>206</code></td>
+<td class="left"><code>21122</code></td>
+<td class="right"><code>120120111221211212202120012112022210120102001201100122101022202002222120121222121020020222</code></td>
+</tr>
+<tr>
+<td class="left"><code>207</code></td>
+<td class="left"><code>21200</code></td>
+<td class="right"><code>221012102002101202120111112020212011002212022001210210010221220120112020120112211120011021</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>208</code></td>
+<td class="left"><code>21201</code></td>
+<td class="right"><code class="pisano">1111202221001020122100001201210011221200021100210011102112021122200111211012112102210102020</code></td>
+</tr>
+<tr>
+<td class="left"><code>209</code></td>
+<td class="left"><code>21202</code></td>
+<td class="right"><code>2102222100010122101220120021001001002210010122211222012200020120021001001210002021100120111</code></td>
+</tr>
+<tr>
+<td class="left"><code>210</code></td>
+<td class="left"><code>21210</code></td>
+<td class="right"><code>10221202021011220001020121222211020001110102000122010122012112012221112212222121201010222201</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>211</code></td>
+<td class="left"><code>21211</code></td>
+<td class="right"><code>20101201121022112110011012020212021011020112200111002211212202210012120221202200222111120012</code></td>
+</tr>
+<tr>
+<td class="left"><code>212</code></td>
+<td class="left"><code>21212</code></td>
+<td class="right"><code>101100110212111102111101211020200111012200221201010020111002022000011010211202022200122112220</code></td>
+</tr>
+<tr>
+<td class="left"><code>213</code></td>
+<td class="left"><code>21220</code></td>
+<td class="right"><code>121202012110210221221120000111112202100221111101121100022222001210100201210112000200011010002</code></td>
+</tr>
+<tr>
+<td class="left"><code>214</code></td>
+<td class="left"><code>21221</code></td>
+<td class="right"><code>1000002200100022101102221211202020020120122110002201120211001100210111212122021100100210122222</code></td>
+</tr>
+<tr>
+<td class="left"><code>215</code></td>
+<td class="left"><code>21222</code></td>
+<td class="right"><code>1121211212211010100101111212020202222221120221111022221011000102120212121102210101000221210001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>216</code></td>
+<td class="left"><code>22000</code></td>
+<td class="right"><code class="pisano">2121221120011102201211110201000000020112020101121001111222001210101101111002001201101202110000</code></td>
+</tr>
+<tr>
+<td class="left"><code>217</code></td>
+<td class="left"><code>22001</code></td>
+<td class="right"><code>11020210102222120002012222120020210020110211100002101110010002012222021002111212002102201020001</code></td>
+</tr>
+<tr>
+<td class="left"><code>218</code></td>
+<td class="left"><code>22002</code></td>
+<td class="right"><code>20212202000010222211001110021020210111000001201200102222002011000100122120120220210211110200001</code></td>
+</tr>
+<tr>
+<td class="left"><code>219</code></td>
+<td class="left"><code>22010</code></td>
+<td class="right"><code>102010112110010112220021102211111120201110220001202211102012020020022220200002202220021011220002</code></td>
+</tr>
+<tr>
+<td class="left"><code>220</code></td>
+<td class="left"><code>22011</code></td>
+<td class="right"><code>200000021110021112201022220002202101012110221210110021101021101020200120020200200201002122120010</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>221</code></td>
+<td class="left"><code>22012</code></td>
+<td class="right"><code>1002010210220102002121121022221020221220221211212020002210110121111000110220210110121100211110012</code></td>
+</tr>
+<tr>
+<td class="left"><code>222</code></td>
+<td class="left"><code>22020</code></td>
+<td class="right"><code>1202011002100200122022221020001000100010102210122200101011201222201201001011111011022110111000022</code></td>
+</tr>
+<tr>
+<td class="left"><code>223</code></td>
+<td class="left"><code>22021</code></td>
+<td class="right"><code>2211021220021002201221112112222021022001101122111220110222012121012201112002021121220211022110111</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>224</code></td>
+<td class="left"><code>22022</code></td>
+<td class="right"><code class="pisano">11120102222121210101021110210000021122011211110011120212010221120221102120020202210020021210110210</code></td>
+</tr>
+<tr>
+<td class="left"><code>225</code></td>
+<td class="left"><code>22100</code></td>
+<td class="right"><code>21101201212212220010020000022222112221020020002200111100010011012011011002100001102011010002221021</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>226</code></td>
+<td class="left"><code>22101</code></td>
+<td class="right"><code>102222011212111200111111111002222211120102001112212002012021002210002120122120211012101101220102001</code></td>
+</tr>
+<tr>
+<td class="left"><code>227</code></td>
+<td class="left"><code>22102</code></td>
+<td class="right"><code>201100220202101120121201111102222101111122021122112120112101020222020201201220212121112112000100022</code></td>
+</tr>
+<tr>
+<td class="left"><code>228</code></td>
+<td class="left"><code>22110</code></td>
+<td class="right"><code>1011100002121220021010012222112222020002001100012101122201122100202100022101111200210220220220202100</code></td>
+</tr>
+<tr>
+<td class="left"><code>229</code></td>
+<td class="left"><code>22111</code></td>
+<td class="right"><code>1212201000101021211201221110222221121120200121211221020021000121201121001010102120102110102221002122</code></td>
+</tr>
+<tr>
+<td class="left"><code>230</code></td>
+<td class="left"><code>22112</code></td>
+<td class="right"><code>10001001010000012002212011110112220211122201222001022212222122222110221100111221021020101100211211222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>231</code></td>
+<td class="left"><code>22120</code></td>
+<td class="right"><code>11220202010101110221121002221112212110020102120220021010020200121012112101122100211122211210202221121</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>232</code></td>
+<td class="left"><code>22121</code></td>
+<td class="right"><code class="pisano">21221210020101200001110021102002210021220011112221121000020100120200110202011022002220020011121210120</code></td>
+</tr>
+<tr>
+<td class="left"><code>233</code></td>
+<td class="left"><code>22122</code></td>
+<td class="right"><code>110212112100210011000001101100122122202010121010211212010111001011220000010210122221120001222101202011</code></td>
+</tr>
+<tr>
+<td class="left"><code>234</code></td>
+<td class="left"><code>22200</code></td>
+<td class="right"><code>202211022121011211001111122202202110001000202200210110010201101202120110212221222001110022011000112201</code></td>
+</tr>
+<tr>
+<td class="left"><code>235</code></td>
+<td class="left"><code>22201</code></td>
+<td class="right"><code>1020200211221221222001120001010102002210011100211122022021012102221110111000202122000000101010102021212</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>236</code></td>
+<td class="left"><code>22202</code></td>
+<td class="right"><code>2000112011120010210010001200220011112211012010112102202101220211201000221220201121001110200021102211120</code></td>
+</tr>
+<tr>
+<td class="left"><code>237</code></td>
+<td class="left"><code>22210</code></td>
+<td class="right"><code>10021020000112002202011121202000120122121100111101002001200010021122111102221111020001111001101212010102</code></td>
+</tr>
+<tr>
+<td class="left"><code>238</code></td>
+<td class="left"><code>22211</code></td>
+<td class="right"><code>12021202012002020112021200102220202012102112121220111211002001010100112101212012211002221201200021221222</code></td>
+</tr>
+<tr>
+<td class="left"><code>239</code></td>
+<td class="left"><code>22212</code></td>
+<td class="right"><code>22112222012121100021110022011221022212000220010021120212202011102000000211210201001011102210002011002101</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>240</code></td>
+<td class="left"><code>22220</code></td>
+<td class="right"><code class="pisano">111211201101200120210201222121212002001110102202012002200211012112100120020122220212021101111202110001100</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>241</code></td>
+<td class="left"><code>22221</code></td>
+<td class="right"><code>211101200121021221002012021210210101220111022212110200120120100221100121002110121220102211021211121010201</code></td>
+</tr>
+<tr>
+<td class="left"><code>242</code></td>
+<td class="left"><code>22222</code></td>
+<td class="right"><code>1100020101222222111212221021102122110221221202121122210021101120110201011100010112202201012210121001012001</code></td>
+</tr>
+<tr>
+<td class="left"><code>243</code></td>
+<td class="left"><code>100000</code></td>
+<td class="right"><code>2011122002121021102222010120020102212212110002111010110211221221102001202102121011200011001002102122022202</code></td>
+</tr>
+<tr>
+<td class="left"><code>244</code></td>
+<td class="left"><code>100001</code></td>
+<td class="right"><code>10111212111121020221212001211200002100211101212002210021010100111212202220202201201102212020220000200111210</code></td>
+</tr>
+<tr>
+<td class="left"><code>245</code></td>
+<td class="left"><code>100002</code></td>
+<td class="right"><code>12200111121012112101211012101220112020200211221120220201222022110021211200012022220010000021222110022211112</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>246</code></td>
+<td class="left"><code>100010</code></td>
+<td class="right"><code>100012101002210210100200021020120121121112020210200201000002122222011121120222001121112212112212111000100022</code></td>
+</tr>
+<tr>
+<td class="left"><code>247</code></td>
+<td class="left"><code>100011</code></td>
+<td class="right"><code>112212212201000022202111110122111010212020002202021121202001222102110110021011101111122212211211221100011211</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>248</code></td>
+<td class="left"><code>100012</code></td>
+<td class="right"><code class="pisano">220002020210211010010011201220001202110202100112222022202011122101122001212010110010012202101201102100112010</code></td>
+</tr>
+<tr>
+<td class="left"><code>249</code></td>
+<td class="left"><code>100020</code></td>
+<td class="right"><code>1102222010111211102212200012112112220022222110022020221111020121211002112010021211121212122020120100200200221</code></td>
+</tr>
+<tr>
+<td class="left"><code>250</code></td>
+<td class="left"><code>100021</code></td>
+<td class="right"><code>2100001101022122112222211221102121122210201210212020021020102021012201120222102021202002101122021210001020001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>251</code></td>
+<td class="left"><code>100022</code></td>
+<td class="right"><code>10210000111211110222212112010222011120010201021011111012201122220000211010002201010100222000212212010201220222</code></td>
+</tr>
+<tr>
+<td class="left"><code>252</code></td>
+<td class="left"><code>100100</code></td>
+<td class="right"><code>20010001220011010112212101002101210012221110002000201110222002011020112201002010102010001102112010220210011000</code></td>
+</tr>
+<tr>
+<td class="left"><code>253</code></td>
+<td class="left"><code>100101</code></td>
+<td class="right"><code>100220002101222121112201220020100221210002011100012012200200202001021100211011211112111000110102000001112001222</code></td>
+</tr>
+<tr>
+<td class="left"><code>254</code></td>
+<td class="left"><code>100102</code></td>
+<td class="right"><code>121000011022010202002121021022202202000000121102012221011122211012111220112020221221121001212221010222022012222</code></td>
+</tr>
+<tr>
+<td class="left"><code>255</code></td>
+<td class="left"><code>100110</code></td>
+<td class="right"><code>221220020201010100122100011120010200210002202202102010212100120020210021100102210111002002100100011000211021221</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>256</code></td>
+<td class="left"><code>100111</code></td>
+<td class="right"><code class="pisano">1112220102000021002201221102212220102210010101011122002001000101110022011212200202102200011020021022000010111220</code></td>
+</tr>
+<tr>
+<td class="left"><code>257</code></td>
+<td class="left"><code>100112</code></td>
+<td class="right"><code>2111210122201101110101021121110001010120020010221001012220100221201002110020010112220202020120121110000221210211</code></td>
+</tr>
+<tr>
+<td class="left"><code>258</code></td>
+<td class="left"><code>100120</code></td>
+<td class="right"><code>11001201001201122120010020001022221120100100112002200021221101100011101122002211022100102101210212202001002022201</code></td>
+</tr>
+<tr>
+<td class="left"><code>259</code></td>
+<td class="left"><code>100121</code></td>
+<td class="right"><code>20120111201110001000111111122202222200220120200000201111211202021212111002022221212021011122101111012002001010112</code></td>
+</tr>
+<tr>
+<td class="left"><code>260</code></td>
+<td class="left"><code>100122</code></td>
+<td class="right"><code>101122012210011200120121201201002221021020221012010101210210010122000212201102210011121121001012100221010010110020</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>261</code></td>
+<td class="left"><code>100200</code></td>
+<td class="right"><code>122012201111121201121010020100212220222011111212011010022121212220220100210202202000212202200120212010012011120202</code></td>
+</tr>
+<tr>
+<td class="left"><code>262</code></td>
+<td class="left"><code>100201</code></td>
+<td class="right"><code>1000211221021210102011201222001222212020102110001021112010102000112221020112012112012111100201210020001022022000222</code></td>
+</tr>
+<tr>
+<td class="left"><code>263</code></td>
+<td class="left"><code>100202</code></td>
+<td class="right"><code>1200001122210102010202212012102212210012120221220102122110000220110211121022222021020101010102101002011111110121201</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>264</code></td>
+<td class="left"><code>100210</code></td>
+<td class="right"><code class="pisano">2200220121002012112221121011111212122110000101221201011120102221000202211212011210102212111011011022012210202122200</code></td>
+</tr>
+<tr>
+<td class="left"><code>265</code></td>
+<td class="left"><code>100211</code></td>
+<td class="right"><code>11100222020212121200201110100221202102122121100212010211000110211111121110012011001200020121120112101101022020021101</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>266</code></td>
+<td class="left"><code>100212</code></td>
+<td class="right"><code>21001212211221211020200001112110122002002121202210211222120220202112101022001022212010010002201200200121002222221001</code></td>
+</tr>
+<tr>
+<td class="left"><code>267</code></td>
+<td class="left"><code>100220</code></td>
+<td class="right"><code>102102212002211102221101111220102101111202020010122222210121101121000222202020110220210100201022020001222102020012102</code></td>
+</tr>
+<tr>
+<td class="left"><code>268</code></td>
+<td class="left"><code>100221</code></td>
+<td class="right"><code>200111201221210021012001120102220000120211211220110211210012022100120101001021210202220110211000220202120112020010110</code></td>
+</tr>
+<tr>
+<td class="left"><code>269</code></td>
+<td class="left"><code>100222</code></td>
+<td class="right"><code>1002221121001121201010110002100022102002121002001010211120210200221121100210112021200200211112100010211112221110022212</code></td>
+</tr>
+<tr>
+<td class="left"><code>270</code></td>
+<td class="left"><code>101000</code></td>
+<td class="right"><code>1210110100000101222022111122210012102200102220221121200101000000022011201211211002110121022100101001121010110200110022</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>271</code></td>
+<td class="left"><code>101001</code></td>
+<td class="right"><code>2220101221002000200102221202010111211210000222222202111221210201020210002122100101011022010212201012102200102010210011</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>272</code></td>
+<td class="left"><code>101002</code></td>
+<td class="right"><code class="pisano">11200212021002102122202110101220201021110110220221101012022210201112221211111011110121220110020002021000210212211020110</code></td>
+</tr>
+<tr>
+<td class="left"><code>273</code></td>
+<td class="left"><code>101010</code></td>
+<td class="right"><code>21121021012011110100012102011001020010020111220221010201021121102210201221010111211210012121002210110110111021222000121</code></td>
+</tr>
+<tr>
+<td class="left"><code>274</code></td>
+<td class="left"><code>101011</code></td>
+<td class="right"><code>110022010110020212222221212112221221101200222211212111220121102011100200202121200022102010001022212201111022011210021001</code></td>
+</tr>
+<tr>
+<td class="left"><code>275</code></td>
+<td class="left"><code>101012</code></td>
+<td class="right"><code>201220101122102100100011021201000011111221111202210122121220000121011102200202012011012022122102200011221210110202021122</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>276</code></td>
+<td class="left"><code>101020</code></td>
+<td class="right"><code>1012012112002200020100010011020222002220122111121200011112111102202112010110100212110121102200202112220110002122112112200</code></td>
+</tr>
+<tr>
+<td class="left"><code>277</code></td>
+<td class="left"><code>101021</code></td>
+<td class="right"><code>1221002220202002120200021102221222021102121000101110211011101110100200120011010001121210202100012020002101220010021211022</code></td>
+</tr>
+<tr>
+<td class="left"><code>278</code></td>
+<td class="left"><code>101022</code></td>
+<td class="right"><code>10010022102211202211000101121012221101100020112000010222200212220010012200121110221002102012000221202222211222202211100222</code></td>
+</tr>
+<tr>
+<td class="left"><code>279</code></td>
+<td class="left"><code>101100</code></td>
+<td class="right"><code>12001102100120212101200200001011220122202211112101121210212021100110220020202120222201012221101011000002020212220010012021</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>280</code></td>
+<td class="left"><code>101101</code></td>
+<td class="right"><code class="pisano">22011201210102122012201001122101212001010002001101202210120011020121002221101001220210122010102002210002002212122221120020</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>281</code></td>
+<td class="left"><code>101102</code></td>
+<td class="right"><code>111020011011000111121101201200120202200212220120210101121102102121002000012010122220111212001210020210011100202120001202111</code></td>
+</tr>
+<tr>
+<td class="left"><code>282</code></td>
+<td class="left"><code>101110</code></td>
+<td class="right"><code>210101212221110010211002210022222121201222222122012011101222120211200010010111201211022111012012100120020110122020000022201</code></td>
+</tr>
+<tr>
+<td class="left"><code>283</code></td>
+<td class="left"><code>101111</code></td>
+<td class="right"><code>1021122001002110122102111112000120101102212220012222120000102000102202010022122101201211100020222121100101211101210002002012</code></td>
+</tr>
+<tr>
+<td class="left"><code>284</code></td>
+<td class="left"><code>101112</code></td>
+<td class="right"><code>2002000221000220210020121022100120000011212212212011201102101121021102020110011010120010211110011221220122022001000002101220</code></td>
+</tr>
+<tr>
+<td class="left"><code>285</code></td>
+<td class="left"><code>101120</code></td>
+<td class="right"><code>10100122222010101102200002211101010101121202210002011021102210121201011100202210112021222011201011120021001010102210011111002</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>286</code></td>
+<td class="left"><code>101121</code></td>
+<td class="right"><code>12102200220011022012220201010201200101210122122221022222212012012222120121012221122212010000011100112011200102110210020212222</code></td>
+</tr>
+<tr>
+<td class="left"><code>287</code></td>
+<td class="left"><code>101122</code></td>
+<td class="right"><code>22210100212021200122120210222002210210102102110000111021021222211200201221222202012011002011212112002102201112220120102101001</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>288</code></td>
+<td class="left"><code>101200</code></td>
+<td class="right"><code class="pisano">112020001202102222212111112002211111012020002002221211021011012001200022120012200212000012012000212121121101222101100200021000</code></td>
+</tr>
+<tr>
+<td class="left"><code>289</code></td>
+<td class="left"><code>101201</code></td>
+<td class="right"><code>212000102121201200112002100001221021222122111112222022112110011220101001112012110001011021100220101201001010112021221002122001</code></td>
+</tr>
+<tr>
+<td class="left"><code>290</code></td>
+<td class="left"><code>101202</code></td>
+<td class="right"><code>1101020111101011200101120212011202210011212120122221010210121100222001101002102010220011110112221021022122112111200021202220001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>291</code></td>
+<td class="left"><code>101210</code></td>
+<td class="right"><code>2020020220222220100220200012020201002011112002012220110100001112212102102121121120221022201220211200000200200000222012212112002</code></td>
+</tr>
+<tr>
+<td class="left"><code>292</code></td>
+<td class="left"><code>101211</code></td>
+<td class="right"><code>10121111102101002001022021001102110212100101122212211121010122220211110210201000201211111012110202221100100012112122111122102010</code></td>
+</tr>
+<tr>
+<td class="left"><code>293</code></td>
+<td class="left"><code>101212</code></td>
+<td class="right"><code>12211202100100222102012221020200011221111220202002202001110201110200220020022122022202210221101121121101000212120121201111221012</code></td>
+</tr>
+<tr>
+<td class="left"><code>294</code></td>
+<td class="left"><code>101220</code></td>
+<td class="right"><code>100110020202202001110112012022002122210212022101222120122121101101112101001000200001121022010212101112201101002010021020011100022</code></td>
+</tr>
+<tr>
+<td class="left"><code>295</code></td>
+<td class="left"><code>101221</code></td>
+<td class="right"><code>120022000010010000212202010112202211202101020011002022201002002212020021021100022101101010002021000011002101221200212221200021111</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>296</code></td>
+<td class="left"><code>101222</code></td>
+<td class="right"><code class="pisano">220202020212212002100021022211212111120020112120001220100200111020202122022100222102222102020010101200210210000211011011211121210</code></td>
+</tr>
+<tr>
+<td class="left"><code>297</code></td>
+<td class="left"><code>102000</code></td>
+<td class="right"><code>1111001020222222010020000110101122100022121202201011020001202121002222220120201021211100112022101101211220011222112001010111220021</code></td>
+</tr>
+<tr>
+<td class="left"><code>298</code></td>
+<td class="left"><code>102001</code></td>
+<td class="right"><code>2101210111212211012120021210020111211212212022021020010102110002100202112220002021021022221112111210112200222000100012022100112001</code></td>
+</tr>
+<tr>
+<td class="left"><code>299</code></td>
+<td class="left"><code>102002</code></td>
+<td class="right"><code>10212211202212210022210022020122011012012111001222101100111012200110202110110210120002200110211220012101121010222212020102212102022</code></td>
+</tr>
+<tr>
+<td class="left"><code>300</code></td>
+<td class="left"><code>102010</code></td>
+<td class="right"><code>20021122021202121112100121000212200001002100101020121110220122202211112000100212211101000102101101222221022010000012102202012221100</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>301</code></td>
+<td class="left"><code>102011</code></td>
+<td class="right"><code>101011111001122101212010220021111211020021211110012222211101212110022021110211200101110200220020022012022220021000001200012002100122</code></td>
+</tr>
+<tr>
+<td class="left"><code>302</code></td>
+<td class="left"><code>102012</code></td>
+<td class="right"><code>121110010100102000101111111022101111021101011211110121022022112020010210111012120012211201022121201012021012101000021002221022021222</code></td>
+</tr>
+<tr>
+<td class="left"><code>303</code></td>
+<td class="left"><code>102020</code></td>
+<td class="right"><code>222121121102001102020122101120220022111200000021200121010201101200110001222001020121022102012212000101121002122000022210010101122121</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>304</code></td>
+<td class="left"><code>102021</code></td>
+<td class="right"><code class="pisano">1121001201202110102122010212220021210210001012010011012110000220220120212110020210211011010112110201120212022000000120220001200221120</code></td>
+</tr>
+<tr>
+<td class="left"><code>305</code></td>
+<td class="left"><code>102022</code></td>
+<td class="right"><code>2120200100011111211212210021111012010021201012101211210120202022121000221102022001102110112202022201222110101122000220200012002121011</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>306</code></td>
+<td class="left"><code>102100</code></td>
+<td class="right"><code>11011202001220222021111221011101110221001202101112000000000210020111121210212112212020121200021210110120022200122001111120020210112201</code></td>
+</tr>
+<tr>
+<td class="left"><code>307</code></td>
+<td class="left"><code>102101</code></td>
+<td class="right"><code>20202102102002111010101201102212200001100110120220211210121112120002122202021211220200002020001010012112210002021002102020102220010212</code></td>
+</tr>
+<tr>
+<td class="left"><code>308</code></td>
+<td class="left"><code>102102</code></td>
+<td class="right"><code>101221011111000110101220122121021010222102012222102211210122022210121021120011101202220200220022220200010002202220010220210200200200120</code></td>
+</tr>
+<tr>
+<td class="left"><code>309</code></td>
+<td class="left"><code>102110</code></td>
+<td class="right"><code>122200120220002221112022101001010211000202200120100200121020212100200221022110020200120210010101000212122212212011020100001010120211102</code></td>
+</tr>
+<tr>
+<td class="left"><code>310</code></td>
+<td class="left"><code>102111</code></td>
+<td class="right"><code>1001121202101010101221020000122101222000011220112210112101220012011022012212121122110111111000200221112202222122001101020211211021111222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>311</code></td>
+<td class="left"><code>102112</code></td>
+<td class="right"><code>1201022100021020100110112101200112210000221121010011020000011001112000011012001220011002021011001222102102212111012121120212221212100101</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>312</code></td>
+<td class="left"><code>102120</code></td>
+<td class="right"><code class="pisano">2202221002122100202101202102022221202001010111122221202102001020200022101001200112121120202011202220222012212010020222211201210010212100</code></td>
+</tr>
+<tr>
+<td class="left"><code>313</code></td>
+<td class="left"><code>102121</code></td>
+<td class="right"><code>11111020102220121002212021211000111112002002002210002222102012022012022112020202102202200000022211220101122201121110121102121202000012201</code></td>
+</tr>
+<tr>
+<td class="left"><code>314</code></td>
+<td class="left"><code>102122</code></td>
+<td class="right"><code>21021011112112221212021001020100110021010012121110001201211020112212121220022102222101020202111121211100212120201201121021100112011002001</code></td>
+</tr>
+<tr>
+<td class="left"><code>315</code></td>
+<td class="left"><code>102200</code></td>
+<td class="right"><code>102202101222110112222010100001100221210012021201020011201020102212001221102120012102010220202211110201202112022100012012200222021011021202</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>316</code></td>
+<td class="left"><code>102201</code></td>
+<td class="right"><code>201000120112000111211101101021201102001022111022200020110001200101221120022212122101112011112100002120010101220001220210222022210022100210</code></td>
+</tr>
+<tr>
+<td class="left"><code>317</code></td>
+<td class="left"><code>102202</code></td>
+<td class="right"><code>1010202222111111001210111201100002100211111210000220102011022010021000111202102211210200002022011120021212221012102010000200022001110122112</code></td>
+</tr>
+<tr>
+<td class="left"><code>318</code></td>
+<td class="left"><code>102210</code></td>
+<td class="right"><code>1211210120000111120121220002121210202212211021100120122121100210122222002002022111012012020211111122212000100002111000211122121211210000022</code></td>
+</tr>
+<tr>
+<td class="left"><code>319</code></td>
+<td class="left"><code>102211</code></td>
+<td class="right"><code>2222120112111222122102101210221220010201100001101111001202122220220222120211202022222212100010200020010220021021220010212022220220020122211</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>320</code></td>
+<td class="left"><code>102212</code></td>
+<td class="right"><code class="pisano">11211101002112111020001021220120200220121011022202001201101000201120221122221001211012001120222011212222220121101101011200222112202000200010</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>321</code></td>
+<td class="left"><code>102220</code></td>
+<td class="right"><code>21210221122001110212110200201112121001022111101010112210010200122111221020202211011011220221002212010010210212200021022120022110122021022221</code></td>
+</tr>
+<tr>
+<td class="left"><code>322</code></td>
+<td class="left"><code>102221</code></td>
+<td class="right"><code>110122022201120222002111222122010021221220122200212121111111201101002212220200212222100222112002001000010201111001122111021022000101022000001</code></td>
+</tr>
+<tr>
+<td class="left"><code>323</code></td>
+<td class="left"><code>102222</code></td>
+<td class="right"><code>202110021100122102221222200100122220000020011002000011021122102000121211011110201010112220110011220010021112100201220210211121111000120022222</code></td>
+</tr>
+<tr>
+<td class="left"><code>324</code></td>
+<td class="left"><code>110000</code></td>
+<td class="right"><code>1020002121002020102001111122222210011222010210202212202210011010101201201002011121002220212222020221010102020211210120022002220111101212100000</code></td>
+</tr>
+<tr>
+<td class="left"><code>325</code></td>
+<td class="left"><code>110001</code></td>
+<td class="right"><code>1222112212102212212000111100100110001222100221211212221001210112102100112020122022020110210102102211020200210012112111002221111222102102122222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>326</code></td>
+<td class="left"><code>110002</code></td>
+<td class="right"><code>10012122110112010021002000000100020020221111202121202200211221122211002020022210220100101200101200202101010001001100001102001102110211021222222</code></td>
+</tr>
+<tr>
+<td class="left"><code>327</code></td>
+<td class="left"><code>110010</code></td>
+<td class="right"><code>12012012022222000010002111100200200022220212201110122121220202012020102202120110012120212110211010120121210211020212112111222221110020201122221</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>328</code></td>
+<td class="left"><code>110011</code></td>
+<td class="right"><code class="pisano">22101211210111010101011111101000220120212101111002102022202200212001111222220021002221021011012211022222220212022012120221001100221002000122220</code></td>
+</tr>
+<tr>
+<td class="left"><code>329</code></td>
+<td class="left"><code>110012</code></td>
+<td class="right"><code>111121001010110010111020222201201120220210021012120001221200110001021221202110201022112010122000221220121201200120002010110001022101022202022211</code></td>
+</tr>
+<tr>
+<td class="left"><code>330</code></td>
+<td class="left"><code>110020</code></td>
+<td class="right"><code>210222212220221020212102111002202111111122122200122111021110010220100110202100222102110101210020210020121122112212021201101002200022101202222201</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>331</code></td>
+<td class="left"><code>110021</code></td>
+<td class="right"><code>1022120221001101101100200110211111002102102220220012120020010120221122102111211200201222112102021202011020101020102100211211010222200201112022112</code></td>
+</tr>
+<tr>
+<td class="left"><code>332</code></td>
+<td class="left"><code>110022</code></td>
+<td class="right"><code>2010120210222022122020002221221020120221002120120212001111120201211222220021012200011102221012112112101212000210021122120012020200000010022022020</code></td>
+</tr>
+<tr>
+<td class="left"><code>333</code></td>
+<td class="left"><code>110100</code></td>
+<td class="right"><code>10110011202000201000120210102202201200100112111111001121201201022210122022210001100220102110121211021120002102000201000102000101122200211211121202</code></td>
+</tr>
+<tr>
+<td class="left"><code>334</code></td>
+<td class="left"><code>110101</code></td>
+<td class="right"><code>12120202120000000122210220101200222021021122002001220200020022001122122020001021001001212101211100210221221102210222122222012122022200222010220222</code></td>
+</tr>
+<tr>
+<td class="left"><code>335</code></td>
+<td class="left"><code>110102</code></td>
+<td class="right"><code>100000221022000201200101200211110200221122011120112222021222000101110021112211022101222021212110012002112000211211200200101020000222101210222112201</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>336</code></td>
+<td class="left"><code>110110</code></td>
+<td class="right"><code class="pisano">112121200212000202100012121020011200012220210122121212222012022110002220202212120110001011021021112220110222021122200100100102200022002210010110200</code></td>
+</tr>
+<tr>
+<td class="left"><code>337</code></td>
+<td class="left"><code>110111</code></td>
+<td class="right"><code>212122122011001111000121022001122101011112222020011212021011022211120012022200212212000110010201202000000000010111101000201122201021111121010000101</code></td>
+</tr>
+<tr>
+<td class="left"><code>338</code></td>
+<td class="left"><code>110112</code></td>
+<td class="right"><code>1102021100000002020100210220021211001101110202212210202020100122021200010002120110022001121102000021220110222102011001101002002101120121101020111001</code></td>
+</tr>
+<tr>
+<td class="left"><code>339</code></td>
+<td class="left"><code>110120</code></td>
+<td class="right"><code>2021220222011010201101102012100110102120000202002222121111111222010020022102021100011002001112202000220110222112122102101210202002212002222100111102</code></td>
+</tr>
+<tr>
+<td class="left"><code>340</code></td>
+<td class="left"><code>110121</code></td>
+<td class="right"><code>10201012022011012221202020002122021110221111111222210100201212121101220102111211210110010122221202022210221221221210110202212211111102201100120222110</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>341</code></td>
+<td class="left"><code>110122</code></td>
+<td class="right"><code>20000010021022100200010122021222201220111112021002202222020101120112010201221010010121012201111111100201102221111102220011200120121021211022221110212</code></td>
+</tr>
+<tr>
+<td class="left"><code>342</code></td>
+<td class="left"><code>110200</code></td>
+<td class="right"><code>100201022120110120121212212101122000101110000210002120022222021011221001011102221221001100101110020200112101220110020100221120102002201112200112110022</code></td>
+</tr>
+<tr>
+<td class="left"><code>343</code></td>
+<td class="left"><code>110201</code></td>
+<td class="right"><code>120201102211202221022000111200121202021221120001012100022012122202110011220101002001122120002221202001020211211221200021010020222201000101000110221011</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>344</code></td>
+<td class="left"><code>110202</code></td>
+<td class="right"><code class="pisano">221102202102020111220220101002020202200101120211021220122011220221101020001211000222200220111101222201210020202101220122001211101210201220201000101110</code></td>
+</tr>
+<tr>
+<td class="left"><code>345</code></td>
+<td class="left"><code>110210</code></td>
+<td class="right"><code>1112011012021000110012220212202212111222100010212111020221101120200211101222012010001100110121100201210001002121100120220012002101111202021201111022121</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>346</code></td>
+<td class="left"><code>110211</code></td>
+<td class="right"><code>2110120221200020222010211020212010021122201201200210011120120111122012122001000011001001101002202201111211100100202111112020220210022111012102111201001</code></td>
+</tr>
+<tr>
+<td class="left"><code>347</code></td>
+<td class="left"><code>110212</code></td>
+<td class="right"><code>10222202010221021102100202010121222210122001212120021102111222002100001001000012021002101211201010110021212102222010002102110000011211020111011000000122</code></td>
+</tr>
+<tr>
+<td class="left"><code>348</code></td>
+<td class="left"><code>110220</code></td>
+<td class="right"><code>20110100002121112101111120101111010002021210121021001121002112120222020200001012102010110012210220011210200210022212120221200220222010201200120111201200</code></td>
+</tr>
+<tr>
+<td class="left"><code>349</code></td>
+<td class="left"><code>110221</code></td>
+<td class="right"><code>101110002020112210210212022112010002212220212110211100000121111200022021201001101200012212001112000122002120020021222200101010221010221222011201111202022</code></td>
+</tr>
+<tr>
+<td class="left"><code>350</code></td>
+<td class="left"><code>110222</code></td>
+<td class="right"><code>121220102100011100012100212220121012222012200002002101121201001021021112101002121002100022021022220210220021000121212021022211212010002200212022000110222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>351</code></td>
+<td class="left"><code>111000</code></td>
+<td class="right"><code>1000100111120201011000020012102201022212010112112220201122022112221120211002010222202120011022211221102222211020220211221200222210021001200001000112020021</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>352</code></td>
+<td class="left"><code>111001</code></td>
+<td class="right"><code class="pisano">1122020220220212111012121002100022112211100012122000010021000121012212100110020120211220110121011212020220002021112201020000211122101011100220022112201020</code></td>
+</tr>
+<tr>
+<td class="left"><code>353</code></td>
+<td class="left"><code>111002</code></td>
+<td class="right"><code>2122121102111120122012211021210000212200110202011220211220100011011110011112101120121110121221000210200212220112110120011201211102122020000221100001221111</code></td>
+</tr>
+<tr>
+<td class="left"><code>354</code></td>
+<td class="left"><code>111010</code></td>
+<td class="right"><code>11021212100102110010102102101010100102111210221210220222011100202101022111222122011110101002112012122221202222211000021101202200002000101101211122121122201</code></td>
+</tr>
+<tr>
+<td class="left"><code>355</code></td>
+<td class="left"><code>111011</code></td>
+<td class="right"><code>20221110202221000202122020122220101022012021200222211211001200220112202200112000202001211201110020110122122220100110211120111111111122121102202222200121012</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>356</code></td>
+<td class="left"><code>111012</code></td>
+<td class="right"><code>102020100010100110220001200001000201201201002122210202210020001122221002012111122220112012210222110010121102220011111002222021011120122222211121122022020220</code></td>
+</tr>
+<tr>
+<td class="left"><code>357</code></td>
+<td class="left"><code>111020</code></td>
+<td class="right"><code>200011210220021111122200220200221010000220101100210121121021202120110211220000200122121001112102200121021002210111221221112202200002022121021101121222212002</code></td>
+</tr>
+<tr>
+<td class="left"><code>358</code></td>
+<td class="left"><code>111021</code></td>
+<td class="right"><code>1002102011000121222112202120201221211202121111000121101101111211020101221002112100120010021100102010201212112200200110001112000211122222121010000021022002222</code></td>
+</tr>
+<tr>
+<td class="left"><code>359</code></td>
+<td class="left"><code>111022</code></td>
+<td class="right"><code>1202120221220220111012110111102212221210111212101101222222210120210212202222120001012201022212211211100010122111012102000001210111202022012101101220021222001</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>360</code></td>
+<td class="left"><code>111100</code></td>
+<td class="right"><code class="pisano">2212000002221112110202020002011211210120010100102000101101022102001021201002002101202211121020020222002000012011212212001120211100102021210111102011121002000</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>361</code></td>
+<td class="left"><code>111101</code></td>
+<td class="right"><code>11121121001212102221221200120121201202100122012210102101101002222212011111001122102222112221010002210102010211200002021001122121212011120222212211001220001001</code></td>
+</tr>
+<tr>
+<td class="left"><code>362</code></td>
+<td class="left"><code>111102</code></td>
+<td class="right"><code>21110121011210222102200220122210120112220202120012102202202102101220110012010201211202101112100100202111011000211222010010020110012120212210101020020111010001</code></td>
+</tr>
+<tr>
+<td class="left"><code>363</code></td>
+<td class="left"><code>111110</code></td>
+<td class="right"><code>110002012020200102101122121020102022022021101202222212011010112101202121200012101021201221110110110112220021212112001101011220002001202110210021001022101011002</code></td>
+</tr>
+<tr>
+<td class="left"><code>364</code></td>
+<td class="left"><code>111111</code></td>
+<td class="right"><code>201112210102111101211100111220012212212012011100012021220212221210200001212100010010111022222210211022101102220101000111022010112021100100120122021112212021010</code></td>
+</tr>
+<tr>
+<td class="left"><code>365</code></td>
+<td class="left"><code>111112</code></td>
+<td class="right"><code>1011121222200011211020000010010122012011110120010012011002000111012102200112112111102020021110021021212021201202220001212111000121100002211100220022212020102012</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>366</code></td>
+<td class="left"><code>111120</code></td>
+<td class="right"><code>1220011210002200020001100122000212002000122201110101102222220110000002202101212121112201121110002010011200011200021002100210011010121110011221112121102002200022</code></td>
+</tr>
+<tr>
+<td class="left"><code>367</code></td>
+<td class="left"><code>111121</code></td>
+<td class="right"><code>10001210202202212001021100202011111021012010021120120121001220221012112102221102002221221212220100102000221220110011011020021011201221120000022102221021100002111</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>368</code></td>
+<td class="left"><code>111122</code></td>
+<td class="right"><code class="pisano">11221222112212112021022201101012100100012210000000222001001211101012122012100021201111200111100102112012122002010102020121001022212120000012020222112200102202210</code></td>
+</tr>
+<tr>
+<td class="left"><code>369</code></td>
+<td class="left"><code>111200</code></td>
+<td class="right"><code>22000210022122101022121002010100211121101220021121112122010202022102011122021200211110122101020202221020120222120120101211022111121111120012120102110221202212021</code></td>
+</tr>
+<tr>
+<td class="left"><code>370</code></td>
+<td class="left"><code>111201</code></td>
+<td class="right"><code>110222202212111220120220210111120011221121200021122111200012120200121210211121222112222022212121012110110020001200222122102100211111001120101211102000122012122001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>371</code></td>
+<td class="left"><code>111202</code></td>
+<td class="right"><code>210000120012011021220111212121221000120000120120021001022100100000000222110220200101102222020211222101200211001021120001020200100002120010121101211111120222111022</code></td>
+</tr>
+<tr>
+<td class="left"><code>372</code></td>
+<td class="left"><code>111210</code></td>
+<td class="right"><code>1021000100001200012111102200010111012111122020211220112222112220200122210022112122221102022010110011212011001002222112200200001011120121201000020020112020012010100</code></td>
+</tr>
+<tr>
+<td class="left"><code>373</code></td>
+<td class="left"><code>111211</code></td>
+<td class="right"><code>2001000220020211111101221112202102020001122211102011121021220020200200202210110100022212021101022011020211212011021002201220201111200011211121122002000211011121122</code></td>
+</tr>
+<tr>
+<td class="left"><code>374</code></td>
+<td class="left"><code>111212</code></td>
+<td class="right"><code>10022001020022111200220101012212220102120022002021002011021110011101100120010000000021021120111202100002222220021020122102120202200020210112121212022120001100201222</code></td>
+</tr>
+<tr>
+<td class="left"><code>375</code></td>
+<td class="left"><code>111220</code></td>
+<td class="right"><code>12100002010120100012022022202122022122121221220200020202120100102002001022220110100121010211220001111100211202102111202011111111011220222101020111101120212112100121</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>376</code></td>
+<td class="left"><code>111221</code></td>
+<td class="right"><code class="pisano">22122010100212211220012200222112020002012020222221022220211210120110101220000110100212102102101210211110211122200202101121002020212011202220212100201010220220002120</code></td>
+</tr>
+<tr>
+<td class="left"><code>377</code></td>
+<td class="left"><code>111222</code></td>
+<td class="right"><code>111222012111110012002112000202011112201211012220121120200102010222112110012220220201110120021021212022211200102010021010202120202001002202022002212002201210102110011</code></td>
+</tr>
+<tr>
+<td class="left"><code>378</code></td>
+<td class="left"><code>112000</code></td>
+<td class="right"><code>211121022212100000222201201201200202211000110220112220121020221112222212002221101002022222200200200011022112001211000112100122222220021112012222012210212201022112201</code></td>
+</tr>
+<tr>
+<td class="left"><code>379</code></td>
+<td class="left"><code>112001</code></td>
+<td class="right"><code>1100120112100210020002020202110212022112211200211011111021200002112112022022212021210210112221222112111011012110221021200010020201221101021112002001220121111201222212</code></td>
+</tr>
+<tr>
+<td class="left"><code>380</code></td>
+<td class="left"><code>112002</code></td>
+<td class="right"><code>2012011212020010021001222111012120002100212011201201101212221001002112011102210122220010112122200012122110201112202022012110220201211122210202001021201111020001112120</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>381</code></td>
+<td class="left"><code>112010</code></td>
+<td class="right"><code>10112202101120220111011020020200102101220200212112212220011121010122001110202122221200221002121122202010121221000200120212121011110210001002021010100122002201210112102</code></td>
+</tr>
+<tr>
+<td class="left"><code>382</code></td>
+<td class="left"><code>112011</code></td>
+<td class="right"><code>12201221020211000202020012201212222111021120001021121022001112011201120122012110121121001122021022221210002122120102220002002002012121200220000011122100120221212001222</code></td>
+</tr>
+<tr>
+<td class="left"><code>383</code></td>
+<td class="left"><code>112012</code></td>
+<td class="right"><code>100021200122101221020101102222120101220012020220211111012020010022100122002222010120021222201212222200220201120121010110221200020200101201222021021222222200200122121101</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>384</code></td>
+<td class="left"><code>112020</code></td>
+<td class="right"><code class="pisano">120000121220012221222121122201110101101110210222010002111021122111002012202011121011220001101011022122200211020011120101000202022220000102212021110122100021122111200100</code></td>
+</tr>
+<tr>
+<td class="left"><code>385</code></td>
+<td class="left"><code>112021</code></td>
+<td class="right"><code>220022022112121220020000002201000210021200001212221120200111202210102211212010201202012001010001022100121112210202200211222102120120102011211112202122022222100011021201</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>386</code></td>
+<td class="left"><code>112022</code></td>
+<td class="right"><code>1110022221102211212012121202102111011200010212212001200011210102021112001121022022221002002111012122000022101000221021020000011220110102121200211020021200020222122222001</code></td>
+</tr>
+<tr>
+<td class="left"><code>387</code></td>
+<td class="left"><code>112100</code></td>
+<td class="right"><code>2100122020222110202102121212010111221221210221202000020212022012001221220110110001200021010121020221100220220211200222001222121111000211210112100222221000020022211020202</code></td>
+</tr>
+<tr>
+<td class="left"><code>388</code></td>
+<td class="left"><code>112101</code></td>
+<td class="right"><code>10210222012102022121122020121120000010121221211121001221001002121100110222001202101121100020002110120101020021212122020021222210101111021102020012020012200111022111012210</code></td>
+</tr>
+<tr>
+<td class="left"><code>389</code></td>
+<td class="left"><code>112102</code></td>
+<td class="right"><code>20011121110101210101001212110200112002120202210100002011220101210102102212112012110021121100200201111202011012201100012100222101212112010012202120020010200201122022110112</code></td>
+</tr>
+<tr>
+<td class="left"><code>390</code></td>
+<td class="left"><code>112110</code></td>
+<td class="right"><code>100222120122211002222201010002020112020012201121221011002221111101202220211120221211212221120210012002010101111120222102122222012021000101121222202110100101012221210200022</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>391</code></td>
+<td class="left"><code>112111</code></td>
+<td class="right"><code>121011012010012220100202222112221001022210111102021020021211220012012100201010011022011112221110220120212112201022022122000221121010112111211202022200111001221121010010211</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>392</code></td>
+<td class="left"><code>112112</code></td>
+<td class="right"><code class="pisano">222010202210001000100111002122011120120000020001012101101210101120222021112201010011001111112021002122222221012220022001200220210101112220110202002010211110011112220211010</code></td>
+</tr>
+<tr>
+<td class="left"><code>393</code></td>
+<td class="left"><code>112120</code></td>
+<td class="right"><code>1120021221220020220201021002012002121212210201110110121200122021210011122020211021110020001110202000020212110221012121200201212101112002102022111101211022112010011000221221</code></td>
+</tr>
+<tr>
+<td class="left"><code>394</code></td>
+<td class="left"><code>112121</code></td>
+<td class="right"><code>2112102201200021221001202011211021012102210221111200000002102200101010220210112101121021120000000002220212102011002220202102210011220122022210020110222010222021200221210001</code></td>
+</tr>
+<tr>
+<td class="left"><code>395</code></td>
+<td class="left"><code>112122</code></td>
+<td class="right"><code>11002201200120112211210000021000100211022121122222010121210001222011022120001100200001111121110202010011201220002022112110011122120102201202002201212210110111101211222201222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>396</code></td>
+<td class="left"><code>112200</code></td>
+<td class="right"><code>20122011102020211202211202102211122000202102121110210121212111122112110110211220001122210011110202020002121022020102110012121102202100101001212222100202121110200112221112000</code></td>
+</tr>
+<tr>
+<td class="left"><code>397</code></td>
+<td class="left"><code>112201</code></td>
+<td class="right"><code>101201220002211101121121202200211222212002001021102221020122120121200210000220020201201021202221111100021100012022201222122210002022210002210222201020120001222002101221020222</code></td>
+</tr>
+<tr>
+<td class="left"><code>398</code></td>
+<td class="left"><code>112202</code></td>
+<td class="right"><code>122101001112002020101110112010200121212211110212220201212112002021020020111202010210101001221102020120100221111120011102212101112002010110212212200121022200102202221212202222</code></td>
+</tr>
+<tr>
+<td class="left"><code>399</code></td>
+<td class="left"><code>112210</code></td>
+<td class="right"><code>1001002221121220122000002021211112121201220112011100200010011122212221000112122101112002100201100201220122021200212220102112011121101220120200212101211212202101212100211000221</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>400</code></td>
+<td class="left"><code>112211</code></td>
+<td class="right"><code class="pisano">1200111000010222212101112210222020020121202000001021101222200202011011021001101112022110102122202222111000020012110001212101120010111001001120202002110012102211122022200210220</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>401</code></td>
+<td class="left"><code>112212</code></td>
+<td class="right"><code>2201120221202220111101122002210202212100122112012122002002212102001002021121000220211112210101010201101122111220022222021220201201212221122021121111022002012020111200111211211</code></td>
+</tr>
+<tr>
+<td class="left"><code>402</code></td>
+<td class="left"><code>112220</code></td>
+<td class="right"><code>11102001221220220100210011220210000002222101112020220111002120011012020112122102110011000020000220200212122202002210001011022021212100222200212100120202021122002011000012122201</code></td>
+</tr>
+<tr>
+<td class="left"><code>403</code></td>
+<td class="left"><code>112221</code></td>
+<td class="right"><code>21010122220200210212011211000120202222100001001110112120012102120020022211020110100222120000102001102021022021000010000110020000121020221100010222002001100211022122200201111112</code></td>
+</tr>
+<tr>
+<td class="left"><code>404</code></td>
+<td class="left"><code>112222</code></td>
+<td class="right"><code>102112201212121201012221222221100210002022102120201110001021222201102120100212212211010120020102222010010222000002220001121112022110121221001000022122210122110101210200221011020</code></td>
+</tr>
+<tr>
+<td class="left"><code>405</code></td>
+<td class="left"><code>120000</code></td>
+<td class="right"><code>200200101210022112002010210221221120001122110122011222121111102021122220012010100012010010020212000112102021021010000002001202100001212212101011021201212000021201110101122122202</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>406</code></td>
+<td class="left"><code>120001</code></td>
+<td class="right"><code>1010020010122221020022002210220022100010221220012220102122210102000002110120000020000020200111021222122120020021012220010200021122112111210102011121101122122202010021002120210222</code></td>
+</tr>
+<tr>
+<td class="left"><code>407</code></td>
+<td class="left"><code>120002</code></td>
+<td class="right"><code>1210220112110020202101020121212020220012121100212002102021021211021202100202010120012100210202011000011222111112022220012202000222121101122210022220010111200000211201111020110201</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>408</code></td>
+<td class="left"><code>120010</code></td>
+<td class="right"><code class="pisano">2221010200010011222200100102202120020100120021001222211221002020021211211022010210012121111020102222211112201210112210100102022122010220110012111111112011022202221222120211021200</code></td>
+</tr>
+<tr>
+<td class="left"><code>409</code></td>
+<td class="left"><code>120011</code></td>
+<td class="right"><code>11202001012120102202001121001121211010120011121221002021012101001120121012001021100101222021222121000000112020022212200120011100121202022002222211101122122222210210201002001202101</code></td>
+</tr>
+<tr>
+<td class="left"><code>410</code></td>
+<td class="left"><code>120012</code></td>
+<td class="right"><code>21200011212200121201201221111101101100220201220000002010010110021212110000100102010121120210020000222212001222010102110220120200020220012120012022220011211022120202200122220001001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>411</code></td>
+<td class="left"><code>120020</code></td>
+<td class="right"><code>110102020002021001110210112120000012111110220111221011101022211100110001012101200111000120002012121222212121012110022011110202000212122111200012011021211111022101120101201221210102</code></td>
+</tr>
+<tr>
+<td class="left"><code>412</code></td>
+<td class="left"><code>120021</code></td>
+<td class="right"><code>202002101221221200012112111001101120212101122101221020111110021122022111012202002121122010212102122222201200011120201122101022201010112201020101111012000022121222100002101211211110</code></td>
+</tr>
+<tr>
+<td class="left"><code>413</code></td>
+<td class="left"><code>120022</code></td>
+<td class="right"><code>1012111122001012201200100000121101210100212112220212101212210002222202112102010210002122200221122021222121021101001000210212001202000012012220120122110211210221100220111010210121212</code></td>
+</tr>
+<tr>
+<td class="left"><code>414</code></td>
+<td class="left"><code>120100</code></td>
+<td class="right"><code>1221121001000011101212212111122210101020021012022210122101020101122002000121212212201021211211001221222022221112121202110020101110010201221010222010122212010120100020120112122110022</code></td>
+</tr>
+<tr>
+<td class="left"><code>415</code></td>
+<td class="left"><code>120101</code></td>
+<td class="right"><code>10011002200001101010120012112021012011121010202020200001021000111121211120001000122210221112202201020221221012220122210021002110012010221011001112210010200221111201011001200110002011</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>416</code></td>
+<td class="left"><code>120102</code></td>
+<td class="right"><code class="pisano">12002200201001112112110002000220222112211101221120110200122020220020220120122220112112020101120210012221021011110021112201022211122021200002012111220210120002002001101122020002112110</code></td>
+</tr>
+<tr>
+<td class="left"><code>417</code></td>
+<td class="left"><code>120110</code></td>
+<td class="right"><code>22020210101002220200000021120012011201102112200211010201220021101212202010200221012100011221100111110220012101100221022222102021211102121020021001200221021000120202112200220112121121</code></td>
+</tr>
+<tr>
+<td class="left"><code>418</code></td>
+<td class="left"><code>120111</code></td>
+<td class="right"><code>111100111002011110012110100121010011021020221122101121102112112022010122201100211201212102022221021200211110112211012212200202010110201021022110120121201211002122210221100010122011001</code></td>
+</tr>
+<tr>
+<td class="left"><code>419</code></td>
+<td class="left"><code>120112</code></td>
+<td class="right"><code>210121021110021100212110122011022022222200111100012202011102210201000101212001202221012121021021210011201122221012011012200011102022010212112201122022200002010020120111001001011202122</code></td>
+</tr>
+<tr>
+<td class="left"><code>420</code></td>
+<td class="left"><code>120120</code></td>
+<td class="right"><code>1021221202112102211001220222202102111020221102222121100120222100000011001120102121200002000121020001212120010111000101002100220112202212010212012012221101220012220101102101011210220200</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>421</code></td>
+<td class="left"><code>120121</code></td>
+<td class="right"><code>2002120000222201011221101121220201211020121221022211002202102010201011110102111101121021121212111212001021210102012112022001001222002000000101220212021001222100010221220102012222200022</code></td>
+</tr>
+<tr>
+<td class="left"><code>422</code></td>
+<td class="left"><code>120122</code></td>
+<td class="right"><code>10101111210112011000000022121200011022111120101022102110100101110201022111222221000021100122110201220220211220220012220101101222111211212011021010002012110212120001100022210101210120222</code></td>
+</tr>
+<tr>
+<td class="left"><code>423</code></td>
+<td class="left"><code>120200</code></td>
+<td class="right"><code>12111001211111212011221201020120220010202012022122020120002210121102110222102102101212122021100020202222010201022102102200110001110220212011200000221110112211220012022020012121210021021</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>424</code></td>
+<td class="left"><code>120201</code></td>
+<td class="right"><code class="pisano">22212120122001000011222000212021001110020202200221200000110012002010210111102100102010222220210222200212222122012122100001212000222202201022221011000200000201110020122120000000120212020</code></td>
+</tr>
+<tr>
+<td class="left"><code>425</code></td>
+<td class="left"><code>120202</code></td>
+<td class="right"><code>112100122110112212100220202002211221120222222000120220120112222200120021110211202211000122012011020110212010100112001202202022002110200120111121011222010120120100102221210012122101010111</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>426</code></td>
+<td class="left"><code>120210</code></td>
+<td class="right"><code>212020020002120212112212202222010000001020201201112120121000011202201001222021010020011122002222020011202002222201201002211011010110110021211112022222210121021210200121100012122221222201</code></td>
+</tr>
+<tr>
+<td class="left"><code>427</code></td>
+<td class="left"><code>120211</code></td>
+<td class="right"><code>1101120212120010201220210112001221221122020200202010111011120011110021100110002220001012021022010110122121020100020202212120110012221010212100010111221221011212011010120010102022100010012</code></td>
+</tr>
+<tr>
+<td class="left"><code>428</code></td>
+<td class="left"><code>120212</code></td>
+<td class="right"><code>2020211002122201121110200022001001221200111102110200001202120100012222102102101000021100220102002200211100100022222110222101121100101121011011122211221201210010221211011110121222022002220</code></td>
+</tr>
+<tr>
+<td class="left"><code>429</code></td>
+<td class="left"><code>120220</code></td>
+<td class="right"><code>10122101222012212100101110211010000220022202010012210112221010111200020202212110220022120011201020011110221120200020020211222001120022202000111210100220122222000002221201121001021122020002</code></td>
+</tr>
+<tr>
+<td class="left"><code>430</code></td>
+<td class="left"><code>120221</code></td>
+<td class="right"><code>12220020001212120221212011010011002212000020112200110121200200211220020012021211220120221002010022212022021221000012201211100122220201100011200110012212101202011001202220001200020221022222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>431</code></td>
+<td class="left"><code>120222</code></td>
+<td class="right"><code>100112122001002110022020121221021010202022222122220021011121211100120110222011022210220111020211120000210020111200102222200022201111001002012012020120210001201011011201121122201112120120001</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>432</code></td>
+<td class="left"><code>121000</code></td>
+<td class="right"><code class="pisano">120102212002222001021002210001102020121100020012120201210022112012110201011110011201111102022221212220002112102200122201111200101101202102100212200210122110110022020111111201101210111220000</code></td>
+</tr>
+<tr>
+<td class="left"><code>433</code></td>
+<td class="left"><code>121001</code></td>
+<td class="right"><code>220222111011001111120100101222200101100200012212110222221221100120001012010121111112101220120210102220212202221101002201012000002212210111120001221101102112011110102020010101010100002110001</code></td>
+</tr>
+<tr>
+<td class="left"><code>434</code></td>
+<td class="left"><code>121002</code></td>
+<td class="right"><code>1111102100021000112211110012001002121222000110002001201202020212202111220022001200020220022220202022210222022101001202102200200111021112220220221122012001222121202122201122002112010121100001</code></td>
+</tr>
+<tr>
+<td class="left"><code>435</code></td>
+<td class="left"><code>121010</code></td>
+<td class="right"><code>2102101211102002001101210121000210000022200122221112201201012020022120002102200011210022020111112202201212002022102212010212200121011100102111000120120111111210020001221202110122110200210002</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>436</code></td>
+<td class="left"><code>121011</code></td>
+<td class="right"><code>10220211011200002121020020210001212122021201010000121110110110010002001222201201212001012120102022002112211101200111121120120101002102220100101222012202120111101222201200101120011121022010010</code></td>
+</tr>
+<tr>
+<td class="left"><code>437</code></td>
+<td class="left"><code>121012</code></td>
+<td class="right"><code>20100020000002011122122001101002122122121101202222011012011122100101122002011102000211111210220211212021200110222221110201110001200121020202212222210100002000012012210122011000211001222220012</code></td>
+</tr>
+<tr>
+<td class="left"><code>438</code></td>
+<td class="left"><code>121020</code></td>
+<td class="right"><code>101021001011202021020212022011011112021220002212222202122122002110110201001220010212212201101100010221211111212200110002022000102210001011010021222000002122111121012112022112120222200022000022</code></td>
+</tr>
+<tr>
+<td class="left"><code>439</code></td>
+<td class="left"><code>121021</code></td>
+<td class="right"><code>121121021011211102220111100112021011221111111122221220211210201210212100011001112220201020012020222211010012100200101120000110111110122101220011221210102201111210102022221200121210202021220111</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>440</code></td>
+<td class="left"><code>121022</code></td>
+<td class="right"><code class="pisano">222212022100120201011100122200102201020101121112221200111102211021100001012221200210120221120121010202221201020100211122022110221020200120000110220210112101000101121212021020012210102120220210</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>441</code></td>
+<td class="left"><code>121100</code></td>
+<td class="right"><code>1121110120112102011001212000012200220011220010012220121100020120002012101101000020201022011202212010121001220121001020012022221102201022221220122212120222002112012001012012220211121011212211021</code></td>
+</tr>
+<tr>
+<td class="left"><code>442</code></td>
+<td class="left"><code>121101</code></td>
+<td class="right"><code>2121022212212222212020012122220010121102021201202212021211200101100112102120221221111220010100110021101000121211102001211122102100222000111221010210101111110112120200001111011001101121110202001</code></td>
+</tr>
+<tr>
+<td class="left"><code>443</code></td>
+<td class="left"><code>121102</code></td>
+<td class="right"><code>11012210110102102000022001200002211111121011211222202220011220221102201210221222012020012022010022101222002112102110022000222100210200100110211210122222110120001202201020201001212222210100120022</code></td>
+</tr>
+<tr>
+<td class="left"><code>444</code></td>
+<td class="left"><code>121110</code></td>
+<td class="right"><code>20211010100022101212112021022222222010000110120202122012000121022210021020112221010202002102110202200100010011020212100212121210011122100222202221110100222000121100101022012012221101101211022100</code></td>
+</tr>
+<tr>
+<td class="left"><code>445</code></td>
+<td class="left"><code>121111</code></td>
+<td class="right"><code>102000220210201210212211100000002210121121122102202102002012112021020000001111220022222021201121002002022012200200022122220121010222022201110121202010100102120200010002112220021211101012011212122</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>446</code></td>
+<td class="left"><code>121112</code></td>
+<td class="right"><code>122212001011001012202100121100002202201122010000112001021020010121000021022001211110201101011001211202122022211221012000210012221010222002110101200120201101121021110110212002111202202121000011222</code></td>
+</tr>
+<tr>
+<td class="left"><code>447</code></td>
+<td class="left"><code>121120</code></td>
+<td class="right"><code>1001212221221210000122011221100012120100020202110021110100102122212020021100120201210200122212122220211221112112121111200200211002010021210221000102201001211011221120120101222210121010210012001121</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>448</code></td>
+<td class="left"><code>121121</code></td>
+<td class="right"><code class="pisano">1201202000002211020101112112200022100001212212110210111121122210110020112122122120021102001000201202121120212101112200201111001000021020220101102010021210012210020001001021002022100220101012020120</code></td>
+</tr>
+<tr>
+<td class="left"><code>449</code></td>
+<td class="left"><code>121122</code></td>
+<td class="right"><code>2210121222001121021000201111000111220102010121221001221222002110022110211000020022002002200220101200110112101221011012102011212002101112201022102112222212000222011121121200002002222001011101022011</code></td>
+</tr>
+<tr>
+<td class="left"><code>450</code></td>
+<td class="left"><code>121200</code></td>
+<td class="right"><code>11112100222011102111102021000200211020111000111101212110120202020202201100122212212100111201221010110002010021022200220010122220002122210121200211200021122020202101122122221011102022221112120112201</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>451</code></td>
+<td class="left"><code>121201</code></td>
+<td class="right"><code>21022222221020000202102222111201100010220011010022221102112211201002012011200010011102121102211112010112122200020212002112211202012001100100000021020021111021201120021021121020112021222200221211212</code></td>
+</tr>
+<tr>
+<td class="left"><code>452</code></td>
+<td class="left"><code>121202</code></td>
+<td class="right"><code>102212100220101110020212020112102011101101011121201210220010120221211220112100000000210010011202122120121202221120112222200111122021201010221201002220120010112110221220221112101221121221020112101120</code></td>
+</tr>
+<tr>
+<td class="left"><code>453</code></td>
+<td class="left"><code>121210</code></td>
+<td class="right"><code>201012100211121111000022020001010111112021022202001202022200102122221002201000010012012201121121011201011102121211102002020100101110202111021201101010211121211012112012020010122110220220221111020102</code></td>
+</tr>
+<tr>
+<td class="left"><code>454</code></td>
+<td class="left"><code>121211</code></td>
+<td class="right"><code>1011001201201222221021011110120112122220122111100210120012211000121210000020100010012222211210100211021210012120101222001220212000202110122020102111001101202100200111010011200001102112212012000121222</code></td>
+</tr>
+<tr>
+<td class="left"><code>455</code></td>
+<td class="left"><code>121212</code></td>
+<td class="right"><code>1212021002120121102021110200121200011102220211002212022112111110021201002221100020102012120101221222222221122012020101011011012102020020010112010212012020101011220000022101210200220110210010111212101</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>456</code></td>
+<td class="left"><code>121220</code></td>
+<td class="right"><code class="pisano">10000022211022121100112122011012012211100120022110122212202022110220111010011200100122012102012022211021201211202122100020002001102222200202202120100020122010112120111102120110202100000122022112111100</code></td>
+</tr>
+<tr>
+<td class="left"><code>457</code></td>
+<td class="left"><code>121221</code></td>
+<td class="right"><code>11212120220220012202211002211210212222210111010120112012021210221012012020010000121001101222121021211021200110221212201101020020212012220220021201012102212111201110111201222021110020111102110001100201</code></td>
+</tr>
+<tr>
+<td class="left"><code>458</code></td>
+<td class="left"><code>121222</code></td>
+<td class="right"><code>21212220202012211010100202000000002211011001110001012002001010102002200100021200221200121101210121122120102022201112001121022022022012121200001021112200111122021001000011112202012120112001202120212001</code></td>
+</tr>
+<tr>
+<td class="left"><code>459</code></td>
+<td class="left"><code>122000</code></td>
+<td class="right"><code>110202111200010000220011211211210222210221112120121201021022221100021212120101201112202000101101220110212002210200101202222112120011102112120022222202010101010222111111220112000122211000111012122012202</code></td>
+</tr>
+<tr>
+<td class="left"><code>460</code></td>
+<td class="left"><code>122001</code></td>
+<td class="right"><code>202122102102022212000112120211211002122002121000122220100101001202101112220200102111102121210012112010102112010101220211120211212110122011020101021021210212210020112112002001202212101112112222020001210</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>461</code></td>
+<td class="left"><code>122002</code></td>
+<td class="right"><code>1020101221002102212220201102200122002110001010121021121121201000002200102111002011001011122011121102121021121221002022121120101102122001200210201021000221020221020001000222120210112012120001011212021112</code></td>
+</tr>
+<tr>
+<td class="left"><code>462</code></td>
+<td class="left"><code>122010</code></td>
+<td class="right"><code>2000001100111202201221021000112110012002010201121221111222002001212001222101202120112121020221210221201201011001111020110011020022002200212001002112022202010201110120120001122120101121002121011002100022</code></td>
+</tr>
+<tr>
+<td class="left"><code>463</code></td>
+<td class="left"><code>122011</code></td>
+<td class="right"><code>10020110021121012121211222110020002021112011212020020010120210001221202101212211201120202220010102101022222202222120120001201121201201202112211210210100200101122200121121001020100220210122122022221121211</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>464</code></td>
+<td class="left"><code>122012</code></td>
+<td class="right"><code class="pisano">12020111122002222100210020110202112110121022120212011122112212010210211101021121022010101011002020100001200221001001210111212212000211110101212220022200102112101011012011002212221022101202020111000222010</code></td>
+</tr>
+<tr>
+<td class="left"><code>465</code></td>
+<td class="left"><code>122020</code></td>
+<td class="right"><code>22110221220201011222122012220222121202010111110002101210010122012202120210011110000201011001012122201101200201000122100120121110202120012221201201010001002221000211210202011010022020012101212210222120221</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>466</code></td>
+<td class="left"><code>122021</code></td>
+<td class="right"><code>111201110112211011100102110101202011012201211000221120102200111100120102011110001022211112012021220001110101122001201011002111022210101200100121121102201112110101222222220021000020112121011010022000120001</code></td>
+</tr>
+<tr>
+<td class="left"><code>467</code></td>
+<td class="left"><code>122022</code></td>
+<td class="right"><code>211012102110112100100001200022201202221212022111000222012211010120022222221121111100112200020111112202212002100002100111200002210112221220022100022112202122101102211210122102010112202210120000010000010222</code></td>
+</tr>
+<tr>
+<td class="left"><code>468</code></td>
+<td class="left"><code>122100</code></td>
+<td class="right"><code>1022220220000100111200111010201110221011121010111222112122111121220220102010001112200101012102210102211022110222011001122202121010100100120122221220222111011211211211210112200010210022101201010102000201000</code></td>
+</tr>
+<tr>
+<td class="left"><code>469</code></td>
+<td class="left"><code>122101</code></td>
+<td class="right"><code>2011010022110212212000112211001012201010110110000000111212022202111020102001200001000220212200021222121011120022020102011102200220220022110222022020112020211020021200121012002021100002012021010112000211222</code></td>
+</tr>
+<tr>
+<td class="left"><code>470</code></td>
+<td class="left"><code>122102</code></td>
+<td class="right"><code>10111001012111020100201000221202200122022001120112000001111211101102010211011201120201022002010002102102111001021101110211012022001020200001122021011111202000002010112101201202102010101120222020221001112222</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>471</code></td>
+<td class="left"><code>122110</code></td>
+<td class="right"><code>12122011111222010012201120202210220100102112000112000120101011010220101020020101121202012221210101102000122121120121212222121222222010222112121120102000222211022102012222220211200110110210020101110002101221</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>472</code></td>
+<td class="left"><code>122111</code></td>
+<td class="right"><code class="pisano">100010012201110100120102121201120120222201120121001000121212222112022112001102010012110112000220110211110010122212000100210211022000101122121020211120112201211101112202101122121002120212101012122101010221220</code></td>
+</tr>
+<tr>
+<td class="left"><code>473</code></td>
+<td class="left"><code>122112</code></td>
+<td class="right"><code>112202101020102110210011012111101111100011002121120001012021010200012220021122111211012201222200212020110210021102122020210110021222112122010212101222120201122200221222101120102210001100011110000211020100211</code></td>
+</tr>
+<tr>
+<td class="left"><code>474</code></td>
+<td class="left"><code>122120</code></td>
+<td class="right"><code>212212120221212211100120211012222002022212200012121001211011010012112102100001122000200021000121100001220220221021122121121021120222221021202010020120010110111002111201210020000212122012112122200012101022201</code></td>
+</tr>
+<tr>
+<td class="left"><code>475</code></td>
+<td class="left"><code>122121</code></td>
+<td class="right"><code>1102121222012022022010202000201100120200000202211011010000102020212202022121201010211220000000022012022101201012201021212101201212222110220212222122112201012010210110201011210110122200112201002201000121200112</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>476</code></td>
+<td class="left"><code>122122</code></td>
+<td class="right"><code>2022111120011012010111022211221022122222220110000202011211120101002021201221202202212120021000220112101022122010222221111000000110222102012122002220002211122121212222102222000111112022202020202101020000000020</code></td>
+</tr>
+<tr>
+<td class="left"><code>477</code></td>
+<td class="left"><code>122200</code></td>
+<td class="right"><code>10202010112100111102122001212122200020122221012211220021211222121222001001120110220201110021001012201200201100100201020100101202100221220010112002112122112211202200110011010210222012000021221212002020121200202</code></td>
+</tr>
+<tr>
+<td class="left"><code>478</code></td>
+<td class="left"><code>122201</code></td>
+<td class="right"><code>20001122002111200120010101201120222220122211122212122110200120000001022210112020200121000112002010021002000222111201011211101202211221022100011012102202101111101120102121002211110201100001012121110110121200222</code></td>
+</tr>
+<tr>
+<td class="left"><code>479</code></td>
+<td class="left"><code>122202</code></td>
+<td class="right"><code>100210202121212011222202110121020200011022202212201112202112112122000100212002201121022110210010022222202202022212102102011210112012220012110200021222101221100011020212202020122102220100100011110112201020101201</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>480</code></td>
+<td class="left"><code>122210</code></td>
+<td class="right"><code class="pisano">120212101201100212112212212022211200001222121112121012020020002122001200122121222021220111022012110020211210022101010121000012022001211111210211111102011022211112211022100100110220121200101101002000011212002200</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>481</code></td>
+<td class="left"><code>122211</code></td>
+<td class="right"><code>221200011100020001112122022221002100020022101102022201222202122021002001111201200220012222002022210020121112122020120000011222211021201201021111210101120021011201002012002121010100112000201112112112220002111101</code></td>
+</tr>
+<tr>
+<td class="left"><code>482</code></td>
+<td class="left"><code>122212</code></td>
+<td class="right"><code>1112112120001120221002112012020221000022021222221220221012222201220010202011100200012010110101112020111110022221121200121012012010100120020002100021210201121000020220111102221121021010201002220121120001221121001</code></td>
+</tr>
+<tr>
+<td class="left"><code>483</code></td>
+<td class="left"><code>122220</code></td>
+<td class="right"><code>2111012201101210222122011112012000100112121101101020200012202101011012210200002101002100102110212000202001212120212020121101011221122021221100212002012021212011221222200112112201121122201211110011002222001002102</code></td>
+</tr>
+<tr>
+<td class="left"><code>484</code></td>
+<td class="left"><code>122221</code></td>
+<td class="right"><code>11000202021110101220201200201102221100211220101100011121102202010001100112211110001021110212212101021020112012112110221012120101001222212011110012101000000110012012220011222111022212210102221100202200000222200110</code></td>
+</tr>
+<tr>
+<td class="left"><code>485</code></td>
+<td class="left"><code>122222</code></td>
+<td class="right"><code>20111221222212012220100212020121221201101111202201102021122111111012120100111112102100211022100020021222121002010100011210221120000122011002211001110012022022101011212212112001001111110011202210220210000000202212</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>486</code></td>
+<td class="left"><code>200000</code></td>
+<td class="right"><code>101112201021022121211002112222001220002020102011001120220002020121020220220022222110122022012012121120020010021122211010000111221002122000021021020211012022202120101210001111112101101020121201011200110001000110022</code></td>
+</tr>
+<tr>
+<td class="left"><code>487</code></td>
+<td class="left"><code>200001</code></td>
+<td class="right"><code>122001200021011211201110102012200211210121220220210000011201202002110111020211111220000010111112211212012201100210011021211110111010021011101002022021101122001221120122221000120102212200210110222121020001001020011</code></td>
+</tr>
+<tr class="pisano-boundary">
+<td class="left"><code>488</code></td>
+<td class="left"><code>200002</code></td>
+<td class="right"><code class="pisano">1000121101112111110112112222011202201212212100001211121001210222200201102011011111100122102200202110102102211122102222101211222102012220011122100120002120221211111222102222112002211020221102012011021200002001200110</code></td>
+</tr>
+<tr>
+<td class="left"><code>489</code></td>
+<td class="left"><code>200010</code></td>
+<td class="right"><code>1122200001210200022021000101101110120200111020222121121020112201210011220102000000020122120012022022021122120000020010200200102220100011100000102212100222120220110120002220112200021010122012200010212220010002220121</code></td>
+</tr>
+<tr>
+<td class="left"><code>490</code></td>
+<td class="left"><code>200011</code></td>
+<td class="right"><code>2200021110100011202210120100120020022120100121001110012022100201110220022120011111121021222220001202201002101122200010002112102022120001111122210102110120112201222112112220001210002101120121212022011120012011121001</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr>
+<td class="left"><code>491</code></td>
+<td class="left"><code>200012</code></td>
+<td class="right"><code>11022221112010212002001120201221200220020211212001001210112220110021002012222011111211221120002101001222201221122220020210012212012220012211200020021211120010122110002122210121110100112012211112110001110022021111122</code></td>
+</tr>
+<tr>
+<td class="left"><code>492</code></td>
+<td class="left"><code>200020</code></td>
+<td class="right"><code>21000012222111000211212011002111221012211012110002111222212021011201222112112100000110020112222102211200211100022120100212202021112110021100100000201022010200101102122012200200020102220210110101202020000111110002200</code></td>
+</tr>
+<tr>
+<td class="left"><code>493</code></td>
+<td class="left"><code>200021</code></td>
+<td class="right"><code>102100011111121212220220201211110122010002001022010120210102011122000001202111111112022012010001210220200120021222110121122222010202100111012000021000010200211000212201212111021200210110000021221012021110210201121022</code></td>
+</tr>
+<tr>
+<td class="left"><code>494</code></td>
+<td class="left"><code>200022</code></td>
+<td class="right"><code>200100101111002220202202212220222120022220020202020002210021102210202001022000211112202102200001020202101101122022000222112201102021210202112100021201102211111102022101002011221221020100210202022221111111022011200222</code></td>
+</tr>
+<tr>
+<td class="left"><code>495</code></td>
+<td class="left"><code>200100</code></td>
+<td class="right"><code>1002200112222201210200200121202110012102222022001100200120200121102202010001112100002001121210010001200001221221021111121012200120001011020201100112201120112022110012002221200020122000210211001021010202222002220022021</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+<tr class="pisano-boundary">
+<td class="left"><code>496</code></td>
+<td class="left"><code>200101</code></td>
+<td class="right"><code class="pisano">1210000221110211201110110111200102202202212112210120210100222001020111011100120011121211001110011022102110100120120112120202101222022222000020200211110000100210212111111000212012120021011121210121002021110102002000020</code></td>
+</tr>
+<tr>
+<td class="left"><code>497</code></td>
+<td class="left"><code>200102</code></td>
+<td class="right"><code>2212201111110120112011011010102212222012211211211221110221122122200020021102002111200212200020021101002112022111212001011222002112101010020222001101011120220010022200120222112110012021222102211212020001102111222022111</code></td>
+</tr>
+<tr>
+<td class="left"><code>498</code></td>
+<td class="left"><code>200110</code></td>
+<td class="right"><code>11122202102221102020121121122010022201222201101122112021022121200220201102202122200022200201200102200111222200002102120202201111111201002021012202012121121020221012012002000101122202120011001122110022022212221001022201</code></td>
+</tr>
+<tr>
+<td class="left"><code>499</code></td>
+<td class="left"><code>200111</code></td>
+<td class="right"><code>21112110221101222202202202202120012201012120020111110202021021100120221201011202012000120101220201001121111222121021121221200121001002012112011210120210012011001111212122222221002221212010111111022112101022110000122012</code></td>
+</tr>
+<tr>
+<td class="left"><code>500</code></td>
+<td class="left"><code>200112</code></td>
+<td class="right"><code>110012020101100102000101101101200112110012021122011000000120220001111200010221101212100021010121010202010111122200201012201102002112210021210101112210101210101222201001202000022202201102021120010202211201012101001221220</code></td>
+</tr>
+<tr>
+<td class="left">&nbsp;</td><td class="left">&nbsp;</td><td class="right">&nbsp;</td></tr>
+</table>
+
+</div><!-- end guts -->

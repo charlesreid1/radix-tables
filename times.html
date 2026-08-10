@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<title>Radix Tables - Times Table</title>
+	
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel='stylesheet' type='text/css' href='css/navbar.css' />
+	<link rel='stylesheet' type='text/css' href='css/times.css' />
+
+</head>
+
+<body>
+
+
+
+
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">radix-tables</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="times.html">Times</a></li>
+                    <li><a href="primes.html">Primes</a></li>
+                    <li><a href="powers.html">Powers</a></li>
+                    <li><a href="factorials.html">Factorials</a></li>
+                    <li><a href="reciprocals.html">Reciprocals</a></li>
+                    <li><a href="harshad.html">Harshad</a></li>
+                    <li><a href="persistence.html">Persistence</a></li>
+                    <li><a href="fibonacci.html">Fibonacci</a></li>
+                    <!--
+                    <li>Pascal's Triangle</li>
+                    -->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <h1>Times Table</h1>
+                <p class="lead">Times table for the integers, up to 50 x 50.</p>
+
+                <p>Numbers in <span class="palindrome">red</span> indicate palindrome numbers.</p>
+
+            </div>
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <p>Select a radix below:</p>
+                <div id="usejs" class="btn-group" role="group">
+                    <a href="times2.html"  type="button" class="btn btn-primary btn-default">2</a>
+                    <a href="times3.html"  type="button" class="btn btn-primary btn-default">3</a>
+                    <a href="times4.html"  type="button" class="btn btn-primary btn-default">4</a>
+                    <a href="times5.html"  type="button" class="btn btn-primary btn-default">5</a>
+                    <a href="times6.html"  type="button" class="btn btn-primary btn-default">6</a>
+                    <a href="times7.html"  type="button" class="btn btn-primary btn-default">7</a>
+                    <a href="times8.html"  type="button" class="btn btn-primary btn-default">8</a>
+                    <a href="times9.html"  type="button" class="btn btn-primary btn-default">9</a>
+                    <a href="times10.html" type="button" class="btn btn-primary btn-default">10</a>
+                    <a href="times11.html" type="button" class="btn btn-primary btn-default">11</a>
+                    <a href="times12.html" type="button" class="btn btn-primary btn-default">12</a>
+                    <a href="times13.html" type="button" class="btn btn-primary btn-default">13</a>
+                    <a href="times14.html" type="button" class="btn btn-primary btn-default">14</a>
+                    <a href="times15.html" type="button" class="btn btn-primary btn-default">15</a>
+                    <a href="times16.html" type="button" class="btn btn-primary btn-default">16</a>
+                    <a href="times17.html" type="button" class="btn btn-primary btn-default">17</a>
+                    <a href="times18.html" type="button" class="btn btn-primary btn-default">18</a>
+                    <a href="times19.html" type="button" class="btn btn-primary btn-default">19</a>
+                    <a href="times20.html" type="button" class="btn btn-primary btn-default">20</a>
+                </div>
+
+                <p>&nbsp;</p>
+
+            </div>
+        </div><!--end row-->
+
+        <div id="main-content">
+        </div>
+
+        <div id="guts">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
