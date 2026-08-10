@@ -1,5 +1,6 @@
 *.class
 build/
+output/
 .claude
 
 # Mobile Tools for Java (J2ME)

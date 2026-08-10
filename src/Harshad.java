@@ -10,16 +10,18 @@ public class Harshad {
 
     public static void main(String[] args) throws FileNotFoundException {
 
+        String outdir = (args.length > 0) ? args[0] : "docs";
+
         for( int n = 2; n <= 20; n++ ) {
             System.out.println("Creating html file for base "+n);
-            generateHarshadTable(n);
+            generateHarshadTable(n, outdir);
         }
 
     }
 
-    public static void generateHarshadTable(int b) throws FileNotFoundException {
+    public static void generateHarshadTable(int b, String outdir) throws FileNotFoundException {
 
-        String filename = String.format("docs/harshad%d.html", b);
+        String filename = String.format("%s/harshad%d.html", outdir, b);
 
         PrintStream ps = new PrintStream(filename);
 
